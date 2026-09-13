@@ -1,0 +1,126 @@
+name: CI and release
+
+"on":
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Verification never receives a write-capable token.  Publication opts in at
+# its own job below only after the complete verification job succeeds.
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Release verification
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    outputs:
+      release_requested: ${{ steps.classify.outputs.release_requested }}
+      release_version: ${{ steps.classify.outputs.release_version }}
+      tested_commit: ${{ steps.classify.outputs.tested_commit }}
+    steps:
+      - name: Check out the event commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Classify the exact tip commit
+        id: classify
+        env:
+          EVENT_SHA: ${{ github.sha }}
+        run: python3 .github/release/release_automation.py inspect --commit "$EVENT_SHA" --cmake CMakeLists.txt
+
+      - name: Test release helper decisions
+        run: python3 -m unittest discover -s .github/release -p 'test_*.py'
+
+      - name: Configure Release build
+        env:
+          BUILD_DIR: ${{ runner.temp }}/qalsh-release-build
+        run: cmake -S . -B "$BUILD_DIR" -DQALSH_BUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build Release configuration
+        env:
+          BUILD_DIR: ${{ runner.temp }}/qalsh-release-build
+        run: cmake --build "$BUILD_DIR" --parallel
+
+      - name: Run full CTest suite
+        env:
+          BUILD_DIR: ${{ runner.temp }}/qalsh-release-build
+        run: ctest --test-dir "$BUILD_DIR" --output-on-failure
+
+      - name: Install into an isolated prefix
+        env:
+          BUILD_DIR: ${{ runner.temp }}/qalsh-release-build
+          INSTALL_PREFIX: ${{ runner.temp }}/qalsh-release-install
+        run: |
+          set -eu
+          rm -rf "$INSTALL_PREFIX"
+          cmake --install "$BUILD_DIR" --prefix "$INSTALL_PREFIX"
+          test -f "$INSTALL_PREFIX/lib/cmake/qalsh/qalshConfig.cmake"
+
+      - name: Configure independent installed consumer
+        env:
+          INSTALL_PREFIX: ${{ runner.temp }}/qalsh-release-install
+          CONSUMER_BUILD: ${{ runner.temp }}/qalsh-installed-consumer
+        run: |
+          set -eu
+          rm -rf "$CONSUMER_BUILD"
+          cmake -S .github/release/consumer -B "$CONSUMER_BUILD" \
+            -DCMAKE_BUILD_TYPE=Release \
+            -Dqalsh_DIR="$INSTALL_PREFIX/lib/cmake/qalsh" \
+            -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF
+
+      - name: Build installed consumer
+        env:
+          CONSUMER_BUILD: ${{ runner.temp }}/qalsh-installed-consumer
+        run: cmake --build "$CONSUMER_BUILD" --parallel
+
+      - name: Run installed consumer query smoke
+        env:
+          CONSUMER_BUILD: ${{ runner.temp }}/qalsh-installed-consumer
+        run: ctest --test-dir "$CONSUMER_BUILD" --output-on-failure
+
+  publish:
+    name: Publish requested release
+    needs: verify
+    if: >-
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/main' &&
+      needs.verify.outputs.release_requested == 'true'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    # Verification runs are intentionally not in this queue.  Only retries or
+    # pushes requesting the same validated version serialize, and a running
+    # publication is never cancelled.  Different versions may publish in
+    # parallel; the helper asks GitHub for its legacy latest-release policy.
+    concurrency:
+      group: qalsh-release-${{ github.repository }}-${{ needs.verify.outputs.release_version }}
+      cancel-in-progress: false
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Check out the tested event commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ needs.verify.outputs.tested_commit }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Create or resume annotated tag and generated-notes release
+        env:
+          RELEASE_VERSION: ${{ needs.verify.outputs.release_version }}
+          TESTED_COMMIT: ${{ needs.verify.outputs.tested_commit }}
+          REPOSITORY: ${{ github.repository }}
+        run: >-
+          python3 .github/release/release_automation.py publish
+          --repository "$REPOSITORY"
+          --version "$RELEASE_VERSION"
+          --commit "$TESTED_COMMIT"

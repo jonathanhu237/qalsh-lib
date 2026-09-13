@@ -23,6 +23,58 @@ The library has no third-party runtime dependency. It requires a compiler with
 C++20 support and uses the host's native little-endian IEEE-754 `float` binary
 representation for its persistent format.
 
+## Release automation
+
+A push to `main` always runs the hosted Ubuntu verification workflow. A release
+is requested only by the exact **tip commit** title
+`chore(release): vMAJOR.MINOR.PATCH`, using stable numeric SemVer components
+with no leading zeroes or prerelease suffix. Before making that commit, update
+the `project(qalsh-lib VERSION ...)` declaration in `CMakeLists.txt` to the
+same `MAJOR.MINOR.PATCH`; the workflow rejects a mismatch and rejects malformed
+release-looking titles explicitly. Pull requests and ordinary commits have a
+read-only token and never publish.
+
+For example, after updating `CMakeLists.txt` to `VERSION 1.2.3`, use:
+
+```sh
+git add CMakeLists.txt
+git commit -m "chore(release): v1.2.3"
+git push origin main
+```
+
+For the first version, when the CMake version is already correct and no source
+change is needed, an empty tip commit is explicit and supported:
+
+```sh
+git commit --allow-empty -m "chore(release): v1.2.3"
+git push origin main
+```
+
+The gate configures a Release build, runs the complete CTest suite, installs to
+an isolated prefix, and builds/runs the standalone consumer under
+`.github/release/consumer`. That consumer uses only the installed package with
+`find_package(qalsh CONFIG REQUIRED)`, links `qalsh::qalsh`, and performs a
+real query. A successful release creates an annotated `vX.Y.Z` tag pointing at
+the tested event SHA (with message `chore(release): vX.Y.Z`) and a non-draft
+GitHub Release with generated notes. GitHub provides its default source
+archives; the workflow uploads no custom source package or assets.
+
+Publication is safe to retry. A tag already resolving to the tested commit is
+reused, while a conflicting tag is an error. A correctly published stable
+release is left untouched. A draft is published only when it carries the
+workflow's marker and exact tested commit; an external/pre-existing draft is
+never edited and requires manual resolution. Verification runs are not in a
+workflow-wide concurrency queue: same-version publication jobs (including
+retries) serialize with cancellation disabled, while independent versions may
+publish concurrently or out of order. Each release requests GitHub's
+`make_latest: legacy` policy rather than blindly making completion order the
+latest release. If verification fails, fix the source/version and push a new
+exact-title commit, or rerun the same workflow run after a transient failure.
+The trigger is intentionally tip-only: pushing a later ordinary commit does
+not retroactively release an earlier title. GitHub-hosted Ubuntu and the job's
+`contents: write` permission are required; local development validation uses
+Centaurus separately and does not create real tags or releases.
+
 ## Public query seam
 
 The public header is `include/qalsh/qalsh.h`:
