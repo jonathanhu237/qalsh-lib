@@ -1,0 +1,160 @@
+{
+  "spec": {
+    "path": ".scratch/qalsh-window-simd/spec.md",
+    "sha256": "fa8a00a2104d341054531f018792e925183d346b2b3f80caabab4889428ee5f2"
+  },
+  "comparison_baseline": {
+    "revision": "722ecfbf8b426a3148d30f9cd6b393018bf31fab",
+    "working_tree_head": "722ecfbf8b426a3148d30f9cd6b393018bf31fab"
+  },
+  "candidate_source": {
+    "tracked_tree_manifest": "computed from git ls-files paths and SHA-256 content hashes at the uncommitted working tree",
+    "files": {
+      "CMakeLists.txt": "9c70b24827922671c66e9c712de8d0c7b1e4f061e6bcf6a311270dc6973aacb1",
+      "src/qalsh.cc": "fb849680b91dc42031a5207f65cf3fa74fecf17bd9897655671b5bb859a703c4",
+      "src/window_clamp.h": "b5a61b485327762454e4de82623b7f6fa8d6e69fa6f7ef2d9805248b804d7057",
+      "tests/window_clamp_test.cc": "a2c73d8b3947d70b80fda869a3762d5d40a7b3092402b8c7949c48bcb46d3f09",
+      "tests/window_trace_test.cc": "6510d393093a390ff68e834071cd82c243613bf9c2d234417df0842c8b45eba3"
+    },
+    "production_scope": [
+      "src/qalsh.cc",
+      "src/window_clamp.h"
+    ],
+    "test_scope": [
+      "CMakeLists.txt",
+      "tests/window_clamp_test.cc",
+      "tests/window_trace_test.cc",
+      ".scratch/qalsh-window-simd/stage_b_quality_compare.cc",
+      ".scratch/qalsh-window-simd/test_stage_b_quality_compare.py"
+    ]
+  },
+  "original_c": {
+    "audited_revision": "266118b6851a30f5dfc7ba80b00760e887578f47",
+    "source_hashes": ".scratch/qalsh-window-simd/consumer-source-hashes.txt (remote original section); audited file hashes match original-baseline-source-audit.json"
+  },
+  "current_c_consumer": {
+    "source": "implementation-c-validation snapshot",
+    "source_hashes": ".scratch/qalsh-window-simd/consumer-source-hashes.txt (remote current section)",
+    "note": "The current consumer wrapper is held constant between unmodified 722ecfb and candidate; only the library source differs."
+  },
+  "host_and_tools": {
+    "host": "centaurus",
+    "os": "Linux centaurus 7.0.0-30-generic #30-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 31 18:22:54 UTC 2026 x86_64",
+    "cpu": "AMD Ryzen 9 5900X 12-Core Processor; 24 logical CPUs; 12 physical cores; SMT2",
+    "compiler": "g++-15 (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+    "cmake": "cmake version 4.2.3",
+    "ninja": "1.13.2",
+    "build_type": "Release",
+    "flags": "-O3 -DNDEBUG -std=gnu++20 for library; -O3 -DNDEBUG -std=c++23 -fopenmp -DQALSH4C_USE_OPENMP for C harness",
+    "isa_policy": "portable x86-64 baseline; candidate private seam uses SSE2, scalar forced build uses QALSH_WINDOW_FORCE_SCALAR",
+    "governor": "powersave (observed on benchmark CPUs; not changed)",
+    "topology_and_preflight": ".scratch/qalsh-window-simd/preflight-stageb-20260913.json and preflight-adjustment-stageb-20260913.json",
+    "unrelated_work": "old_algo workload was present on another CPU; no process was killed, suspended, or re-affinitized",
+    "validation_fix1": {
+      "host": "centaurus",
+      "remote_source": "/home/jonathanhu237/code/qalsh-window-simd-fix1",
+      "compiler": "g++-15 (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+      "configure_flags": "-G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=g++-15 -DQALSH_BUILD_TESTS=ON -DBUILD_TESTING=ON",
+      "optimized_force_scalar": "OFF",
+      "forced_scalar_force_scalar": "ON; production qalsh target and integrated tests compile with QALSH_WINDOW_FORCE_SCALAR",
+      "sanitizer_flags": "-fsanitize=address,undefined -fno-omit-frame-pointer",
+      "no_stage_b_or_stage_c_retry": true,
+      "logs": "validation-fix1/"
+    }
+  },
+  "builds": {
+    "baseline_library_sha256": "0044d124080cfebbc3a707cb4620dc8e784e299acc909bf0d54aa706f4ad43b4",
+    "candidate_library_sha256": "d2a15e985f00bb336c6c10ab38c1b131461352b0bd339f26ad2ba8054d6736c4",
+    "original_harness_sha256": "3577819b3cc1e29465266c731a6e9b6af43d343d879c2853c0df3c71522b5c6c",
+    "baseline_harness_sha256": "633282803f7547e79a7870c8cf37d4c56e5b266ca2dc5d0a3f34dd9350cd6517",
+    "candidate_harness_sha256": "b423768b8a510c713e1a2c67299a569fdf21a037dc5d5880cdd327851c8ff63b",
+    "candidate_test_library_sha256": "d2a15e985f00bb336c6c10ab38c1b131461352b0bd339f26ad2ba8054d6736c4",
+    "stage_b_harness_sha256": "1b894357c6fa9530f6c5845d1359dae8b2dde98201c317ecf0e10d54640ed2ef",
+    "validation_fix1_optimized_library_sha256": "d2a15e985f00bb336c6c10ab38c1b131461352b0bd339f26ad2ba8054d6736c4",
+    "validation_fix1_forced_scalar_library_sha256": "e7a055e907c1343c7ca2c628dfcbda0c6995f5b29543f4924e7a144a81a75902",
+    "validation_fix1_optimized_trace_test_sha256": "54d1bbd50f523deeeeecfbb64539e12f8916daf4cb53bafa7093282ee7bd463b",
+    "validation_fix1_forced_scalar_trace_test_sha256": "931f1086448e1010773a80cbbd7c7a9c07f17c17cc097f4113c51f8f8a254c5e"
+  },
+  "dataset": {
+    "name": "Federalist",
+    "direction": "L1 AB",
+    "queries": 1880,
+    "base_points": 1178,
+    "dimensions": 300,
+    "A.bin_sha256": "5bb17396ec0d8b77741f059cb484901a46ae62acee3437afb1d72ae05be07efd",
+    "B.bin_sha256": "4ab3e20e57692ef81665c6ac97ad32a41d11b4b7bf99fb843c779e9e720b3e95",
+    "metadata.json_sha256": "67f67afba504a7a3c2d3ec05274cc50a3bedb0b245fd2786ae7c16d211c588a5",
+    "truth_l1_ab_sha256": "f8d1d78f7d3b6827e437404026857e19920838a232b90da8e9f58c09ba6ae874"
+  },
+  "evidence": {
+    "stage_a_log": "stage-a-20260913.txt",
+    "stage_a_ratios": {
+      "histogram_synthetic": 0.874739,
+      "short": 1.05386,
+      "tails": 1.20363,
+      "medium": 0.439416,
+      "long": 1.26792
+    },
+    "stage_b_primary_raw": "raw-stageb-20260913/records.json",
+    "stage_b_primary_stats": "stage-b-stats.json",
+    "stage_b_adjustment_raw": "raw-stageb-adjustment-20260913/records.json",
+    "stage_b_adjustment_stats": "stage-b-adjustment-stats.json",
+    "stage_b_quality": "quality-stageb-20260913.txt",
+    "stage_b_quality_compare": "quality-compare-stageb-20260913.txt",
+    "resource_smoke": "resource-smoke-20260913/",
+    "tests": [
+      "ctest-candidate-tests.log",
+      "ctest-candidate-sanitize.log",
+      "ctest-c-consumer-candidate.log",
+      "ctest-h-candidate.log"
+    ],
+    "fix_attempt_1": {
+      "r1": "validation-fix1/ctest-optimized.log and ctest-forcedscalar.log; trace-optimized-output.log and trace-forcedscalar-output.log record long quantum/range traces, both directions, memory/B+/array, partial and exhaustion/deferred events.",
+      "r1_forced_scalar_compile": "validation-fix1/validation-build-fingerprints.txt; forced library build has QALSH_WINDOW_FORCE_SCALAR=ON and full 7/7 CTest pass.",
+      "r1_sanitizer": "validation-fix1/ctest-sanitize.log; focused ClampToWindow and trace tests 2/2 ASan/UBSan pass.",
+      "r2_fixture_tests": "validation-fix1/validation-quality-fixtures.log; positive tie, recall loss, non-exact farther candidate, missing/duplicate/out-of-range/non-finite IDs, wrong distance, and same-file rejection.",
+      "r2_existing_stage_b_original_vs_candidate": "validation-fix1/quality-compare-existing.log; 1880/1880 per-query statuses pass, original_only=0, candidate_only=0, quality_failures=0.",
+      "r2_existing_stage_b_head_vs_candidate": "validation-fix1/quality-compare-existing-head.log; 1880/1880 per-query statuses pass, original_only=0, candidate_only=0, quality_failures=0.",
+      "performance_status": "E1 remains environment-blocked; no Stage-B or Stage-C timing retry was run.",
+      "implementation_sha256": "3e39e794997ba9f7bc063ce05f8c9450f58c63dfdaa7c7fb162f959fa8b566ee",
+      "quality_comparator_source_sha256": "fdda5e16a5dbf5de08b4c9c52f74f3a0ec910c6962ab4f05775871b6d689bd94",
+      "quality_fixture_source_sha256": "ecb4c374e1cfa7e391d66b96d3c0f94827b94630e112eab73e8572a7c61e63b4",
+      "assembly_probe_source_sha256": "22febbfe2423c8d91d024c52fdf4741cac432d14d1df70f65e217e168bf96607",
+      "assembly_probe": "validation-fix1/validation-assembly-probe.txt"
+    },
+    "fix_attempt_2": {
+      "scope": "R2 quality-comparator only; src/qalsh.cc and src/window_clamp.h unchanged",
+      "mechanism": "Neumaier long-double independent L1 with gamma error bounds; zero is exact-only; interval comparisons for ties, selected distance, and unconditional ratio; float32 rounding-cell validation for reported distances",
+      "numeric_basis": "u=epsilon/2; gamma_n=n*u/(1-n*u); independent accumulator n=4*dimensions+1 and float32 path n=3*dimensions+1; no absolute distance or ratio tolerance",
+      "parent_edge_fixture": "parent_quality_edge_repro.py",
+      "parent_edge_log": "validation-fix2/parent-quality-edge-r2fix2.log",
+      "fixture_source": "test_stage_b_quality_compare.py",
+      "fixture_log": "validation-fix2/quality-fixtures-r2fix2.log",
+      "fed_original_vs_candidate": "validation-fix2/fed-original-vs-candidate.log",
+      "fed_722ecfb_vs_candidate": "validation-fix2/fed-722ecfb-vs-candidate.log",
+      "commands_and_provenance": "validation-fix2/validation-commands.log",
+      "quality_comparator_source_sha256": "564d56bcad5ace42672e4894d4e7a10e0f0464d7e3d18cac4dcbc9cac7cf82b9",
+      "quality_fixture_source_sha256": "17d3689e13c7a4a864713460f4c1b344303a81e45a789d5575b4e1497c52c409",
+      "parent_edge_fixture_source_sha256": "4fc82a2179b6d79fcd485e9efb3e377080a17fc400e823f3bbe28de711353e45",
+      "implementation_report_sha256": "b9c0d45970d56a844e82670dc6515babc28acde75a4d47688e7978e810249f56",
+      "implementation_md_sha256_after_fix2": "2e4b0549865e4f7c3b3651ec6a52b368add76247cb309296b8506ffc6ff57b74",
+      "remote_checker_sha256": "b54e341a259557bdf9d13b498565e6b82138e3f1e26fe6189e99e52558f8abfa",
+      "logs_sha256": {
+        "parent_quality_edge": "2e87c2993ad7be47ce46d897c0b95fd3844d35992ebecd4f21e80fda64f110a6",
+        "quality_fixtures": "8c671e08abb9a9b05f9accbda7d08c95b6fd8b09d21567d76a26d94ca200db5e",
+        "fed_original_vs_candidate": "d668ebf9ac4ce95c51fe709f27cb637db473f431e7da3b509242805b0bc29d20",
+        "fed_722ecfb_vs_candidate": "abc7c30b0fb27bbe99b20ffe22835f5e8c24ec3e7595a980557e2bd02195476b",
+        "commands": "151adb4352571a120df767e12281962f467de08b554e518b99c506e0e867d105"
+      },
+      "remote": "/tmp/qalsh-window-simd-r2fix2",
+      "compiler": "g++-15 (Ubuntu 15.2.0-16ubuntu1)",
+      "fed_population": "1880 queries x 1178 points x 300 dimensions; existing triplet-01-ABC result files",
+      "fed_original_result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+      "fed_722ecfb_result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+      "fed_candidate_result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+      "no_stage_b_or_stage_c_retry": true,
+      "no_cpu_adjustment": true,
+      "performance_status": "E1 remains environment-blocked; checker validation does not rebind or accept old timing evidence"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+public_scan memory calls 94 partial 21 simd_eligible_forward 6 simd_eligible_reverse 6 window_exhausted 30 table_exhausted 6
+strategy_trace memory quantum events 276 reference_calls 24 partial_ranges 22 simd_eligible_forward 11 simd_eligible_reverse 11 partial_boundary 9 table_exhausted 0 deferred_evaluation 0
+strategy_trace memory range events 267 reference_calls 15 partial_ranges 24 simd_eligible_forward 12 simd_eligible_reverse 12 partial_boundary 0 table_exhausted 0 deferred_evaluation 0
+strategy_trace memory quantum exhaustive events 394 reference_calls 35 partial_ranges 24 simd_eligible_forward 11 simd_eligible_reverse 11 partial_boundary 14 table_exhausted 1 deferred_evaluation 1
+strategy_trace memory range exhaustive events 380 reference_calls 21 partial_ranges 26 simd_eligible_forward 13 simd_eligible_reverse 13 partial_boundary 0 table_exhausted 1 deferred_evaluation 1
+public_scan bplus calls 95 partial 21 simd_eligible_forward 6 simd_eligible_reverse 6 window_exhausted 30 table_exhausted 6
+public_scan array calls 95 partial 21 simd_eligible_forward 6 simd_eligible_reverse 6 window_exhausted 30 table_exhausted 6
+strategy_trace bplus events 276 reference_calls 24 partial_ranges 22 simd_eligible_forward 10 simd_eligible_reverse 11 partial_boundary 9 table_exhausted 0 deferred_evaluation 0
+strategy_trace array events 276 reference_calls 24 partial_ranges 22 simd_eligible_forward 11 simd_eligible_reverse 11 partial_boundary 9 table_exhausted 0 deferred_evaluation 0
+strategy_trace bplus exhaustive events 394 reference_calls 35 partial_ranges 24 simd_eligible_forward 10 simd_eligible_reverse 11 partial_boundary 14 table_exhausted 1 deferred_evaluation 1
+strategy_trace array exhaustive events 394 reference_calls 35 partial_ranges 24 simd_eligible_forward 11 simd_eligible_reverse 11 partial_boundary 14 table_exhausted 1 deferred_evaluation 1
+strategy_trace bplus events 270 reference_calls 18 partial_ranges 24 simd_eligible_forward 12 simd_eligible_reverse 12 partial_boundary 3 table_exhausted 0 deferred_evaluation 0
+strategy_trace array events 270 reference_calls 18 partial_ranges 24 simd_eligible_forward 12 simd_eligible_reverse 12 partial_boundary 3 table_exhausted 0 deferred_evaluation 0
+strategy_trace bplus exhaustive events 383 reference_calls 24 partial_ranges 26 simd_eligible_forward 13 simd_eligible_reverse 13 partial_boundary 3 table_exhausted 1 deferred_evaluation 1
+strategy_trace array exhaustive events 383 reference_calls 24 partial_ranges 26 simd_eligible_forward 13 simd_eligible_reverse 13 partial_boundary 3 table_exhausted 1 deferred_evaluation 1

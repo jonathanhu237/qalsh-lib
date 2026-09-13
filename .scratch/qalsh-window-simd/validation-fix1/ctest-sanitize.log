@@ -1,0 +1,9 @@
+Test project /home/jonathanhu237/code/qalsh-window-simd-fix1/build-sanitize
+    Start 5: qalsh_window_clamp_test
+1/2 Test #5: qalsh_window_clamp_test ..........   Passed   42.31 sec
+    Start 7: qalsh_window_trace_test
+2/2 Test #7: qalsh_window_trace_test ..........   Passed    0.13 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  42.44 sec

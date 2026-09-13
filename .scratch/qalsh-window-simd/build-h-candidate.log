@@ -1,0 +1,32 @@
+[1/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/ann_searcher.cc for CXX dependencies
+[2/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/config.cc for CXX dependencies
+[3/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/global.cc for CXX dependencies
+[4/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/command.cc for CXX dependencies
+[5/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/main.cc for CXX dependencies
+[6/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/point_set.cc for CXX dependencies
+[7/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/tests/qalsh_h_strategy_test.cc for CXX dependencies
+[8/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/utils.cc for CXX dependencies
+[9/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/ann_searcher.cc for CXX dependencies
+[10/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/global.cc for CXX dependencies
+[11/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/config.cc for CXX dependencies
+[12/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/point_set.cc for CXX dependencies
+[13/32] Generating CXX dyndep file CMakeFiles/qalsh-h.dir/CXX.dd
+[14/32] Scanning /home/jonathanhu237/code/qalsh-library-compatibility/implementation/h/src/utils.cc for CXX dependencies
+[15/32] Generating CXX dyndep file CMakeFiles/qalsh_h_strategy_test.dir/CXX.dd
+[16/32] Building CXX object CMakeFiles/qalsh-h.dir/src/ann_searcher.cc.o
+[17/32] Building CXX object qalsh-lib/CMakeFiles/qalsh.dir/src/qalsh.cc.o
+[18/32] Building CXX object CMakeFiles/qalsh-h.dir/src/config.cc.o
+[19/32] Building CXX object CMakeFiles/qalsh-h.dir/src/global.cc.o
+[20/32] Building CXX object CMakeFiles/qalsh-h.dir/src/command.cc.o
+[21/32] Building CXX object CMakeFiles/qalsh-h.dir/src/point_set.cc.o
+[22/32] Building CXX object CMakeFiles/qalsh-h.dir/src/utils.cc.o
+[23/32] Building CXX object CMakeFiles/qalsh_h_strategy_test.dir/tests/qalsh_h_strategy_test.cc.o
+[24/32] Building CXX object CMakeFiles/qalsh_h_strategy_test.dir/src/ann_searcher.cc.o
+[25/32] Building CXX object CMakeFiles/qalsh-h.dir/src/main.cc.o
+[26/32] Building CXX object CMakeFiles/qalsh_h_strategy_test.dir/src/global.cc.o
+[27/32] Building CXX object CMakeFiles/qalsh_h_strategy_test.dir/src/point_set.cc.o
+[28/32] Building CXX object CMakeFiles/qalsh_h_strategy_test.dir/src/config.cc.o
+[29/32] Linking CXX static library qalsh-lib/libqalsh.a
+[30/32] Linking CXX executable qalsh-h
+[31/32] Building CXX object CMakeFiles/qalsh_h_strategy_test.dir/src/utils.cc.o
+[32/32] Linking CXX executable qalsh_h_strategy_test

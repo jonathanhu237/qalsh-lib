@@ -1,0 +1,6 @@
+[optimized mode]
+window clamp mode: sse2
+[forced mode]
+window clamp mode: scalar
+[optimized trace]
+[forced trace]

@@ -1,0 +1,39 @@
+date=2026-09-13T01:17:15+00:00
+host=centaurus
+Linux centaurus 7.0.0-30-generic #30-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 31 18:22:54 UTC 2026 x86_64 GNU/Linux
+nproc=24
+compiler=g++-15 (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+cmake=cmake version 4.2.3
+ninja=1.13.2
+flags baseline:
+CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_CXX_COMPILER:STRING=/usr/bin/x86_64-linux-gnu-g++-15
+CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+QALSH_BUILD_TESTS:BOOL=OFF
+CMAKE_GENERATOR:INTERNAL=Ninja
+flags candidate:
+CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_CXX_COMPILER:STRING=/usr/bin/x86_64-linux-gnu-g++-15
+CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+QALSH_BUILD_TESTS:BOOL=OFF
+CMAKE_GENERATOR:INTERNAL=Ninja
+cpu topo:
+CPU(s):                                  24
+On-line CPU(s) list:                     0-23
+Model name:                              AMD Ryzen 9 5900X 12-Core Processor
+Thread(s) per core:                      2
+Core(s) per socket:                      12
+Socket(s):                               1
+CPU(s) scaling MHz:                      71%
+CPU max MHz:                             4954.5649
+CPU min MHz:                             567.0890
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm debug_swap
+NUMA node0 CPU(s):                       0-23
+governors:
+cpu6 powersave
+cpu10 powersave
+cpu18 powersave
+cpu22 powersave
+processes:
+ 416258  10  0.0 Ss   zsh             zsh -c set -e; c++ -O3 -std=c++20 /tmp/old_algo.cc -o /tmp/old_algo; /tmp/old_algo /tmp/qalsh-acceptance/base/index/qalsh/l2/b /tmp/qalsh-acceptance/base/B.bin /tmp/qalsh-acceptance/base/A.bin >/tmp/oldalgo.out; head /tmp/oldalgo.out; python3 - <<"PY" import struct x=struct.unpack("<1880f",open("/tmp/oldalgo.bin","rb").read()) for p in ["/tmp/qalsh-acceptance/base/l2_qalsh_weights_A.bin","/tmp/qalsh-acceptance/mig/l2_qalsh_weights_A.bin"]:  a=struct.unpack("<1880f",open(p,"rb").read()); print(p,"diff",sum(i!=j for i,j in zip(a,x)),"mae",sum(abs(i-j) for i,j in zip(a,x))/len(x)) PY
+ 416377   1 99.9 R    old_algo        /tmp/old_algo /tmp/qalsh-acceptance/base/index/qalsh/l2/b /tmp/qalsh-acceptance/base/B.bin /tmp/qalsh-acceptance/base/A.bin

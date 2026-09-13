@@ -1,0 +1,59 @@
+quality comparator fixtures: exact/near ties, zero/nonzero, adjacent float32, subnormal/extreme values, float32 rounding, both-nonexact regression, malformed rows/data, and same-file rejection passed
+[
+  {
+    "case": "zero_to_nonzero",
+    "expected_quality_rejection": true,
+    "exit_code": 5,
+    "stdout": "query 0 status fail baseline_id 0 candidate_id 1 best_distance 0 best_error 0 baseline_distance 0 baseline_error 0 candidate_distance 4.99999985859034268287e-10 candidate_error 1.35525267727771612486e-28 baseline_exact 1 candidate_exact 0 baseline_ratio 1 candidate_ratio inf baseline_reported_error 0 candidate_reported_error 0 failure recall_loss,selected_distance_regression,approximation_regression\nsummary queries 1 original_hits 1 candidate_hits 0 both_hits 0 original_only 1 candidate_only 0 quality_failures 1 max_original_ratio 1 max_candidate_ratio inf max_original_reported_error 0 max_candidate_reported_error 0\n",
+    "stderr": ""
+  },
+  {
+    "case": "wrong_zero_distance_encoding",
+    "expected_quality_rejection": true,
+    "exit_code": 5,
+    "stdout": "query 0 status fail baseline_id 0 candidate_id 0 best_distance 0 best_error 0 baseline_distance 0 baseline_error 0 candidate_distance 0 candidate_error 0 baseline_exact 1 candidate_exact 1 baseline_ratio 1 candidate_ratio 1 baseline_reported_error 0 candidate_reported_error 9.00000013643875718117e-05 failure candidate_reported_distance_mismatch\nsummary queries 1 original_hits 1 candidate_hits 1 both_hits 1 original_only 0 candidate_only 0 quality_failures 1 max_original_ratio 1 max_candidate_ratio 1 max_original_reported_error 0 max_candidate_reported_error 9.00000013643875718117e-05\n",
+    "stderr": ""
+  }
+]
+Test project /home/jonathanhu237/code/qalsh-window-simd-fix1/build-optimized
+    Start 1: qalsh_public_test
+1/7 Test #1: qalsh_public_test ................   Passed    0.01 sec
+    Start 2: qalsh_dispatch_test
+2/7 Test #2: qalsh_dispatch_test ..............   Passed    0.02 sec
+    Start 3: qalsh_distance_test
+3/7 Test #3: qalsh_distance_test ..............   Passed    0.00 sec
+    Start 4: qalsh_build_test
+4/7 Test #4: qalsh_build_test .................   Passed    0.01 sec
+    Start 5: qalsh_window_clamp_test
+5/7 Test #5: qalsh_window_clamp_test ..........   Passed    0.60 sec
+    Start 6: qalsh_window_clamp_scalar_test
+6/7 Test #6: qalsh_window_clamp_scalar_test ...   Passed    0.61 sec
+    Start 7: qalsh_window_trace_test
+7/7 Test #7: qalsh_window_trace_test ..........   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Total Test time (real) =   1.25 sec
+Test project /home/jonathanhu237/code/qalsh-window-simd-fix1/build-forcedscalar
+    Start 1: qalsh_public_test
+1/7 Test #1: qalsh_public_test ................   Passed    0.01 sec
+    Start 2: qalsh_dispatch_test
+2/7 Test #2: qalsh_dispatch_test ..............   Passed    0.01 sec
+    Start 3: qalsh_distance_test
+3/7 Test #3: qalsh_distance_test ..............   Passed    0.00 sec
+    Start 4: qalsh_build_test
+4/7 Test #4: qalsh_build_test .................   Passed    0.01 sec
+    Start 5: qalsh_window_clamp_test
+5/7 Test #5: qalsh_window_clamp_test ..........   Passed    0.63 sec
+    Start 6: qalsh_window_clamp_scalar_test
+6/7 Test #6: qalsh_window_clamp_scalar_test ...   Passed    0.63 sec
+    Start 7: qalsh_window_trace_test
+7/7 Test #7: qalsh_window_trace_test ..........   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 7
+
+Total Test time (real) =   1.30 sec
+564d56bcad5ace42672e4894d4e7a10e0f0464d7e3d18cac4dcbc9cac7cf82b9  stage_b_quality_compare.cc
+b54e341a259557bdf9d13b498565e6b82138e3f1e26fe6189e99e52558f8abfa  quality
+d2a15e985f00bb336c6c10ab38c1b131461352b0bd339f26ad2ba8054d6736c4  /home/jonathanhu237/code/qalsh-window-simd-fix1/build-optimized/libqalsh.a
+e7a055e907c1343c7ca2c628dfcbda0c6995f5b29543f4924e7a144a81a75902  /home/jonathanhu237/code/qalsh-window-simd-fix1/build-forcedscalar/libqalsh.a

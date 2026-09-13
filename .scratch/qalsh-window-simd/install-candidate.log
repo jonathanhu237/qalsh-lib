@@ -1,0 +1,9 @@
+-- Install configuration: "Release"
+-- Installing: /home/jonathanhu237/code/qalsh-window-simd/stageb/install-candidate/lib/libqalsh.a
+-- Installing: /home/jonathanhu237/code/qalsh-window-simd/stageb/install-candidate/include
+-- Installing: /home/jonathanhu237/code/qalsh-window-simd/stageb/install-candidate/include/qalsh
+-- Installing: /home/jonathanhu237/code/qalsh-window-simd/stageb/install-candidate/include/qalsh/qalsh.h
+-- Installing: /home/jonathanhu237/code/qalsh-window-simd/stageb/install-candidate/lib/cmake/qalsh/qalshTargets.cmake
+-- Installing: /home/jonathanhu237/code/qalsh-window-simd/stageb/install-candidate/lib/cmake/qalsh/qalshTargets-release.cmake
+-- Installing: /home/jonathanhu237/code/qalsh-window-simd/stageb/install-candidate/lib/cmake/qalsh/qalshConfig.cmake
+-- Installing: /home/jonathanhu237/code/qalsh-window-simd/stageb/install-candidate/lib/cmake/qalsh/qalshConfigVersion.cmake

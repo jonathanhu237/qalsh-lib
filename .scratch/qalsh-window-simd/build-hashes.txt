@@ -1,0 +1,10 @@
+baseline
+0044d124080cfebbc3a707cb4620dc8e784e299acc909bf0d54aa706f4ad43b4  /home/jonathanhu237/code/qalsh-window-simd/stageb/build-baseline/libqalsh.a
+candidate
+d2a15e985f00bb336c6c10ab38c1b131461352b0bd339f26ad2ba8054d6736c4  /home/jonathanhu237/code/qalsh-window-simd/stageb/build-candidate/libqalsh.a
+candidate-tests
+d2a15e985f00bb336c6c10ab38c1b131461352b0bd339f26ad2ba8054d6736c4  /home/jonathanhu237/code/qalsh-window-simd/stageb/build-candidate-tests/libqalsh.a
+candidate-c-consumer
+d2a15e985f00bb336c6c10ab38c1b131461352b0bd339f26ad2ba8054d6736c4  /home/jonathanhu237/code/qalsh-window-simd/stageb/build-c-consumer-candidate/qalsh-lib/libqalsh.a
+candidate-h
+d2a15e985f00bb336c6c10ab38c1b131461352b0bd339f26ad2ba8054d6736c4  /home/jonathanhu237/code/qalsh-window-simd/stageb/build-h-candidate/qalsh-lib/libqalsh.a

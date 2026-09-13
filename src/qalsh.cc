@@ -1,4 +1,5 @@
 #include "qalsh/qalsh.h"
+#include "window_clamp.h"
 
 #include <algorithm>
 #include <array>
@@ -867,33 +868,6 @@ void ResetBoundedSides(float bound, float& last_bound, bool& left_blocked, bool&
     }
 }
 
-// Sorted outward ranges contain a prefix inside the current radius. Test the
-// far endpoint first (the usual case), otherwise locate that prefix by binary
-// search. This removes a window branch from every hit, without reading outside
-// the already validated leaf/array extent.
-void ClampToWindow(detail::HitRange& range, float bound) {
-    const auto inside = [&](std::size_t i) {
-        const auto* bytes = range.reverse ? range.first - i * 8U : range.first + i * 8U;
-        Projection value;
-        std::memcpy(&value, bytes, sizeof(value));
-        return std::abs(range.query_value - value) <= bound;
-    };
-    if (range.count == 0 || inside(range.count - 1)) {
-        return;
-    }
-    if (!inside(0)) {
-        range.count = 0;
-        return;
-    }
-    std::size_t lo = 1, hi = range.count;
-    while (lo < hi) {
-        const auto mid = lo + (hi - lo) / 2;
-        if (inside(mid)) lo = mid + 1;
-        else hi = mid;
-    }
-    range.count = lo;
-}
-
 // Bounded and unbounded calls use exactly the same accumulation order. A
 // separate scalar bounded loop and SIMD unbounded loop can disagree by several
 // float ULPs and incorrectly prune even identical high-dimensional vectors.
@@ -1117,7 +1091,7 @@ ScanReport InMemoryIndex::scan_impl(Cursor& base_cursor, float bound, std::size_
             const auto available = std::min(left_limit - scanned, index + 1);
             detail::HitRange range{entry_bytes.data() + index * sizeof(Entry),
                                    available, true, cursor->table_id, cursor->query_value};
-            ClampToWindow(range, bound);
+            window_detail::ClampToWindow(range, bound);
             cursor->left_blocked = range.count < available;
             if (range.count != 0) visitor(range);
             entries_visited += range.count;
@@ -1134,7 +1108,7 @@ ScanReport InMemoryIndex::scan_impl(Cursor& base_cursor, float bound, std::size_
             const auto available = std::min(right_limit - scanned, entries.size() - index);
             detail::HitRange range{entry_bytes.data() + index * sizeof(Entry),
                                    available, false, cursor->table_id, cursor->query_value};
-            ClampToWindow(range, bound);
+            window_detail::ClampToWindow(range, bound);
             cursor->right_blocked = range.count < available;
             if (range.count != 0) visitor(range);
             entries_visited += range.count;
@@ -2202,7 +2176,7 @@ ScanReport BPlusTreeIndex::scan_impl(Cursor& base_cursor, float bound, std::size
                                             static_cast<std::size_t>(left_index) + 1);
             detail::HitRange range{entry_data + static_cast<std::size_t>(left_index) * sizeof(DiskEntry),
                                    available, true, table_id, query_value};
-            ClampToWindow(range, bound);
+            window_detail::ClampToWindow(range, bound);
             left_blocked = range.count < available;
             if (range.count != 0) visitor(range);
             scanned += range.count;
@@ -2241,7 +2215,7 @@ ScanReport BPlusTreeIndex::scan_impl(Cursor& base_cursor, float bound, std::size
                                             static_cast<std::size_t>(header.count - right_index));
             detail::HitRange range{entry_data + static_cast<std::size_t>(right_index) * sizeof(DiskEntry),
                                    available, false, table_id, query_value};
-            ClampToWindow(range, bound);
+            window_detail::ClampToWindow(range, bound);
             right_blocked = range.count < available;
             if (range.count != 0) visitor(range);
             scanned += range.count;
@@ -2542,7 +2516,7 @@ ScanReport SortedArrayIndex::scan_impl(Cursor& base_cursor, float bound,
                 scope == ScanScope::range ? region_available : index + 1U);
             detail::HitRange range{data + index * sizeof(DiskEntry), available, true,
                                    cursor->table_id, cursor->query_value};
-            ClampToWindow(range, bound);
+            window_detail::ClampToWindow(range, bound);
             cursor->left_blocked = range.count < available;
             if (range.count != 0) visitor(range);
             entries_visited += range.count;
@@ -2572,7 +2546,7 @@ ScanReport SortedArrayIndex::scan_impl(Cursor& base_cursor, float bound,
                 scope == ScanScope::range ? region_available : entry_count - index);
             detail::HitRange range{data + index * sizeof(DiskEntry), available, false,
                                    cursor->table_id, cursor->query_value};
-            ClampToWindow(range, bound);
+            window_detail::ClampToWindow(range, bound);
             cursor->right_blocked = range.count < available;
             if (range.count != 0) visitor(range);
             entries_visited += range.count;

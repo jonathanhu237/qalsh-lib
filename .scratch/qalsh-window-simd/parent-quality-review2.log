@@ -1,0 +1,16 @@
+[
+  {
+    "case": "zero_to_nonzero",
+    "expected_quality_rejection": true,
+    "exit_code": 0,
+    "stdout": "query 0 status pass baseline_id 0 candidate_id 1 best_distance 0 baseline_distance 0 candidate_distance 4.9999998585903427e-10 baseline_exact 1 candidate_exact 1 baseline_ratio 1 candidate_ratio inf\nsummary queries 1 original_hits 1 candidate_hits 1 both_hits 1 original_only 0 candidate_only 0 quality_failures 0 max_original_ratio 1 max_candidate_ratio inf\n",
+    "stderr": ""
+  },
+  {
+    "case": "wrong_zero_distance_encoding",
+    "expected_quality_rejection": true,
+    "exit_code": 0,
+    "stdout": "query 0 status pass baseline_id 0 candidate_id 0 best_distance 0 baseline_distance 0 candidate_distance 0 baseline_exact 1 candidate_exact 1 baseline_ratio 1 candidate_ratio 1\nsummary queries 1 original_hits 1 candidate_hits 1 both_hits 1 original_only 0 candidate_only 0 quality_failures 0 max_original_ratio 1 max_candidate_ratio 1\n",
+    "stderr": ""
+  }
+]

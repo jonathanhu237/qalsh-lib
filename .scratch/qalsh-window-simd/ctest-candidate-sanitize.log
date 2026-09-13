@@ -1,0 +1,9 @@
+Test project /home/jonathanhu237/code/qalsh-window-simd/stageb/build-candidate-sanitize
+    Start 5: qalsh_window_clamp_test
+1/2 Test #5: qalsh_window_clamp_test ..........   Passed   41.66 sec
+    Start 7: qalsh_window_trace_test
+2/2 Test #7: qalsh_window_trace_test ..........   Passed    0.04 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =  41.70 sec

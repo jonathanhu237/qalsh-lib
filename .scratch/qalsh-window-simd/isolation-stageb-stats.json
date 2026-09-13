@@ -1,0 +1,332 @@
+{
+  "triplets": [
+    {
+      "triplet": 1,
+      "order": "ABC",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4499338000.837542,
+        "B": 4501937050.618349,
+        "C": 4499972662.871646
+      }
+    },
+    {
+      "triplet": 2,
+      "order": "ACB",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4498330860.715314,
+        "B": 4500034907.851107,
+        "C": 4500954376.159161
+      }
+    },
+    {
+      "triplet": 3,
+      "order": "BAC",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4492034537.071944,
+        "B": 4500425501.781722,
+        "C": 4500050630.042771
+      }
+    },
+    {
+      "triplet": 4,
+      "order": "BCA",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4495655901.061048,
+        "B": 4500502884.895685,
+        "C": 4499970595.615543
+      }
+    },
+    {
+      "triplet": 5,
+      "order": "CAB",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0036101083032491488
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4490283648.031423,
+        "B": 4500478143.016922,
+        "C": 4500950094.38526
+      }
+    },
+    {
+      "triplet": 6,
+      "order": "CBA",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4498852183.255287,
+        "B": 4499782476.062083,
+        "C": 4500063842.99446
+      }
+    },
+    {
+      "triplet": 7,
+      "order": "ABC",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4491073491.163491,
+        "B": 4501533990.265181,
+        "C": 4500397894.759532
+      }
+    },
+    {
+      "triplet": 8,
+      "order": "ACB",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4491103288.482016,
+        "B": 4499729029.477117,
+        "C": 4501071896.101282
+      }
+    },
+    {
+      "triplet": 9,
+      "order": "BAC",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4496841176.592956,
+        "B": 4499891997.25711,
+        "C": 4498415458.040089
+      }
+    },
+    {
+      "triplet": 10,
+      "order": "BCA",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4485264001.605542,
+        "B": 4500683239.387511,
+        "C": 4501192362.095398
+      }
+    },
+    {
+      "triplet": 11,
+      "order": "CAB",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4491898601.340584,
+        "B": 4499142795.9433155,
+        "C": 4501127192.774546
+      }
+    },
+    {
+      "triplet": 12,
+      "order": "CBA",
+      "contaminated": false,
+      "sibling_occupancy": {
+        "A": {
+          "18": 0.0
+        },
+        "B": {
+          "18": 0.0
+        },
+        "C": {
+          "18": 0.0
+        }
+      },
+      "effective_frequency_hz": {
+        "A": 4492968585.422661,
+        "B": 4495939960.779215,
+        "C": 4502339004.210762
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "baseline": "B",
+      "candidate": "C",
+      "pairs": 12,
+      "baseline_median_ms": 89.10183018334999,
+      "candidate_median_ms": 89.25727188335,
+      "ratios": [
+        0.9971953650434048,
+        0.9955744108405193,
+        1.0139300114299872,
+        1.0067316200844862,
+        0.991991129345331,
+        0.9630603800445247,
+        1.005332974126755,
+        1.0036306465821276,
+        0.9990119901408782,
+        1.0043263898076418,
+        0.9984374106908294,
+        1.000828558323621
+      ],
+      "geometric_mean_ratio": 0.9982643841129354,
+      "interval95": [
+        0.9906419864946823,
+        1.004037942865831
+      ],
+      "evidence": "inconclusive"
+    },
+    {
+      "baseline": "A",
+      "candidate": "C",
+      "pairs": 12,
+      "baseline_median_ms": 92.91740303335,
+      "candidate_median_ms": 89.25727188335,
+      "ratios": [
+        0.9605443681137111,
+        0.9599847908144544,
+        0.9618549990744992,
+        0.9670227712576812,
+        0.9508812216330677,
+        0.9691067446310683,
+        0.9616202545099682,
+        0.9624397089245087,
+        0.9602132906844151,
+        0.9573807262630675,
+        0.9632272491838121,
+        0.9497368707567679
+      ],
+      "geometric_mean_ratio": 0.9603192406100374,
+      "interval95": [
+        0.9571658620552116,
+        0.9631961326785505
+      ],
+      "evidence": "improvement"
+    }
+  ],
+  "contaminated_triplets": [],
+  "contamination_fraction": 0.0,
+  "result_hashes": {
+    "A": [
+      "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4"
+    ],
+    "B": [
+      "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e"
+    ],
+    "C": [
+      "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e"
+    ]
+  },
+  "candidate_equals_722ecfb": true,
+  "result_and_data_identity_permits_reusing_existing_independent_Federalist_quality": true,
+  "stage_b_pass": false,
+  "full_project_acceptance": false,
+  "all_samples_included": true,
+  "bootstrap_resamples": 20000,
+  "bootstrap_seed": 20260912
+}

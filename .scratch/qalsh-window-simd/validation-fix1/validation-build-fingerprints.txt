@@ -1,0 +1,20 @@
+[optimized cache]
+CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_CXX_COMPILER:STRING=/usr/bin/g++-15
+QALSH_WINDOW_FORCE_SCALAR:BOOL=OFF
+[optimized commands]
+/usr/bin/g++-15 -DQALSH_USE_OPENMP_SIMD -I/home/jonathanhu237/code/qalsh-window-simd-fix1/include -O3 -DNDEBUG -std=gnu++20 -fPIC -Wall -Wextra -Wpedantic -fopenmp-simd -MD -MT CMakeFiles/qalsh.dir/src/qalsh.cc.o -MF CMakeFiles/qalsh.dir/src/qalsh.cc.o.d -o CMakeFiles/qalsh.dir/src/qalsh.cc.o -c /home/jonathanhu237/code/qalsh-window-simd-fix1/src/qalsh.cc
+: && /usr/bin/cmake -E rm -f libqalsh.a && /usr/bin/ar qc libqalsh.a  CMakeFiles/qalsh.dir/src/qalsh.cc.o && /usr/bin/ranlib libqalsh.a && :
+[optimized hashes]
+d2a15e985f00bb336c6c10ab38c1b131461352b0bd339f26ad2ba8054d6736c4  build-optimized/libqalsh.a
+54d1bbd50f523deeeeecfbb64539e12f8916daf4cb53bafa7093282ee7bd463b  build-optimized/qalsh_window_trace_test
+[forced cache]
+CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_CXX_COMPILER:STRING=/usr/bin/g++-15
+QALSH_WINDOW_FORCE_SCALAR:BOOL=ON
+[forced commands]
+/usr/bin/g++-15 -DQALSH_USE_OPENMP_SIMD -DQALSH_WINDOW_FORCE_SCALAR -I/home/jonathanhu237/code/qalsh-window-simd-fix1/include -O3 -DNDEBUG -std=gnu++20 -fPIC -Wall -Wextra -Wpedantic -fopenmp-simd -MD -MT CMakeFiles/qalsh.dir/src/qalsh.cc.o -MF CMakeFiles/qalsh.dir/src/qalsh.cc.o.d -o CMakeFiles/qalsh.dir/src/qalsh.cc.o -c /home/jonathanhu237/code/qalsh-window-simd-fix1/src/qalsh.cc
+: && /usr/bin/cmake -E rm -f libqalsh.a && /usr/bin/ar qc libqalsh.a  CMakeFiles/qalsh.dir/src/qalsh.cc.o && /usr/bin/ranlib libqalsh.a && :
+[forced hashes]
+e7a055e907c1343c7ca2c628dfcbda0c6995f5b29543f4924e7a144a81a75902  build-forcedscalar/libqalsh.a
+931f1086448e1010773a80cbbd7c7a9c07f17c17cc097f4113c51f8f8a254c5e  build-forcedscalar/qalsh_window_trace_test

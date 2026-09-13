@@ -1,0 +1,19 @@
+USER         PID    PPID PSR %CPU     ELAPSED COMMAND
+jonatha+ 2828206 2827856  11  2.2  5-08:42:55 java
+root        6688       1   6  2.1  9-14:09:07 dockerd
+root      859644       1   0  1.9  3-20:12:49 containerd
+root        9992    9899   7  1.4  9-14:08:59 mihomo
+dnsmasq  2681774 2681751   5  1.3  1-17:57:52 mysqld
+10001    2683464 2683339   6  1.0  1-17:57:45 java
+dnsmasq    87418   87395  10  0.3  4-07:50:45 mysqld
+jonatha+ 3970287 3970143  13  0.3  4-08:43:44 java
+dnsmasq     9663    9626   5  0.2  9-14:08:59 mysqld
+jonatha+   10783   10686  15  0.2  9-14:08:59 java
+dnsmasq  3770119 3770095   5  0.2  4-09:17:29 mysqld
+dnsmasq    10580   10471  17  0.2  9-14:08:59 mysqld
+root      287187  287111  15  0.2  8-19:40:13 redis-server
+root       10473   10424   2  0.2  9-14:08:59 redis-server
+3577819b3cc1e29465266c731a6e9b6af43d343d879c2853c0df3c71522b5c6c  /home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat
+633282803f7547e79a7870c8cf37d4c56e5b266ca2dc5d0a3f34dd9350cd6517  /home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat
+b423768b8a510c713e1a2c67299a569fdf21a037dc5d5880cdd327851c8ff63b  /home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat
+1b894357c6fa9530f6c5845d1359dae8b2dde98201c317ecf0e10d54640ed2ef  /home/jonathanhu237/code/qalsh-window-simd/stageb/stage_b_repeat.cc

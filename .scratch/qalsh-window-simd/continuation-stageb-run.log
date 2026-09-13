@@ -1,0 +1,72 @@
+running triplet=1 order=ABC variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.339497, "query_ms": 2789.189372, "query_ms_per_population": 92.9729790667, "warm_hash": 14674142271753866389, "warm_ms": 92.507026}
+running triplet=1 order=ABC variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.143172, "query_ms": 2690.520161, "query_ms_per_population": 89.6840053667, "warm_hash": 15320891441025449163, "warm_ms": 89.367654}
+running triplet=1 order=ABC variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.397792, "query_ms": 2703.433768, "query_ms_per_population": 90.1144589333, "warm_hash": 15320891441025449163, "warm_ms": 90.222692}
+running triplet=2 order=ACB variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.958408, "query_ms": 2835.050696, "query_ms_per_population": 94.5016898667, "warm_hash": 14674142271753866389, "warm_ms": 92.834125}
+running triplet=2 order=ACB variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.334582, "query_ms": 2686.496991, "query_ms_per_population": 89.5498997, "warm_hash": 15320891441025449163, "warm_ms": 89.749693}
+running triplet=2 order=ACB variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.251871, "query_ms": 2698.002342, "query_ms_per_population": 89.9334114, "warm_hash": 15320891441025449163, "warm_ms": 89.900953}
+running triplet=3 order=BAC variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.336571, "query_ms": 2700.119176, "query_ms_per_population": 90.0039725333, "warm_hash": 15320891441025449163, "warm_ms": 89.705164}
+running triplet=3 order=BAC variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.023367, "query_ms": 2799.267786, "query_ms_per_population": 93.3089262, "warm_hash": 14674142271753866389, "warm_ms": 94.810191}
+running triplet=3 order=BAC variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.242082, "query_ms": 2715.400447, "query_ms_per_population": 90.5133482333, "warm_hash": 15320891441025449163, "warm_ms": 89.316355}
+running triplet=4 order=BCA variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.196922, "query_ms": 2668.908105, "query_ms_per_population": 88.9636035, "warm_hash": 15320891441025449163, "warm_ms": 90.203762}
+running triplet=4 order=BCA variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.277531, "query_ms": 2675.301719, "query_ms_per_population": 89.1767239667, "warm_hash": 15320891441025449163, "warm_ms": 89.324885}
+running triplet=4 order=BCA variant=A
+{"final_hash": 14674142271753866389, "open_ms": 10.428173, "query_ms": 2912.385801, "query_ms_per_population": 97.0795267, "warm_hash": 14674142271753866389, "warm_ms": 115.365639}
+running triplet=5 order=CAB variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.178962, "query_ms": 2684.307346, "query_ms_per_population": 89.4769115333, "warm_hash": 15320891441025449163, "warm_ms": 89.633164}
+running triplet=5 order=CAB variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.988568, "query_ms": 2794.915917, "query_ms_per_population": 93.1638639, "warm_hash": 14674142271753866389, "warm_ms": 92.653297}
+running triplet=5 order=CAB variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.642571, "query_ms": 2878.444386, "query_ms_per_population": 95.9481462, "warm_hash": 15320891441025449163, "warm_ms": 95.372259}
+running triplet=6 order=CBA variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.240062, "query_ms": 2699.163819, "query_ms_per_population": 89.9721273, "warm_hash": 15320891441025449163, "warm_ms": 89.696833}
+running triplet=6 order=CBA variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.336071, "query_ms": 2720.337245, "query_ms_per_population": 90.6779081667, "warm_hash": 15320891441025449163, "warm_ms": 90.409012}
+running triplet=6 order=CBA variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.000628, "query_ms": 2792.123984, "query_ms_per_population": 93.0707994667, "warm_hash": 14674142271753866389, "warm_ms": 92.788026}
+running triplet=7 order=ABC variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.918878, "query_ms": 2788.976732, "query_ms_per_population": 92.9658910667, "warm_hash": 14674142271753866389, "warm_ms": 92.532666}
+running triplet=7 order=ABC variant=B
+{"final_hash": 15320891441025449163, "open_ms": 8.571378, "query_ms": 3092.743866, "query_ms_per_population": 103.0914622, "warm_hash": 15320891441025449163, "warm_ms": 117.237784}
+running triplet=7 order=ABC variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.122112, "query_ms": 2683.529538, "query_ms_per_population": 89.4509846, "warm_hash": 15320891441025449163, "warm_ms": 89.581344}
+running triplet=8 order=ACB variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.984877, "query_ms": 2959.889631, "query_ms_per_population": 98.6629877, "warm_hash": 14674142271753866389, "warm_ms": 92.974685}
+running triplet=8 order=ACB variant=C
+{"final_hash": 15320891441025449163, "open_ms": 8.451029, "query_ms": 2869.378369, "query_ms_per_population": 95.6459456333, "warm_hash": 15320891441025449163, "warm_ms": 117.440763}
+running triplet=8 order=ACB variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.253261, "query_ms": 2676.762625, "query_ms_per_population": 89.2254208333, "warm_hash": 15320891441025449163, "warm_ms": 89.777004}
+running triplet=9 order=BAC variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.218062, "query_ms": 2811.767074, "query_ms_per_population": 93.7255691333, "warm_hash": 15320891441025449163, "warm_ms": 88.816126}
+running triplet=9 order=BAC variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.016187, "query_ms": 2801.902759, "query_ms_per_population": 93.3967586333, "warm_hash": 14674142271753866389, "warm_ms": 95.968678}
+running triplet=9 order=BAC variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.483191, "query_ms": 2693.420593, "query_ms_per_population": 89.7806864333, "warm_hash": 15320891441025449163, "warm_ms": 90.613351}
+running triplet=10 order=BCA variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.163451, "query_ms": 2743.495096, "query_ms_per_population": 91.4498365333, "warm_hash": 15320891441025449163, "warm_ms": 91.56051}
+running triplet=10 order=BCA variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.346422, "query_ms": 2677.833282, "query_ms_per_population": 89.2611094, "warm_hash": 15320891441025449163, "warm_ms": 89.461794}
+running triplet=10 order=BCA variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.960007, "query_ms": 2808.953792, "query_ms_per_population": 93.6317930667, "warm_hash": 14674142271753866389, "warm_ms": 93.128015}
+running triplet=11 order=CAB variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.305862, "query_ms": 2736.281045, "query_ms_per_population": 91.2093681667, "warm_hash": 15320891441025449163, "warm_ms": 92.106518}
+running triplet=11 order=CAB variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.933988, "query_ms": 2794.577508, "query_ms_per_population": 93.1525836, "warm_hash": 14674142271753866389, "warm_ms": 92.883915}
+running triplet=11 order=CAB variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.161921, "query_ms": 2728.543164, "query_ms_per_population": 90.9514388, "warm_hash": 15320891441025449163, "warm_ms": 89.033586}
+running triplet=12 order=CBA variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.180742, "query_ms": 2695.573428, "query_ms_per_population": 89.8524476, "warm_hash": 15320891441025449163, "warm_ms": 93.805593}
+running triplet=12 order=CBA variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.174592, "query_ms": 2672.971295, "query_ms_per_population": 89.0990431667, "warm_hash": 15320891441025449163, "warm_ms": 89.463164}
+running triplet=12 order=CBA variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.022297, "query_ms": 2888.329141, "query_ms_per_population": 96.2776380333, "warm_hash": 14674142271753866389, "warm_ms": 92.980196}

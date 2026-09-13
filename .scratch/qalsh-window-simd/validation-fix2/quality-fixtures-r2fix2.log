@@ -1,0 +1,1 @@
+quality comparator fixtures: exact/near ties, zero/nonzero, adjacent float32, subnormal/extreme values, float32 rounding, both-nonexact regression, malformed rows/data, and same-file rejection passed

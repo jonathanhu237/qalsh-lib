@@ -1,0 +1,39 @@
+{
+  "cgroup": "/qalshsimdiso20260913a.slice/qalshsimdiso20260913a.service",
+  "effective_cpus": "6,18",
+  "scheduler_affinity": [
+    6,
+    18
+  ],
+  "other_slices": {
+    "system.slice": "0-5,7-17,19-23",
+    "user.slice": "0-5,7-17,19-23"
+  },
+  "before_hashes": {
+    "original-repeat": "3577819b3cc1e29465266c731a6e9b6af43d343d879c2853c0df3c71522b5c6c",
+    "current-baseline-repeat": "633282803f7547e79a7870c8cf37d4c56e5b266ca2dc5d0a3f34dd9350cd6517",
+    "current-candidate-repeat": "b423768b8a510c713e1a2c67299a569fdf21a037dc5d5880cdd327851c8ff63b",
+    "stage_b_repeat.cc": "1b894357c6fa9530f6c5845d1359dae8b2dde98201c317ecf0e10d54640ed2ef",
+    "data/federalist/A.bin": "5bb17396ec0d8b77741f059cb484901a46ae62acee3437afb1d72ae05be07efd",
+    "data/federalist/B.bin": "4ab3e20e57692ef81665c6ac97ad32a41d11b4b7bf99fb843c779e9e720b3e95",
+    "data/federalist/metadata.json": "67f67afba504a7a3c2d3ec05274cc50a3bedb0b245fd2786ae7c16d211c588a5"
+  },
+  "time_unix": 1789268584.7269564,
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OMP_PROC_BIND": "true",
+    "OMP_PLACES": "{6}",
+    "STAGEB_CPU": "6",
+    "STAGEB_RUN_TAG": "stageb-isolated-20260913"
+  },
+  "after_hashes": {
+    "original-repeat": "3577819b3cc1e29465266c731a6e9b6af43d343d879c2853c0df3c71522b5c6c",
+    "current-baseline-repeat": "633282803f7547e79a7870c8cf37d4c56e5b266ca2dc5d0a3f34dd9350cd6517",
+    "current-candidate-repeat": "b423768b8a510c713e1a2c67299a569fdf21a037dc5d5880cdd327851c8ff63b",
+    "stage_b_repeat.cc": "1b894357c6fa9530f6c5845d1359dae8b2dde98201c317ecf0e10d54640ed2ef",
+    "data/federalist/A.bin": "5bb17396ec0d8b77741f059cb484901a46ae62acee3437afb1d72ae05be07efd",
+    "data/federalist/B.bin": "4ab3e20e57692ef81665c6ac97ad32a41d11b4b7bf99fb843c779e9e720b3e95",
+    "data/federalist/metadata.json": "67f67afba504a7a3c2d3ec05274cc50a3bedb0b245fd2786ae7c16d211c588a5"
+  },
+  "end_unix": 1789268686.990387
+}

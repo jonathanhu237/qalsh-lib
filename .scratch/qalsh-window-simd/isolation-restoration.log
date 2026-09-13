@@ -1,0 +1,56 @@
+{
+  "token": "qalshsimdiso20260913a",
+  "before": {
+    "system.slice": {
+      "ControlGroup": "/system.slice",
+      "EffectiveCPUs": "0-23",
+      "AllowedCPUs": ""
+    },
+    "user.slice": {
+      "ControlGroup": "/user.slice",
+      "EffectiveCPUs": "0-23",
+      "AllowedCPUs": ""
+    }
+  },
+  "restricted": "0-5,7-17,19-23",
+  "reserve": "6,18",
+  "watchdog": "qalshsimdiso20260913arestore.timer",
+  "created_unix": 1789268584.6392062,
+  "restored": true,
+  "during": {
+    "system.slice": {
+      "ControlGroup": "/system.slice",
+      "EffectiveCPUs": "0-5 7-17 19-23",
+      "AllowedCPUs": "0-5 7-17 19-23"
+    },
+    "user.slice": {
+      "ControlGroup": "/user.slice",
+      "EffectiveCPUs": "0-5 7-17 19-23",
+      "AllowedCPUs": "0-5 7-17 19-23"
+    }
+  },
+  "after": {
+    "system.slice": {
+      "ControlGroup": "/system.slice",
+      "EffectiveCPUs": "0-23",
+      "AllowedCPUs": ""
+    },
+    "user.slice": {
+      "ControlGroup": "/user.slice",
+      "EffectiveCPUs": "0-23",
+      "AllowedCPUs": ""
+    }
+  },
+  "restore_errors": [],
+  "restoration_unix": 1789268687.0435264
+}
+Id=system.slice
+EffectiveCPUs=0-23
+AllowedCPUs=
+
+Id=user.slice
+EffectiveCPUs=0-23
+AllowedCPUs=
+inactive
+inactive
+inactive

@@ -1,0 +1,23 @@
+[sse2 probe instructions]
+	movdqu	xmm7, XMMWORD PTR -8[r8]
+	movdqu	xmm1, XMMWORD PTR -24[r8]
+	pshufd	xmm0, xmm7, 136
+	pshufd	xmm1, xmm1, 136
+	pshufd	xmm1, xmm1, 17
+	pshufd	xmm0, xmm0, 17
+	punpcklqdq	xmm0, xmm1
+	subps	xmm1, xmm0
+	cmpleps	xmm0, xmm5
+	movmskps	r8d, xmm0
+	movdqu	xmm7, XMMWORD PTR [r8]
+	movdqu	xmm1, XMMWORD PTR 16[r8]
+	pshufd	xmm0, xmm7, 136
+	pshufd	xmm1, xmm1, 136
+	punpcklqdq	xmm0, xmm1
+	subps	xmm1, xmm0
+	cmpleps	xmm0, xmm5
+	movmskps	r8d, xmm0
+[scalar probe instructions]
+[commands]
+g++-15 -std=c++20 -O3 -Iinclude -I. -S -masm=intel probe_window_clamp.cc -o probe-sse2.s
+g++-15 -std=c++20 -O3 -DQALSH_WINDOW_FORCE_SCALAR -Iinclude -I. -S -masm=intel probe_window_clamp.cc -o probe-scalar.s

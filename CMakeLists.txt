@@ -6,6 +6,8 @@ include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 
 option(QALSH_BUILD_TESTS "Build qalsh-lib tests" ON)
+option(QALSH_WINDOW_FORCE_SCALAR
+       "Force the private window-clamp implementation to use its scalar fallback" OFF)
 
 add_library(qalsh STATIC src/qalsh.cc)
 add_library(qalsh::qalsh ALIAS qalsh)
@@ -32,6 +34,12 @@ if(OpenMP_CXX_FOUND)
     )
 endif()
 
+# This is a private validation-build switch.  It is intentionally off for
+# normal consumers and only changes the implementation's internal fallback.
+if(QALSH_WINDOW_FORCE_SCALAR)
+    target_compile_definitions(qalsh PRIVATE QALSH_WINDOW_FORCE_SCALAR)
+endif()
+
 set_target_properties(qalsh PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 if(QALSH_BUILD_TESTS)
@@ -49,6 +57,27 @@ if(QALSH_BUILD_TESTS)
         add_executable(qalsh_build_test tests/build_test.cc)
         target_link_libraries(qalsh_build_test PRIVATE qalsh::qalsh)
         add_test(NAME qalsh_build_test COMMAND qalsh_build_test ${CMAKE_CURRENT_BINARY_DIR})
+
+        add_executable(qalsh_window_clamp_test tests/window_clamp_test.cc)
+        target_link_libraries(qalsh_window_clamp_test PRIVATE qalsh::qalsh)
+        target_include_directories(qalsh_window_clamp_test PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+        if(QALSH_WINDOW_FORCE_SCALAR)
+            target_compile_definitions(qalsh_window_clamp_test PRIVATE QALSH_WINDOW_FORCE_SCALAR)
+        endif()
+        add_test(NAME qalsh_window_clamp_test COMMAND qalsh_window_clamp_test)
+
+        add_executable(qalsh_window_clamp_scalar_test tests/window_clamp_test.cc)
+        target_link_libraries(qalsh_window_clamp_scalar_test PRIVATE qalsh::qalsh)
+        target_include_directories(qalsh_window_clamp_scalar_test PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+        target_compile_definitions(qalsh_window_clamp_scalar_test PRIVATE QALSH_WINDOW_FORCE_SCALAR)
+        add_test(NAME qalsh_window_clamp_scalar_test COMMAND qalsh_window_clamp_scalar_test)
+
+        add_executable(qalsh_window_trace_test tests/window_trace_test.cc)
+        target_link_libraries(qalsh_window_trace_test PRIVATE qalsh::qalsh)
+        if(QALSH_WINDOW_FORCE_SCALAR)
+            target_compile_definitions(qalsh_window_trace_test PRIVATE QALSH_WINDOW_FORCE_SCALAR)
+        endif()
+        add_test(NAME qalsh_window_trace_test COMMAND qalsh_window_trace_test)
     endif()
 endif()
 

@@ -1,0 +1,6 @@
+Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.
+2958.29,msec,task-clock,2958292256,100.00,,
+13211928402,,cycles,2958292256,100.00,,
+37469787273,,instructions,2958292256,100.00,,
+42,,context-switches,2958292256,100.00,,
+0,,cpu-migrations,2958292256,100.00,,

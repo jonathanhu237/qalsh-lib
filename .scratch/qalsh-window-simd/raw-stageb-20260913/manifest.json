@@ -1,0 +1,46 @@
+{
+  "timestamp": 1789261757.2263265,
+  "host": "centaurus",
+  "cpu": 10,
+  "siblings": [
+    10,
+    22
+  ],
+  "orders": [
+    "ABC",
+    "ACB",
+    "BAC",
+    "BCA",
+    "CAB",
+    "CBA",
+    "ABC",
+    "ACB",
+    "BAC",
+    "BCA",
+    "CAB",
+    "CBA"
+  ],
+  "variants": {
+    "A": {
+      "label": "audited-original-c",
+      "binary": "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "sha256": "3577819b3cc1e29465266c731a6e9b6af43d343d879c2853c0df3c71522b5c6c"
+    },
+    "B": {
+      "label": "unmodified-722ecfb",
+      "binary": "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "sha256": "633282803f7547e79a7870c8cf37d4c56e5b266ca2dc5d0a3f34dd9350cd6517"
+    },
+    "C": {
+      "label": "candidate",
+      "binary": "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "sha256": "b423768b8a510c713e1a2c67299a569fdf21a037dc5d5880cdd327851c8ff63b"
+    }
+  },
+  "data": "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+  "repetitions_per_process": 30,
+  "triplets": 12,
+  "harness": "/home/jonathanhu237/code/qalsh-window-simd/stageb/stage_b_repeat.cc",
+  "harness_sha256": "1b894357c6fa9530f6c5845d1359dae8b2dde98201c317ecf0e10d54640ed2ef",
+  "runner": "/home/jonathanhu237/code/qalsh-window-simd/stageb/stage_b_run.py"
+}

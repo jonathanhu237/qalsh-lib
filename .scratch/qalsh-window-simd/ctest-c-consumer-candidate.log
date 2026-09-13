@@ -1,0 +1,51 @@
+Test project /home/jonathanhu237/code/qalsh-window-simd/stageb/build-c-consumer-candidate
+      Start  1: log_smoke_test
+ 1/23 Test  #1: log_smoke_test .......................   Passed    0.00 sec
+      Start  2: ann_searcher_clone_test
+ 2/23 Test  #2: ann_searcher_clone_test ..............   Passed    0.00 sec
+      Start  3: disk_linear_scan_test
+ 3/23 Test  #3: disk_linear_scan_test ................   Passed    0.05 sec
+      Start  4: quadtree_weights_generator_test
+ 4/23 Test  #4: quadtree_weights_generator_test ......   Passed    0.00 sec
+      Start  5: log_error_test
+ 5/23 Test  #5: log_error_test .......................   Passed    0.00 sec
+      Start  6: dataset_core_test
+ 6/23 Test  #6: dataset_core_test ....................   Passed    0.02 sec
+      Start  7: dataset_loader_test
+ 7/23 Test  #7: dataset_loader_test ..................   Passed    0.00 sec
+      Start  8: dataset_bad_bmp_test
+ 8/23 Test  #8: dataset_bad_bmp_test .................   Passed    0.00 sec
+      Start  9: qalsh4c_help
+ 9/23 Test  #9: qalsh4c_help .........................   Passed    0.01 sec
+      Start 10: qalsh4c_in_memory_qalsh
+10/23 Test #10: qalsh4c_in_memory_qalsh ..............   Passed    0.08 sec
+      Start 11: qalsh4c_direction_help
+11/23 Test #11: qalsh4c_direction_help ...............   Passed    0.01 sec
+      Start 12: qalsh4c_direction_estimate
+12/23 Test #12: qalsh4c_direction_estimate ...........   Passed    0.21 sec
+      Start 13: qalsh4c_qalsh_weights_cache
+13/23 Test #13: qalsh4c_qalsh_weights_cache ..........   Passed    0.08 sec
+      Start 14: qalsh4c_qalsh_sampling_consistency
+14/23 Test #14: qalsh4c_qalsh_sampling_consistency ...   Passed    0.29 sec
+      Start 15: qalsh4c_quadtree_sampling
+15/23 Test #15: qalsh4c_quadtree_sampling ............   Passed    0.17 sec
+      Start 16: qalsh_ann_help
+16/23 Test #16: qalsh_ann_help .......................   Passed    0.01 sec
+      Start 17: qalsh4c_disk_qalsh
+17/23 Test #17: qalsh4c_disk_qalsh ...................   Passed    0.21 sec
+      Start 18: qalsh4c_dataset_generate
+18/23 Test #18: qalsh4c_dataset_generate .............   Passed    0.07 sec
+      Start 19: qalsh4c_dataset_ground_truth
+19/23 Test #19: qalsh4c_dataset_ground_truth .........   Passed    0.05 sec
+      Start 20: qalsh4c_dataset_overwrite
+20/23 Test #20: qalsh4c_dataset_overwrite ............   Passed    0.02 sec
+      Start 21: qalsh4c_dataset_invalid
+21/23 Test #21: qalsh4c_dataset_invalid ..............   Passed    0.02 sec
+      Start 22: qalsh4c_dataset_device
+22/23 Test #22: qalsh4c_dataset_device ...............   Passed    0.06 sec
+      Start 23: qalsh4c_dataset_convert_seed
+23/23 Test #23: qalsh4c_dataset_convert_seed .........   Passed    0.03 sec
+
+100% tests passed, 0 tests failed out of 23
+
+Total Test time (real) =   1.41 sec

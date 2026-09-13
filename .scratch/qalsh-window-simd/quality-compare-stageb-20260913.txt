@@ -1,0 +1,1 @@
+queries 1880 original_hits 1025 candidate_hits 1025 both_hits 1025 original_only 0 candidate_only 0 max_original_ratio 1.94103 max_candidate_ratio 1.94103

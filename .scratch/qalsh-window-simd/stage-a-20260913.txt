@@ -1,0 +1,5 @@
+histogram-synthetic cases=16384 scalar_ns=30.6949 candidate_ns=26.85 ratio=0.874739 checksum=0
+short cases=4096 scalar_ns=5.01695 candidate_ns=5.28716 ratio=1.05386 checksum=0
+tails cases=144 scalar_ns=4.54899 candidate_ns=5.47529 ratio=1.20363 checksum=0
+medium cases=4096 scalar_ns=24.6062 candidate_ns=10.8123 ratio=0.439416 checksum=0
+long cases=2048 scalar_ns=14.0627 candidate_ns=17.8304 ratio=1.26792 checksum=0

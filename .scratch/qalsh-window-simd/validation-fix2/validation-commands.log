@@ -1,0 +1,11 @@
+# r2-fix2 checker validation
+2026-09-13T02:22:16Z
+g++-15 (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+564d56bcad5ace42672e4894d4e7a10e0f0464d7e3d18cac4dcbc9cac7cf82b9  stage_b_quality_compare.cc
+17d3689e13c7a4a864713460f4c1b344303a81e45a789d5575b4e1497c52c409  test_stage_b_quality_compare.py
+4fc82a2179b6d79fcd485e9efb3e377080a17fc400e823f3bbe28de711353e45  parent_quality_edge_repro.py
+b54e341a259557bdf9d13b498565e6b82138e3f1e26fe6189e99e52558f8abfa  stage_b_quality_compare
+# exact checker commands
+./stage_b_quality_compare '/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist/A.bin' '/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist/B.bin' 1880 1178 300 '/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-20260913/triplet-01-ABC-A.results.tsv' '/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-20260913/triplet-01-ABC-C.results.tsv'
+./stage_b_quality_compare '/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist/A.bin' '/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist/B.bin' 1880 1178 300 '/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-20260913/triplet-01-ABC-B.results.tsv' '/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-20260913/triplet-01-ABC-C.results.tsv'
+# observed exit status: quality-fixtures=0; parent-quality-edge=0; fed-original-vs-candidate=0; fed-722ecfb-vs-candidate=0

@@ -1,0 +1,16 @@
+[1/16] Building CXX object CMakeFiles/qalsh_public_test.dir/tests/public_test.cc.o
+[2/16] Building CXX object CMakeFiles/qalsh_dispatch_test.dir/tests/dispatch_test.cc.o
+[3/16] Building CXX object CMakeFiles/qalsh_distance_test.dir/tests/distance_test.cc.o
+[4/16] Building CXX object CMakeFiles/qalsh_build_test.dir/tests/build_test.cc.o
+[5/16] Building CXX object CMakeFiles/qalsh.dir/src/qalsh.cc.o
+[6/16] Linking CXX static library libqalsh.a
+[7/16] Building CXX object CMakeFiles/qalsh_window_clamp_test.dir/tests/window_clamp_test.cc.o
+[8/16] Building CXX object CMakeFiles/qalsh_window_clamp_scalar_test.dir/tests/window_clamp_test.cc.o
+[9/16] Linking CXX executable qalsh_public_test
+[10/16] Linking CXX executable qalsh_dispatch_test
+[11/16] Linking CXX executable qalsh_distance_test
+[12/16] Linking CXX executable qalsh_build_test
+[13/16] Linking CXX executable qalsh_window_clamp_test
+[14/16] Linking CXX executable qalsh_window_clamp_scalar_test
+[15/16] Building CXX object CMakeFiles/qalsh_window_trace_test.dir/tests/window_trace_test.cc.o
+[16/16] Linking CXX executable qalsh_window_trace_test

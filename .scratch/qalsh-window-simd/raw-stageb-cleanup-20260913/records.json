@@ -1,0 +1,5534 @@
+[
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013145,
+        "fields": [
+          1427593,
+          11833,
+          463420,
+          80426216,
+          164180,
+          0,
+          110299,
+          0,
+          0,
+          0
+        ],
+        "total": 82603541
+      },
+      "6": {
+        "busy": 1997155,
+        "fields": [
+          1533351,
+          12933,
+          435899,
+          80470639,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82608703
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499937"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 9.339497,
+      "query_ms": 2789.189372,
+      "query_ms_per_population": 92.9729790667,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 92.507026
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013143,
+        "fields": [
+          1427592,
+          11833,
+          463419,
+          80425925,
+          164180,
+          0,
+          110299,
+          0,
+          0,
+          0
+        ],
+        "total": 82603248
+      },
+      "6": {
+        "busy": 1996864,
+        "fields": [
+          1533061,
+          12933,
+          435898,
+          80470637,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82608410
+      }
+    },
+    "before_freq": {
+      "18": "4599957",
+      "6": "4599978"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267201.0807264,
+    "label": "audited-original-c",
+    "order": "ABC",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "27,,context-switches,2894181550,100.00,,",
+        "unit": "",
+        "value": 27
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2894181550,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13017255119,,cycles,2894181550,100.00,,",
+        "unit": "",
+        "value": 13017255119
+      },
+      "effective_frequency_hz": 4497735150.889026,
+      "instructions": {
+        "raw": "37470454415,,instructions,2894181550,100.00,,",
+        "unit": "",
+        "value": 37470454415
+      },
+      "task-clock": {
+        "raw": "2894.18,msec,task-clock,2894181550,100.00,,",
+        "unit": "msec",
+        "value": 2894.18
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-A.perf",
+    "perf_sha256": "a596d99f3f5627fbcafa06cbb16e7a5c8ea135de0e67f16a0d4b31eb2418c001",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 1,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267198.1416583,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-A.stdout",
+    "stdout_sha256": "23fd32e9b716c297851218e6647305e5e99ca175c656f6bad3096135530dae3f",
+    "triplet": 1,
+    "wrapper_elapsed_s": 2.9390644730301574
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013146,
+        "fields": [
+          1427594,
+          11833,
+          463420,
+          80426493,
+          164182,
+          0,
+          110299,
+          0,
+          0,
+          0
+        ],
+        "total": 82603821
+      },
+      "6": {
+        "busy": 1997437,
+        "fields": [
+          1533631,
+          12933,
+          435901,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82608986
+      }
+    },
+    "after_freq": {
+      "18": "4495330",
+      "6": "4499942"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.143172,
+      "query_ms": 2690.520161,
+      "query_ms_per_population": 89.6840053667,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.367654
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013145,
+        "fields": [
+          1427593,
+          11833,
+          463420,
+          80426216,
+          164180,
+          0,
+          110299,
+          0,
+          0,
+          0
+        ],
+        "total": 82603541
+      },
+      "6": {
+        "busy": 1997155,
+        "fields": [
+          1533351,
+          12933,
+          435899,
+          80470639,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82608703
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4498445"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267203.8936222,
+    "label": "unmodified-722ecfb",
+    "order": "ABC",
+    "perf": {
+      "context-switches": {
+        "raw": "39,,context-switches,2789459749,100.00,,",
+        "unit": "",
+        "value": 39
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2789459749,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12552399413,,cycles,2789459749,100.00,,",
+        "unit": "",
+        "value": 12552399413
+      },
+      "effective_frequency_hz": 4499938845.86981,
+      "instructions": {
+        "raw": "31791818474,,instructions,2789459749,100.00,,",
+        "unit": "",
+        "value": 31791818474
+      },
+      "task-clock": {
+        "raw": "2789.46,msec,task-clock,2789459749,100.00,,",
+        "unit": "msec",
+        "value": 2789.46
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-B.perf",
+    "perf_sha256": "ff6cfac98d926cf81045790afb9bc3c83e6f8d925de668fda23d27266ae4ff19",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 2,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267201.082005,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-B.stdout",
+    "stdout_sha256": "c79e6f1077e5660d48766600beb0227d39b860bf4ae5a8977a5864651976ef26",
+    "triplet": 1,
+    "wrapper_elapsed_s": 2.8116147649707273
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013147,
+        "fields": [
+          1427594,
+          11833,
+          463421,
+          80426774,
+          164182,
+          0,
+          110299,
+          0,
+          0,
+          0
+        ],
+        "total": 82604103
+      },
+      "6": {
+        "busy": 1997719,
+        "fields": [
+          1533911,
+          12933,
+          435903,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82609268
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499979"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.397792,
+      "query_ms": 2703.433768,
+      "query_ms_per_population": 90.1144589333,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 90.222692
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013146,
+        "fields": [
+          1427594,
+          11833,
+          463420,
+          80426493,
+          164182,
+          0,
+          110299,
+          0,
+          0,
+          0
+        ],
+        "total": 82603821
+      },
+      "6": {
+        "busy": 1997437,
+        "fields": [
+          1533631,
+          12933,
+          435901,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82608986
+      }
+    },
+    "before_freq": {
+      "18": "4495330",
+      "6": "4499942"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267206.7205446,
+    "label": "candidate",
+    "order": "ABC",
+    "perf": {
+      "context-switches": {
+        "raw": "39,,context-switches,2803560418,100.00,,",
+        "unit": "",
+        "value": 39
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2803560418,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12619844570,,cycles,2803560418,100.00,,",
+        "unit": "",
+        "value": 12619844570
+      },
+      "effective_frequency_hz": 4501364183.395397,
+      "instructions": {
+        "raw": "33307316808,,instructions,2803560418,100.00,,",
+        "unit": "",
+        "value": 33307316808
+      },
+      "task-clock": {
+        "raw": "2803.56,msec,task-clock,2803560418,100.00,,",
+        "unit": "msec",
+        "value": 2803.56
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-C.perf",
+    "perf_sha256": "880ff44282557532cc32255f30512a9995b7f5217b84af3b45b44c12ffd7308e",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 3,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267203.8944342,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-01-ABC-C.stdout",
+    "stdout_sha256": "ad072265ea360c24e866dc7805dddcd61db471741fe1ca07bffe3a42bbde997a",
+    "triplet": 1,
+    "wrapper_elapsed_s": 2.826108557987027
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013163,
+        "fields": [
+          1427606,
+          11833,
+          463424,
+          80427052,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82604398
+      },
+      "6": {
+        "busy": 1998015,
+        "fields": [
+          1534206,
+          12933,
+          435904,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82609564
+      }
+    },
+    "after_freq": {
+      "18": "4491920",
+      "6": "4499953"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 8.958408,
+      "query_ms": 2835.050696,
+      "query_ms_per_population": 94.5016898667,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 92.834125
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013147,
+        "fields": [
+          1427594,
+          11833,
+          463421,
+          80426774,
+          164182,
+          0,
+          110299,
+          0,
+          0,
+          0
+        ],
+        "total": 82604103
+      },
+      "6": {
+        "busy": 1997719,
+        "fields": [
+          1533911,
+          12933,
+          435903,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82609268
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499979"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267209.6836789,
+    "label": "audited-original-c",
+    "order": "ACB",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "39,,context-switches,2939278021,100.00,,",
+        "unit": "",
+        "value": 39
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2939278021,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13210926141,,cycles,2939278021,100.00,,",
+        "unit": "",
+        "value": 13210926141
+      },
+      "effective_frequency_hz": 4494613014.411693,
+      "instructions": {
+        "raw": "37470770051,,instructions,2939278021,100.00,,",
+        "unit": "",
+        "value": 37470770051
+      },
+      "task-clock": {
+        "raw": "2939.28,msec,task-clock,2939278021,100.00,,",
+        "unit": "msec",
+        "value": 2939.28
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-A.perf",
+    "perf_sha256": "a4c52ecb115e210c70b75eb41280e8ab1e47e869c82992dac3914c27ed395752",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 4,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267206.7213967,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-A.stdout",
+    "stdout_sha256": "9b43e537fdf5a653bf2bc34acb28260194620b3a36a11689ae6081edcb8fc40c",
+    "triplet": 2,
+    "wrapper_elapsed_s": 2.962280464009382
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013163,
+        "fields": [
+          1427606,
+          11833,
+          463424,
+          80427331,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82604677
+      },
+      "6": {
+        "busy": 1998296,
+        "fields": [
+          1534485,
+          12933,
+          435906,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82609845
+      }
+    },
+    "after_freq": {
+      "18": "4500335",
+      "6": "4499982"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.334582,
+      "query_ms": 2686.496991,
+      "query_ms_per_population": 89.5498997,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.749693
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013163,
+        "fields": [
+          1427606,
+          11833,
+          463424,
+          80427052,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82604398
+      },
+      "6": {
+        "busy": 1998015,
+        "fields": [
+          1534206,
+          12933,
+          435904,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82609564
+      }
+    },
+    "before_freq": {
+      "18": "4491920",
+      "6": "4499953"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267212.4940834,
+    "label": "candidate",
+    "order": "ACB",
+    "perf": {
+      "context-switches": {
+        "raw": "46,,context-switches,2786035894,100.00,,",
+        "unit": "",
+        "value": 46
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2786035894,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12537312017,,cycles,2786035894,100.00,,",
+        "unit": "",
+        "value": 12537312017
+      },
+      "effective_frequency_hz": 4500047385.177528,
+      "instructions": {
+        "raw": "33307253228,,instructions,2786035894,100.00,,",
+        "unit": "",
+        "value": 33307253228
+      },
+      "task-clock": {
+        "raw": "2786.04,msec,task-clock,2786035894,100.00,,",
+        "unit": "msec",
+        "value": 2786.04
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-C.perf",
+    "perf_sha256": "03683dfeea37fd04e73414fca5138c5eece799622fd198962d8989f2f913d813",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 5,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267209.6846447,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-C.stdout",
+    "stdout_sha256": "deff77959e59f399eab7b18c16c1f1882c9bad1459df9a2e1174a49c6e4ef533",
+    "triplet": 2,
+    "wrapper_elapsed_s": 2.8094374099746346
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013164,
+        "fields": [
+          1427607,
+          11833,
+          463424,
+          80427611,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82604958
+      },
+      "6": {
+        "busy": 1998578,
+        "fields": [
+          1534765,
+          12933,
+          435908,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82610127
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4500011"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.251871,
+      "query_ms": 2698.002342,
+      "query_ms_per_population": 89.9334114,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.900953
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013163,
+        "fields": [
+          1427606,
+          11833,
+          463424,
+          80427331,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82604677
+      },
+      "6": {
+        "busy": 1998296,
+        "fields": [
+          1534485,
+          12933,
+          435906,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82609845
+      }
+    },
+    "before_freq": {
+      "18": "4500335",
+      "6": "4499976"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267215.3154414,
+    "label": "unmodified-722ecfb",
+    "order": "ACB",
+    "perf": {
+      "context-switches": {
+        "raw": "39,,context-switches,2797347457,100.00,,",
+        "unit": "",
+        "value": 39
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2797347457,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12588209776,,cycles,2797347457,100.00,,",
+        "unit": "",
+        "value": 12588209776
+      },
+      "effective_frequency_hz": 4500048179.884534,
+      "instructions": {
+        "raw": "31791283213,,instructions,2797347457,100.00,,",
+        "unit": "",
+        "value": 31791283213
+      },
+      "task-clock": {
+        "raw": "2797.35,msec,task-clock,2797347457,100.00,,",
+        "unit": "msec",
+        "value": 2797.35
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-B.perf",
+    "perf_sha256": "f92e0d54fa22fff541c377204384dbcf833dfe6a22f04882f6b8447e02a9111c",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 6,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267212.494938,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-02-ACB-B.stdout",
+    "stdout_sha256": "254a32cd9610de82fcfa3ea448133df396a3a627feb4706d06d561798c6e89d8",
+    "triplet": 2,
+    "wrapper_elapsed_s": 2.8205016419524327
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013167,
+        "fields": [
+          1427609,
+          11833,
+          463425,
+          80427891,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82605241
+      },
+      "6": {
+        "busy": 1998860,
+        "fields": [
+          1535046,
+          12933,
+          435909,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82610409
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499968"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.336571,
+      "query_ms": 2700.119176,
+      "query_ms_per_population": 90.0039725333,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.705164
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013164,
+        "fields": [
+          1427607,
+          11833,
+          463424,
+          80427611,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82604958
+      },
+      "6": {
+        "busy": 1998578,
+        "fields": [
+          1534765,
+          12933,
+          435908,
+          80470640,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82610127
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499879"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267218.1398757,
+    "label": "unmodified-722ecfb",
+    "order": "BAC",
+    "perf": {
+      "context-switches": {
+        "raw": "41,,context-switches,2799591542,100.00,,",
+        "unit": "",
+        "value": 41
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2799591542,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12598968477,,cycles,2799591542,100.00,,",
+        "unit": "",
+        "value": 12598968477
+      },
+      "effective_frequency_hz": 4500290570.047756,
+      "instructions": {
+        "raw": "31791553990,,instructions,2799591542,100.00,,",
+        "unit": "",
+        "value": 31791553990
+      },
+      "task-clock": {
+        "raw": "2799.59,msec,task-clock,2799591542,100.00,,",
+        "unit": "msec",
+        "value": 2799.59
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-B.perf",
+    "perf_sha256": "de27edb9a98a5f907ad48d2e367555e7305fa70c15794f576848e037821c670e",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 7,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267215.3163059,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-B.stdout",
+    "stdout_sha256": "54b2963aa2c1a1b1c3f3b41a910793408f9d5f143f8675c4dfec9a528a202e32",
+    "triplet": 3,
+    "wrapper_elapsed_s": 2.8235674349125475
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013170,
+        "fields": [
+          1427610,
+          11833,
+          463427,
+          80428180,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82605533
+      },
+      "6": {
+        "busy": 1999153,
+        "fields": [
+          1535337,
+          12933,
+          435911,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82610703
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499960"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 9.023367,
+      "query_ms": 2799.267786,
+      "query_ms_per_population": 93.3089262,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 94.810191
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013167,
+        "fields": [
+          1427609,
+          11833,
+          463425,
+          80427891,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82605241
+      },
+      "6": {
+        "busy": 1998860,
+        "fields": [
+          1535046,
+          12933,
+          435909,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82610410
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499968"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267221.0706096,
+    "label": "audited-original-c",
+    "order": "BAC",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "42,,context-switches,2905597015,100.00,,",
+        "unit": "",
+        "value": 42
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2905597015,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13071669841,,cycles,2905597015,100.00,,",
+        "unit": "",
+        "value": 13071669841
+      },
+      "effective_frequency_hz": 4498785049.903635,
+      "instructions": {
+        "raw": "37471152290,,instructions,2905597015,100.00,,",
+        "unit": "",
+        "value": 37471152290
+      },
+      "task-clock": {
+        "raw": "2905.60,msec,task-clock,2905597015,100.00,,",
+        "unit": "msec",
+        "value": 2905.6
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-A.perf",
+    "perf_sha256": "74c1038d9cfb81b675362675e80a9c1188ff991e941c6edc3e66f0009f92bfbe",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 8,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267218.14072,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-A.stdout",
+    "stdout_sha256": "b2e4a5a3b3f8a619565bb0993d292c2ed288303fc363f5eb3f35b7c61fdfe2b9",
+    "triplet": 3,
+    "wrapper_elapsed_s": 2.929886526078917
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013180,
+        "fields": [
+          1427616,
+          11834,
+          463429,
+          80428455,
+          164183,
+          0,
+          110301,
+          0,
+          0,
+          0
+        ],
+        "total": 82605818
+      },
+      "6": {
+        "busy": 1999437,
+        "fields": [
+          1535619,
+          12933,
+          435913,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82610987
+      }
+    },
+    "after_freq": {
+      "18": "4479890",
+      "6": "4499983"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.242082,
+      "query_ms": 2715.400447,
+      "query_ms_per_population": 90.5133482333,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.316355
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013170,
+        "fields": [
+          1427610,
+          11833,
+          463427,
+          80428180,
+          164183,
+          0,
+          110300,
+          0,
+          0,
+          0
+        ],
+        "total": 82605533
+      },
+      "6": {
+        "busy": 1999153,
+        "fields": [
+          1535337,
+          12933,
+          435911,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82610703
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499960"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267223.9087796,
+    "label": "candidate",
+    "order": "BAC",
+    "perf": {
+      "context-switches": {
+        "raw": "42,,context-switches,2814399232,100.00,,",
+        "unit": "",
+        "value": 42
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2814399232,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12663374564,,cycles,2814399232,100.00,,",
+        "unit": "",
+        "value": 12663374564
+      },
+      "effective_frequency_hz": 4499493520.466174,
+      "instructions": {
+        "raw": "33307001983,,instructions,2814399232,100.00,,",
+        "unit": "",
+        "value": 33307001983
+      },
+      "task-clock": {
+        "raw": "2814.40,msec,task-clock,2814399232,100.00,,",
+        "unit": "msec",
+        "value": 2814.4
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-C.perf",
+    "perf_sha256": "d84c40fdd9c088606f5d0422244fc872d1554551258d45684af2e5d1b84032bd",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 9,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267221.0714672,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-03-BAC-C.stdout",
+    "stdout_sha256": "8652d96a2077ef586d092621bb98c87ba3d3d6378ec338f5d3062a4780a6e889",
+    "triplet": 3,
+    "wrapper_elapsed_s": 2.8373105900827795
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013180,
+        "fields": [
+          1427616,
+          11834,
+          463429,
+          80428732,
+          164183,
+          0,
+          110301,
+          0,
+          0,
+          0
+        ],
+        "total": 82606095
+      },
+      "6": {
+        "busy": 1999716,
+        "fields": [
+          1535897,
+          12933,
+          435914,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82611266
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499999"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.196922,
+      "query_ms": 2668.908105,
+      "query_ms_per_population": 88.9636035,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 90.203762
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013180,
+        "fields": [
+          1427616,
+          11834,
+          463429,
+          80428455,
+          164183,
+          0,
+          110301,
+          0,
+          0,
+          0
+        ],
+        "total": 82605818
+      },
+      "6": {
+        "busy": 1999437,
+        "fields": [
+          1535619,
+          12933,
+          435913,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82610987
+      }
+    },
+    "before_freq": {
+      "18": "4479890",
+      "6": "4499983"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267226.7015347,
+    "label": "unmodified-722ecfb",
+    "order": "BCA",
+    "perf": {
+      "context-switches": {
+        "raw": "39,,context-switches,2768733330,100.00,,",
+        "unit": "",
+        "value": 39
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2768733330,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12459619712,,cycles,2768733330,100.00,,",
+        "unit": "",
+        "value": 12459619712
+      },
+      "effective_frequency_hz": 4500120890.0831785,
+      "instructions": {
+        "raw": "31791521278,,instructions,2768733330,100.00,,",
+        "unit": "",
+        "value": 31791521278
+      },
+      "task-clock": {
+        "raw": "2768.73,msec,task-clock,2768733330,100.00,,",
+        "unit": "msec",
+        "value": 2768.73
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-B.perf",
+    "perf_sha256": "504d6a80da07d412995204e32f9820cb8ab439f891d64c848dfb48a46ca819e1",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 10,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267223.9095504,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-B.stdout",
+    "stdout_sha256": "a0c3891ed9c61db6a046d12477fbcdc87bb54153da70bf3257529191ac7b7b28",
+    "triplet": 4,
+    "wrapper_elapsed_s": 2.7919828039593995
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013181,
+        "fields": [
+          1427617,
+          11834,
+          463429,
+          80429010,
+          164183,
+          0,
+          110301,
+          0,
+          0,
+          0
+        ],
+        "total": 82606374
+      },
+      "6": {
+        "busy": 1999995,
+        "fields": [
+          1536174,
+          12933,
+          435916,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82611545
+      }
+    },
+    "after_freq": {
+      "18": "4495161",
+      "6": "4499920"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.277531,
+      "query_ms": 2675.301719,
+      "query_ms_per_population": 89.1767239667,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.324885
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013180,
+        "fields": [
+          1427616,
+          11834,
+          463429,
+          80428733,
+          164183,
+          0,
+          110301,
+          0,
+          0,
+          0
+        ],
+        "total": 82606096
+      },
+      "6": {
+        "busy": 1999716,
+        "fields": [
+          1535897,
+          12933,
+          435914,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82611266
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499999"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267229.499549,
+    "label": "candidate",
+    "order": "BCA",
+    "perf": {
+      "context-switches": {
+        "raw": "41,,context-switches,2774327148,100.00,,",
+        "unit": "",
+        "value": 41
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2774327148,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12491786587,,cycles,2774327148,100.00,,",
+        "unit": "",
+        "value": 12491786587
+      },
+      "effective_frequency_hz": 4502631837.957273,
+      "instructions": {
+        "raw": "33306951883,,instructions,2774327148,100.00,,",
+        "unit": "",
+        "value": 33306951883
+      },
+      "task-clock": {
+        "raw": "2774.33,msec,task-clock,2774327148,100.00,,",
+        "unit": "msec",
+        "value": 2774.33
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-C.perf",
+    "perf_sha256": "a57a84b065bdbb7c1844b97e5245e999d22ef35495f1bd584f1cee1d3321b28f",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 11,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267226.702392,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-C.stdout",
+    "stdout_sha256": "5e97374172eca2356c7d860c1d6eba60d1948b8243b85a6b716fe835f62dd5eb",
+    "triplet": 4,
+    "wrapper_elapsed_s": 2.797155271982774
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013222,
+        "fields": [
+          1427648,
+          11834,
+          463437,
+          80429274,
+          164183,
+          0,
+          110303,
+          0,
+          0,
+          0
+        ],
+        "total": 82606679
+      },
+      "6": {
+        "busy": 2000302,
+        "fields": [
+          1536479,
+          12933,
+          435918,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82611852
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499913"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 10.428173,
+      "query_ms": 2912.385801,
+      "query_ms_per_population": 97.0795267,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 115.365639
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013181,
+        "fields": [
+          1427617,
+          11834,
+          463429,
+          80429010,
+          164183,
+          0,
+          110301,
+          0,
+          0,
+          0
+        ],
+        "total": 82606374
+      },
+      "6": {
+        "busy": 1999995,
+        "fields": [
+          1536174,
+          12933,
+          435916,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82611545
+      }
+    },
+    "before_freq": {
+      "18": "4495161",
+      "6": "4499920"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267232.5694945,
+    "label": "audited-original-c",
+    "order": "BCA",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "48,,context-switches,3041069719,100.00,,",
+        "unit": "",
+        "value": 48
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,3041069719,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13642230250,,cycles,3041069719,100.00,,",
+        "unit": "",
+        "value": 13642230250
+      },
+      "effective_frequency_hz": 4485996787.314991,
+      "instructions": {
+        "raw": "37471529556,,instructions,3041069719,100.00,,",
+        "unit": "",
+        "value": 37471529556
+      },
+      "task-clock": {
+        "raw": "3041.07,msec,task-clock,3041069719,100.00,,",
+        "unit": "msec",
+        "value": 3041.07
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-A.perf",
+    "perf_sha256": "8a187b4af7ddbb70f332ce33e57eeb46de37973c547dfbe2775cc240c774a785",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 12,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267229.5003932,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-04-BCA-A.stdout",
+    "stdout_sha256": "cbb4f0d1f531cdffeb20fbc17226c105eb6735f5df494b2668e32c971be7c2a3",
+    "triplet": 4,
+    "wrapper_elapsed_s": 3.0690996448975056
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013222,
+        "fields": [
+          1427648,
+          11834,
+          463437,
+          80429554,
+          164183,
+          0,
+          110303,
+          0,
+          0,
+          0
+        ],
+        "total": 82606959
+      },
+      "6": {
+        "busy": 2000583,
+        "fields": [
+          1536758,
+          12933,
+          435920,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82612133
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499969"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.178962,
+      "query_ms": 2684.307346,
+      "query_ms_per_population": 89.4769115333,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.633164
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013222,
+        "fields": [
+          1427648,
+          11834,
+          463437,
+          80429274,
+          164183,
+          0,
+          110303,
+          0,
+          0,
+          0
+        ],
+        "total": 82606679
+      },
+      "6": {
+        "busy": 2000302,
+        "fields": [
+          1536479,
+          12933,
+          435918,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82611852
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499913"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267235.3769784,
+    "label": "candidate",
+    "order": "CAB",
+    "perf": {
+      "context-switches": {
+        "raw": "41,,context-switches,2783459660,100.00,,",
+        "unit": "",
+        "value": 41
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2783459660,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12526244214,,cycles,2783459660,100.00,,",
+        "unit": "",
+        "value": 12526244214
+      },
+      "effective_frequency_hz": 4500242221.551595,
+      "instructions": {
+        "raw": "33307142904,,instructions,2783459660,100.00,,",
+        "unit": "",
+        "value": 33307142904
+      },
+      "task-clock": {
+        "raw": "2783.46,msec,task-clock,2783459660,100.00,,",
+        "unit": "msec",
+        "value": 2783.46
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-C.perf",
+    "perf_sha256": "1c808ee384b6a7825020a4e164ed0e8c7c1bb768f8d497085797d221e9d574f5",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 13,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267232.5703511,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-C.stdout",
+    "stdout_sha256": "b414f7ce78d9a7f8c7e596ad1ee0cbbc1a9c0579a34ff26b37cbe6d50dc14779",
+    "triplet": 5,
+    "wrapper_elapsed_s": 2.8066254480509087
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013226,
+        "fields": [
+          1427651,
+          11834,
+          463438,
+          80429841,
+          164183,
+          0,
+          110303,
+          0,
+          0,
+          0
+        ],
+        "total": 82607250
+      },
+      "6": {
+        "busy": 2000875,
+        "fields": [
+          1537049,
+          12933,
+          435921,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82612426
+      }
+    },
+    "after_freq": {
+      "18": "4499992",
+      "6": "4500008"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 8.988568,
+      "query_ms": 2794.915917,
+      "query_ms_per_population": 93.1638639,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 92.653297
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013222,
+        "fields": [
+          1427648,
+          11834,
+          463437,
+          80429554,
+          164183,
+          0,
+          110303,
+          0,
+          0,
+          0
+        ],
+        "total": 82606959
+      },
+      "6": {
+        "busy": 2000583,
+        "fields": [
+          1536758,
+          12933,
+          435920,
+          80470641,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82612133
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499865"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267238.3010054,
+    "label": "audited-original-c",
+    "order": "CAB",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "42,,context-switches,2899272266,100.00,,",
+        "unit": "",
+        "value": 42
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2899272266,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13040941389,,cycles,2899272266,100.00,,",
+        "unit": "",
+        "value": 13040941389
+      },
+      "effective_frequency_hz": 4498008598.371314,
+      "instructions": {
+        "raw": "37470826533,,instructions,2899272266,100.00,,",
+        "unit": "",
+        "value": 37470826533
+      },
+      "task-clock": {
+        "raw": "2899.27,msec,task-clock,2899272266,100.00,,",
+        "unit": "msec",
+        "value": 2899.27
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-A.perf",
+    "perf_sha256": "c15c8ef08487da34bfd59c555372e14db1b3783642a132af19f8d08f761354b5",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 14,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267235.377834,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-A.stdout",
+    "stdout_sha256": "22c4b159439e92561209910878d758f2cb70f3baf078b0797b5e81c56b711b1a",
+    "triplet": 5,
+    "wrapper_elapsed_s": 2.923169753048569
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013280,
+        "fields": [
+          1427692,
+          11834,
+          463446,
+          80430081,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82607548
+      },
+      "6": {
+        "busy": 2001176,
+        "fields": [
+          1537348,
+          12933,
+          435923,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82612727
+      }
+    },
+    "after_freq": {
+      "18": "4498190",
+      "6": "4500004"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.642571,
+      "query_ms": 2878.444386,
+      "query_ms_per_population": 95.9481462,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 95.372259
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013226,
+        "fields": [
+          1427651,
+          11834,
+          463438,
+          80429841,
+          164183,
+          0,
+          110303,
+          0,
+          0,
+          0
+        ],
+        "total": 82607250
+      },
+      "6": {
+        "busy": 2000875,
+        "fields": [
+          1537049,
+          12933,
+          435921,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82612426
+      }
+    },
+    "before_freq": {
+      "18": "4499529",
+      "6": "4499653"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267241.3132892,
+    "label": "unmodified-722ecfb",
+    "order": "CAB",
+    "perf": {
+      "context-switches": {
+        "raw": "45,,context-switches,2983835091,100.00,,",
+        "unit": "",
+        "value": 45
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2983835091,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13419769889,,cycles,2983835091,100.00,,",
+        "unit": "",
+        "value": 13419769889
+      },
+      "effective_frequency_hz": 4497483071.813501,
+      "instructions": {
+        "raw": "31792446620,,instructions,2983835091,100.00,,",
+        "unit": "",
+        "value": 31792446620
+      },
+      "task-clock": {
+        "raw": "2983.84,msec,task-clock,2983835091,100.00,,",
+        "unit": "msec",
+        "value": 2983.84
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-B.perf",
+    "perf_sha256": "053744ec369b7b49f4704a6d0a9f7b6bc149ade9f4aec13af8c06a26091c9491",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 15,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267238.3019109,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-05-CAB-B.stdout",
+    "stdout_sha256": "ecdc5197a25cc10883f51892600bc637ed9a43f985daab0a85db542d0e2e9a0e",
+    "triplet": 5,
+    "wrapper_elapsed_s": 3.0113764100242406
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013283,
+        "fields": [
+          1427693,
+          11834,
+          463448,
+          80430359,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82607829
+      },
+      "6": {
+        "busy": 2001458,
+        "fields": [
+          1537628,
+          12933,
+          435925,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82613009
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499964"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.240062,
+      "query_ms": 2699.163819,
+      "query_ms_per_population": 89.9721273,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.696833
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013280,
+        "fields": [
+          1427692,
+          11834,
+          463446,
+          80430081,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82607548
+      },
+      "6": {
+        "busy": 2001176,
+        "fields": [
+          1537348,
+          12933,
+          435923,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82612727
+      }
+    },
+    "before_freq": {
+      "18": "4498190",
+      "6": "4499933"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267244.1353366,
+    "label": "candidate",
+    "order": "CBA",
+    "perf": {
+      "context-switches": {
+        "raw": "44,,context-switches,2798364471,100.00,,",
+        "unit": "",
+        "value": 44
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2798364471,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12595022130,,cycles,2798364471,100.00,,",
+        "unit": "",
+        "value": 12595022130
+      },
+      "effective_frequency_hz": 4500858406.352292,
+      "instructions": {
+        "raw": "33307510210,,instructions,2798364471,100.00,,",
+        "unit": "",
+        "value": 33307510210
+      },
+      "task-clock": {
+        "raw": "2798.36,msec,task-clock,2798364471,100.00,,",
+        "unit": "msec",
+        "value": 2798.36
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-C.perf",
+    "perf_sha256": "0f396b488c21ffca3b0eaf6758498985a613fd59c654c45fc8a688032d62db30",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 16,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267241.3141527,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-C.stdout",
+    "stdout_sha256": "f34aaa68c16af961529baf520fbb75fadbde3d9d27391b539d1596a9604d1fa1",
+    "triplet": 6,
+    "wrapper_elapsed_s": 2.8211821309523657
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013285,
+        "fields": [
+          1427694,
+          11834,
+          463449,
+          80430642,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82608114
+      },
+      "6": {
+        "busy": 2001743,
+        "fields": [
+          1537911,
+          12933,
+          435927,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82613294
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499963"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.336071,
+      "query_ms": 2720.337245,
+      "query_ms_per_population": 90.6779081667,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 90.409012
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013283,
+        "fields": [
+          1427693,
+          11834,
+          463448,
+          80430359,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82607829
+      },
+      "6": {
+        "busy": 2001458,
+        "fields": [
+          1537628,
+          12933,
+          435925,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82613009
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499909"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267246.9802594,
+    "label": "unmodified-722ecfb",
+    "order": "CBA",
+    "perf": {
+      "context-switches": {
+        "raw": "37,,context-switches,2820421438,100.00,,",
+        "unit": "",
+        "value": 37
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2820421438,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12691099290,,cycles,2820421438,100.00,,",
+        "unit": "",
+        "value": 12691099290
+      },
+      "effective_frequency_hz": 4499719648.137511,
+      "instructions": {
+        "raw": "31791170349,,instructions,2820421438,100.00,,",
+        "unit": "",
+        "value": 31791170349
+      },
+      "task-clock": {
+        "raw": "2820.42,msec,task-clock,2820421438,100.00,,",
+        "unit": "msec",
+        "value": 2820.42
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-B.perf",
+    "perf_sha256": "2df93efae05e7d07143b90189c04510d1f5c3e2357bd90dc283b265ea62635f5",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 17,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267244.1362336,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-B.stdout",
+    "stdout_sha256": "36d1452464ea75d8d311e89e7bf3235610d233b08142ad9288a6bd3b1f9fd604",
+    "triplet": 6,
+    "wrapper_elapsed_s": 2.844023973098956
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013287,
+        "fields": [
+          1427695,
+          11834,
+          463450,
+          80430932,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82608406
+      },
+      "6": {
+        "busy": 2002035,
+        "fields": [
+          1538201,
+          12933,
+          435929,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82613586
+      }
+    },
+    "after_freq": {
+      "18": "4497528",
+      "6": "4500009"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 9.000628,
+      "query_ms": 2792.123984,
+      "query_ms_per_population": 93.0707994667,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 92.788026
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013285,
+        "fields": [
+          1427694,
+          11834,
+          463449,
+          80430642,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82608114
+      },
+      "6": {
+        "busy": 2001743,
+        "fields": [
+          1537911,
+          12933,
+          435927,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82613294
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499848"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267249.9011421,
+    "label": "audited-original-c",
+    "order": "CBA",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "40,,context-switches,2896419242,100.00,,",
+        "unit": "",
+        "value": 40
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2896419242,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13014642810,,cycles,2896419242,100.00,,",
+        "unit": "",
+        "value": 13014642810
+      },
+      "effective_frequency_hz": 4493354834.588906,
+      "instructions": {
+        "raw": "37471121626,,instructions,2896419242,100.00,,",
+        "unit": "",
+        "value": 37471121626
+      },
+      "task-clock": {
+        "raw": "2896.42,msec,task-clock,2896419242,100.00,,",
+        "unit": "msec",
+        "value": 2896.42
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-A.perf",
+    "perf_sha256": "92dfa8c2c9fee61bff44589a444ad09c22638f7e4b577af8244111e44ee66be3",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 18,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267246.9812653,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-06-CBA-A.stdout",
+    "stdout_sha256": "f5c48923d9d071b3d2d6b972d41034a314d96f6c6ccb3a7aaa80b913dd9da08b",
+    "triplet": 6,
+    "wrapper_elapsed_s": 2.9198742719599977
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013290,
+        "fields": [
+          1427698,
+          11834,
+          463450,
+          80431219,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82608696
+      },
+      "6": {
+        "busy": 2002327,
+        "fields": [
+          1538491,
+          12933,
+          435931,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82613878
+      }
+    },
+    "after_freq": {
+      "18": "4499679",
+      "6": "4499988"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 8.918878,
+      "query_ms": 2788.976732,
+      "query_ms_per_population": 92.9658910667,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 92.532666
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013287,
+        "fields": [
+          1427695,
+          11834,
+          463450,
+          80430932,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82608406
+      },
+      "6": {
+        "busy": 2002035,
+        "fields": [
+          1538201,
+          12933,
+          435929,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82613586
+      }
+    },
+    "before_freq": {
+      "18": "4497528",
+      "6": "4499842"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267252.820243,
+    "label": "audited-original-c",
+    "order": "ABC",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "46,,context-switches,2893097399,100.00,,",
+        "unit": "",
+        "value": 46
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2893097399,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13004384203,,cycles,2893097399,100.00,,",
+        "unit": "",
+        "value": 13004384203
+      },
+      "effective_frequency_hz": 4494965332.34247,
+      "instructions": {
+        "raw": "37471377537,,instructions,2893097399,100.00,,",
+        "unit": "",
+        "value": 37471377537
+      },
+      "task-clock": {
+        "raw": "2893.10,msec,task-clock,2893097399,100.00,,",
+        "unit": "msec",
+        "value": 2893.1
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-A.perf",
+    "perf_sha256": "f18f94bfeed0e260df344ca3a324b89f556d2c54402ac154a07319582247d696",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 19,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267249.9020278,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-A.stdout",
+    "stdout_sha256": "cec3863dfa861f1b8e6765b3d85e254253655eb358334b1b86ce6e0466cc88e1",
+    "triplet": 7,
+    "wrapper_elapsed_s": 2.9182134359143674
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013400,
+        "fields": [
+          1427779,
+          11834,
+          463470,
+          80431423,
+          164187,
+          0,
+          110317,
+          0,
+          0,
+          0
+        ],
+        "total": 82609010
+      },
+      "6": {
+        "busy": 2002651,
+        "fields": [
+          1538813,
+          12933,
+          435933,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82614202
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499948"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 8.571378,
+      "query_ms": 3092.743866,
+      "query_ms_per_population": 103.0914622,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 117.237784
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013290,
+        "fields": [
+          1427698,
+          11834,
+          463450,
+          80431219,
+          164187,
+          0,
+          110308,
+          0,
+          0,
+          0
+        ],
+        "total": 82608696
+      },
+      "6": {
+        "busy": 2002327,
+        "fields": [
+          1538491,
+          12933,
+          435931,
+          80470642,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82613878
+      }
+    },
+    "before_freq": {
+      "18": "4499949",
+      "6": "4499807"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267256.0708225,
+    "label": "unmodified-722ecfb",
+    "order": "ABC",
+    "perf": {
+      "context-switches": {
+        "raw": "44,,context-switches,3221474952,100.00,,",
+        "unit": "",
+        "value": 44
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,3221474952,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "14476177804,,cycles,3221474952,100.00,,",
+        "unit": "",
+        "value": 14476177804
+      },
+      "effective_frequency_hz": 4493655940.921381,
+      "instructions": {
+        "raw": "31793700891,,instructions,3221474952,100.00,,",
+        "unit": "",
+        "value": 31793700891
+      },
+      "task-clock": {
+        "raw": "3221.47,msec,task-clock,3221474952,100.00,,",
+        "unit": "msec",
+        "value": 3221.47
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-B.perf",
+    "perf_sha256": "5ca6ffda0c01cda8fb02a3058a8464cb95ab9ea08375d810cc5adc581875035a",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 20,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267252.8212945,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-B.stdout",
+    "stdout_sha256": "1d27f4c8304467822c13c36113c6af69442dbbd2b608e39b4e4f13c69c3b8239",
+    "triplet": 7,
+    "wrapper_elapsed_s": 3.249526489060372
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013401,
+        "fields": [
+          1427780,
+          11834,
+          463470,
+          80431702,
+          164187,
+          0,
+          110317,
+          0,
+          0,
+          0
+        ],
+        "total": 82609290
+      },
+      "6": {
+        "busy": 2002931,
+        "fields": [
+          1539092,
+          12933,
+          435934,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82614483
+      }
+    },
+    "after_freq": {
+      "18": "4496635",
+      "6": "4499981"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.122112,
+      "query_ms": 2683.529538,
+      "query_ms_per_population": 89.4509846,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.581344
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013400,
+        "fields": [
+          1427779,
+          11834,
+          463470,
+          80431423,
+          164187,
+          0,
+          110317,
+          0,
+          0,
+          0
+        ],
+        "total": 82609010
+      },
+      "6": {
+        "busy": 2002651,
+        "fields": [
+          1538813,
+          12933,
+          435933,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82614203
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499948"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267258.8769164,
+    "label": "candidate",
+    "order": "ABC",
+    "perf": {
+      "context-switches": {
+        "raw": "43,,context-switches,2782609519,100.00,,",
+        "unit": "",
+        "value": 43
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2782609519,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12526847517,,cycles,2782609519,100.00,,",
+        "unit": "",
+        "value": 12526847517
+      },
+      "effective_frequency_hz": 4501833716.187321,
+      "instructions": {
+        "raw": "33306930377,,instructions,2782609519,100.00,,",
+        "unit": "",
+        "value": 33306930377
+      },
+      "task-clock": {
+        "raw": "2782.61,msec,task-clock,2782609519,100.00,,",
+        "unit": "msec",
+        "value": 2782.61
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-C.perf",
+    "perf_sha256": "f442c0a0f647fb798b55935b32b8be61f5de3832f120a2aa0ba4d8d0cb21f548",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 21,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267256.071718,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-07-ABC-C.stdout",
+    "stdout_sha256": "e3b349bd0389e98f257a7bd74afa924a790b30c752d463dade99953018b7b9c6",
+    "triplet": 7,
+    "wrapper_elapsed_s": 2.805196761037223
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013455,
+        "fields": [
+          1427817,
+          11834,
+          463481,
+          80431953,
+          164187,
+          0,
+          110323,
+          0,
+          0,
+          0
+        ],
+        "total": 82609595
+      },
+      "6": {
+        "busy": 2003240,
+        "fields": [
+          1539399,
+          12933,
+          435936,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82614792
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499976"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 8.984877,
+      "query_ms": 2959.889631,
+      "query_ms_per_population": 98.6629877,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 92.974685
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013401,
+        "fields": [
+          1427780,
+          11834,
+          463470,
+          80431702,
+          164187,
+          0,
+          110317,
+          0,
+          0,
+          0
+        ],
+        "total": 82609290
+      },
+      "6": {
+        "busy": 2002931,
+        "fields": [
+          1539092,
+          12933,
+          435934,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82614483
+      }
+    },
+    "before_freq": {
+      "18": "4496635",
+      "6": "4499981"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267261.9648013,
+    "label": "audited-original-c",
+    "order": "ACB",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "45,,context-switches,3064049958,100.00,,",
+        "unit": "",
+        "value": 45
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,3064049958,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13751557089,,cycles,3064049958,100.00,,",
+        "unit": "",
+        "value": 13751557089
+      },
+      "effective_frequency_hz": 4488032861.408919,
+      "instructions": {
+        "raw": "37471679392,,instructions,3064049958,100.00,,",
+        "unit": "",
+        "value": 37471679392
+      },
+      "task-clock": {
+        "raw": "3064.05,msec,task-clock,3064049958,100.00,,",
+        "unit": "msec",
+        "value": 3064.05
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-A.perf",
+    "perf_sha256": "36befcef3d51281b17d40be8a2b3dbf4f8c0aa18bd06559cbed757598b074a82",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 22,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267258.877773,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-A.stdout",
+    "stdout_sha256": "e809458ddac3531308382d9b98619a282e4e5f480aeaf59b39b1923e5e612759",
+    "triplet": 8,
+    "wrapper_elapsed_s": 3.087026569992304
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013506,
+        "fields": [
+          1427855,
+          11834,
+          463490,
+          80432196,
+          164192,
+          0,
+          110327,
+          0,
+          0,
+          0
+        ],
+        "total": 82609894
+      },
+      "6": {
+        "busy": 2003542,
+        "fields": [
+          1539699,
+          12933,
+          435938,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82615094
+      }
+    },
+    "after_freq": {
+      "18": "4501229",
+      "6": "4499939"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 8.451029,
+      "query_ms": 2869.378369,
+      "query_ms_per_population": 95.6459456333,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 117.440763
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013455,
+        "fields": [
+          1427817,
+          11834,
+          463481,
+          80431953,
+          164187,
+          0,
+          110323,
+          0,
+          0,
+          0
+        ],
+        "total": 82609595
+      },
+      "6": {
+        "busy": 2003240,
+        "fields": [
+          1539399,
+          12933,
+          435936,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82614792
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499976"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267264.987721,
+    "label": "candidate",
+    "order": "ACB",
+    "perf": {
+      "context-switches": {
+        "raw": "39,,context-switches,2998125520,100.00,,",
+        "unit": "",
+        "value": 39
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2998125520,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13486471881,,cycles,2998125520,100.00,,",
+        "unit": "",
+        "value": 13486471881
+      },
+      "effective_frequency_hz": 4498294563.944859,
+      "instructions": {
+        "raw": "33308433182,,instructions,2998125520,100.00,,",
+        "unit": "",
+        "value": 33308433182
+      },
+      "task-clock": {
+        "raw": "2998.13,msec,task-clock,2998125520,100.00,,",
+        "unit": "msec",
+        "value": 2998.13
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-C.perf",
+    "perf_sha256": "cd25b15a76990477250b861bcec38e032da92330747f336809c1e1cdb6d1a36c",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 23,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267261.9656856,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-C.stdout",
+    "stdout_sha256": "43581c6b7df5dfac999d94f64648dc1dd3b66bf0395a4bc361c67019cb59b70b",
+    "triplet": 8,
+    "wrapper_elapsed_s": 3.0220337039791048
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013507,
+        "fields": [
+          1427856,
+          11834,
+          463490,
+          80432475,
+          164192,
+          0,
+          110327,
+          0,
+          0,
+          0
+        ],
+        "total": 82610174
+      },
+      "6": {
+        "busy": 2003822,
+        "fields": [
+          1539978,
+          12933,
+          435939,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82615374
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499973"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.253261,
+      "query_ms": 2676.762625,
+      "query_ms_per_population": 89.2254208333,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.777004
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013506,
+        "fields": [
+          1427855,
+          11834,
+          463490,
+          80432196,
+          164192,
+          0,
+          110327,
+          0,
+          0,
+          0
+        ],
+        "total": 82609894
+      },
+      "6": {
+        "busy": 2003542,
+        "fields": [
+          1539699,
+          12933,
+          435938,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82615094
+      }
+    },
+    "before_freq": {
+      "18": "4501229",
+      "6": "4499939"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267267.7881818,
+    "label": "unmodified-722ecfb",
+    "order": "ACB",
+    "perf": {
+      "context-switches": {
+        "raw": "42,,context-switches,2776234212,100.00,,",
+        "unit": "",
+        "value": 42
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2776234212,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12502895050,,cycles,2776234212,100.00,,",
+        "unit": "",
+        "value": 12502895050
+      },
+      "effective_frequency_hz": 4503551596.9498205,
+      "instructions": {
+        "raw": "31791897326,,instructions,2776234212,100.00,,",
+        "unit": "",
+        "value": 31791897326
+      },
+      "task-clock": {
+        "raw": "2776.23,msec,task-clock,2776234212,100.00,,",
+        "unit": "msec",
+        "value": 2776.23
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-B.perf",
+    "perf_sha256": "ab1790bcd30b218202aa63a61d1fe9cdcb18da3b33ca5ed1877d839fdf1d0d4d",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 24,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267264.9885814,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-08-ACB-B.stdout",
+    "stdout_sha256": "b6008c7e29372227dd20cf77186efc66ed9482822e7afbd0d45bfd449d4d4de3",
+    "triplet": 8,
+    "wrapper_elapsed_s": 2.799598756013438
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013541,
+        "fields": [
+          1427880,
+          11834,
+          463497,
+          80432730,
+          164194,
+          0,
+          110330,
+          0,
+          0,
+          0
+        ],
+        "total": 82610465
+      },
+      "6": {
+        "busy": 2004115,
+        "fields": [
+          1540269,
+          12933,
+          435941,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82615667
+      }
+    },
+    "after_freq": {
+      "18": "4500450",
+      "6": "4499983"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.218062,
+      "query_ms": 2811.767074,
+      "query_ms_per_population": 93.7255691333,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 88.816126
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013507,
+        "fields": [
+          1427856,
+          11834,
+          463490,
+          80432475,
+          164192,
+          0,
+          110327,
+          0,
+          0,
+          0
+        ],
+        "total": 82610174
+      },
+      "6": {
+        "busy": 2003822,
+        "fields": [
+          1539978,
+          12933,
+          435939,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82615374
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499924"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267270.7220168,
+    "label": "unmodified-722ecfb",
+    "order": "BAC",
+    "perf": {
+      "context-switches": {
+        "raw": "41,,context-switches,2910061610,100.00,,",
+        "unit": "",
+        "value": 41
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2910061610,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13087942482,,cycles,2910061610,100.00,,",
+        "unit": "",
+        "value": 13087942482
+      },
+      "effective_frequency_hz": 4497482004.494753,
+      "instructions": {
+        "raw": "31791618876,,instructions,2910061610,100.00,,",
+        "unit": "",
+        "value": 31791618876
+      },
+      "task-clock": {
+        "raw": "2910.06,msec,task-clock,2910061610,100.00,,",
+        "unit": "msec",
+        "value": 2910.06
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-B.perf",
+    "perf_sha256": "25193c2fa665a442946a4e9278a4892c2dd016dcdaaee80c1fad2959a7e066ba",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 25,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267267.7891982,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-B.stdout",
+    "stdout_sha256": "23b27dce34217013531eeb632aa25463e37c5516381bc38dd3f72b4f8a2796a4",
+    "triplet": 9,
+    "wrapper_elapsed_s": 2.9328160890145227
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013546,
+        "fields": [
+          1427881,
+          11834,
+          463500,
+          80433019,
+          164194,
+          0,
+          110331,
+          0,
+          0,
+          0
+        ],
+        "total": 82610759
+      },
+      "6": {
+        "busy": 2004409,
+        "fields": [
+          1540561,
+          12933,
+          435943,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82615961
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499961"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 9.016187,
+      "query_ms": 2801.902759,
+      "query_ms_per_population": 93.3967586333,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 95.968678
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013541,
+        "fields": [
+          1427880,
+          11834,
+          463497,
+          80432730,
+          164194,
+          0,
+          110330,
+          0,
+          0,
+          0
+        ],
+        "total": 82610465
+      },
+      "6": {
+        "busy": 2004115,
+        "fields": [
+          1540269,
+          12933,
+          435941,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82615667
+      }
+    },
+    "before_freq": {
+      "18": "4500450",
+      "6": "4499382"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267273.6553915,
+    "label": "audited-original-c",
+    "order": "BAC",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "44,,context-switches,2909277000,100.00,,",
+        "unit": "",
+        "value": 44
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2909277000,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13078433241,,cycles,2909277000,100.00,,",
+        "unit": "",
+        "value": 13078433241
+      },
+      "effective_frequency_hz": 4495419224.344167,
+      "instructions": {
+        "raw": "37471358529,,instructions,2909277000,100.00,,",
+        "unit": "",
+        "value": 37471358529
+      },
+      "task-clock": {
+        "raw": "2909.28,msec,task-clock,2909277000,100.00,,",
+        "unit": "msec",
+        "value": 2909.28
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-A.perf",
+    "perf_sha256": "c9dbca7158c47faa67e5ff6e1fd5b3714c361f5812da3080f43378f7b3f4699c",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 26,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267270.7229145,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-A.stdout",
+    "stdout_sha256": "2f694d0a2fb5a03f9bd01a5e32eeb4ded65e01551825eac9066c39b9cc292245",
+    "triplet": 9,
+    "wrapper_elapsed_s": 2.9324740099254996
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013547,
+        "fields": [
+          1427882,
+          11834,
+          463500,
+          80433300,
+          164194,
+          0,
+          110331,
+          0,
+          0,
+          0
+        ],
+        "total": 82611041
+      },
+      "6": {
+        "busy": 2004690,
+        "fields": [
+          1540840,
+          12933,
+          435945,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82616243
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499914"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.483191,
+      "query_ms": 2693.420593,
+      "query_ms_per_population": 89.7806864333,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 90.613351
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013546,
+        "fields": [
+          1427881,
+          11834,
+          463500,
+          80433019,
+          164194,
+          0,
+          110331,
+          0,
+          0,
+          0
+        ],
+        "total": 82610759
+      },
+      "6": {
+        "busy": 2004409,
+        "fields": [
+          1540561,
+          12933,
+          435943,
+          80470643,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82615961
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499982"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267276.473528,
+    "label": "candidate",
+    "order": "BAC",
+    "perf": {
+      "context-switches": {
+        "raw": "40,,context-switches,2793971514,100.00,,",
+        "unit": "",
+        "value": 40
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2793971514,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12572948544,,cycles,2793971514,100.00,,",
+        "unit": "",
+        "value": 12572948544
+      },
+      "effective_frequency_hz": 4500029901.537955,
+      "instructions": {
+        "raw": "33306950451,,instructions,2793971514,100.00,,",
+        "unit": "",
+        "value": 33306950451
+      },
+      "task-clock": {
+        "raw": "2793.97,msec,task-clock,2793971514,100.00,,",
+        "unit": "msec",
+        "value": 2793.97
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-C.perf",
+    "perf_sha256": "8a867e849708c01b49a90b121a366bfddbf7ae190388338d1aa90378bf3be94c",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 27,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267273.6562672,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-09-BAC-C.stdout",
+    "stdout_sha256": "c4a5edccfb8fbdf0c448899789024a075f501c27753e5ddebbe3aa51879db136",
+    "triplet": 9,
+    "wrapper_elapsed_s": 2.8172586809378117
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013563,
+        "fields": [
+          1427893,
+          11834,
+          463504,
+          80433563,
+          164200,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82611326
+      },
+      "6": {
+        "busy": 2004977,
+        "fields": [
+          1541126,
+          12933,
+          435946,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82616530
+      }
+    },
+    "after_freq": {
+      "18": "4496884",
+      "6": "4499999"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.163451,
+      "query_ms": 2743.495096,
+      "query_ms_per_population": 91.4498365333,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 91.56051
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013547,
+        "fields": [
+          1427882,
+          11834,
+          463500,
+          80433300,
+          164194,
+          0,
+          110331,
+          0,
+          0,
+          0
+        ],
+        "total": 82611041
+      },
+      "6": {
+        "busy": 2004690,
+        "fields": [
+          1540840,
+          12933,
+          435945,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82616243
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499914"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267279.3421774,
+    "label": "unmodified-722ecfb",
+    "order": "BCA",
+    "perf": {
+      "context-switches": {
+        "raw": "40,,context-switches,2844485202,100.00,,",
+        "unit": "",
+        "value": 40
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2844485202,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12791932292,,cycles,2844485202,100.00,,",
+        "unit": "",
+        "value": 12791932292
+      },
+      "effective_frequency_hz": 4497091672.67243,
+      "instructions": {
+        "raw": "31791519652,,instructions,2844485202,100.00,,",
+        "unit": "",
+        "value": 31791519652
+      },
+      "task-clock": {
+        "raw": "2844.49,msec,task-clock,2844485202,100.00,,",
+        "unit": "msec",
+        "value": 2844.49
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-B.perf",
+    "perf_sha256": "6e70398e26a9bce7b10aea51698d3657f9b3c79fed02e20b136b80883b7acbbd",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 28,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267276.4744518,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-B.stdout",
+    "stdout_sha256": "ddcf2d98f2e5a4770a43871f0e6dea28dc64dbc303fdfca7c328d6edba21d067",
+    "triplet": 10,
+    "wrapper_elapsed_s": 2.8677240828983486
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013564,
+        "fields": [
+          1427894,
+          11834,
+          463504,
+          80433842,
+          164200,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82611606
+      },
+      "6": {
+        "busy": 2005256,
+        "fields": [
+          1541404,
+          12933,
+          435947,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82616809
+      }
+    },
+    "after_freq": {
+      "18": "4497815",
+      "6": "4499943"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.346422,
+      "query_ms": 2677.833282,
+      "query_ms_per_population": 89.2611094,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.461794
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013563,
+        "fields": [
+          1427893,
+          11834,
+          463504,
+          80433563,
+          164200,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82611326
+      },
+      "6": {
+        "busy": 2004977,
+        "fields": [
+          1541126,
+          12933,
+          435946,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82616530
+      }
+    },
+    "before_freq": {
+      "18": "4484855",
+      "6": "4499877"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267282.1428254,
+    "label": "candidate",
+    "order": "BCA",
+    "perf": {
+      "context-switches": {
+        "raw": "40,,context-switches,2777025933,100.00,,",
+        "unit": "",
+        "value": 40
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2777025933,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12497473247,,cycles,2777025933,100.00,,",
+        "unit": "",
+        "value": 12497473247
+      },
+      "effective_frequency_hz": 4500301850.178067,
+      "instructions": {
+        "raw": "33307027593,,instructions,2777025933,100.00,,",
+        "unit": "",
+        "value": 33307027593
+      },
+      "task-clock": {
+        "raw": "2777.03,msec,task-clock,2777025933,100.00,,",
+        "unit": "msec",
+        "value": 2777.03
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-C.perf",
+    "perf_sha256": "fce9016dda67e7a0befaea5048bcfe5ec00d340ba541a7030d0261a81017a669",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 29,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267279.3430042,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-C.stdout",
+    "stdout_sha256": "f6ec7947df5df62917598ed5430a1322d9af7d54a9b92ae6baefaa0eedee54cb",
+    "triplet": 10,
+    "wrapper_elapsed_s": 2.799819684936665
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013566,
+        "fields": [
+          1427895,
+          11834,
+          463505,
+          80434129,
+          164203,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82611898
+      },
+      "6": {
+        "busy": 2005550,
+        "fields": [
+          1541696,
+          12933,
+          435949,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82617103
+      }
+    },
+    "after_freq": {
+      "18": "4498359",
+      "6": "4499971"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 8.960007,
+      "query_ms": 2808.953792,
+      "query_ms_per_population": 93.6317930667,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 93.128015
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013564,
+        "fields": [
+          1427894,
+          11834,
+          463504,
+          80433842,
+          164200,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82611606
+      },
+      "6": {
+        "busy": 2005256,
+        "fields": [
+          1541404,
+          12933,
+          435947,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82616809
+      }
+    },
+    "before_freq": {
+      "18": "4497815",
+      "6": "4499943"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267285.079704,
+    "label": "audited-original-c",
+    "order": "BCA",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "44,,context-switches,2913332296,100.00,,",
+        "unit": "",
+        "value": 44
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2913332296,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13086596281,,cycles,2913332296,100.00,,",
+        "unit": "",
+        "value": 13086596281
+      },
+      "effective_frequency_hz": 4491971826.397971,
+      "instructions": {
+        "raw": "37471240610,,instructions,2913332296,100.00,,",
+        "unit": "",
+        "value": 37471240610
+      },
+      "task-clock": {
+        "raw": "2913.33,msec,task-clock,2913332296,100.00,,",
+        "unit": "msec",
+        "value": 2913.33
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-A.perf",
+    "perf_sha256": "6f12f9fea2e6ba22699a23f73803c192f541f054bb80daf5adcc65aadc9cdb5a",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 30,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267282.1436708,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-10-BCA-A.stdout",
+    "stdout_sha256": "c49bd253bab4aa4dfe9bed7b0501986943000d8468623f0813b3015455588c71",
+    "triplet": 10,
+    "wrapper_elapsed_s": 2.936032131081447
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013568,
+        "fields": [
+          1427896,
+          11834,
+          463506,
+          80434411,
+          164203,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82612182
+      },
+      "6": {
+        "busy": 2005836,
+        "fields": [
+          1541980,
+          12933,
+          435951,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82617389
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4524667"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.305862,
+      "query_ms": 2736.281045,
+      "query_ms_per_population": 91.2093681667,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 92.106518
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013566,
+        "fields": [
+          1427895,
+          11834,
+          463505,
+          80434129,
+          164203,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82611898
+      },
+      "6": {
+        "busy": 2005550,
+        "fields": [
+          1541696,
+          12933,
+          435949,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82617103
+      }
+    },
+    "before_freq": {
+      "18": "4498359",
+      "6": "4499971"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267287.9421818,
+    "label": "candidate",
+    "order": "CAB",
+    "perf": {
+      "context-switches": {
+        "raw": "43,,context-switches,2838108844,100.00,,",
+        "unit": "",
+        "value": 43
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2838108844,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12772427165,,cycles,2838108844,100.00,,",
+        "unit": "",
+        "value": 12772427165
+      },
+      "effective_frequency_hz": 4500328445.69097,
+      "instructions": {
+        "raw": "33307259645,,instructions,2838108844,100.00,,",
+        "unit": "",
+        "value": 33307259645
+      },
+      "task-clock": {
+        "raw": "2838.11,msec,task-clock,2838108844,100.00,,",
+        "unit": "msec",
+        "value": 2838.11
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-C.perf",
+    "perf_sha256": "794ec9a40b0ef3e9bce6c5d1353f03366b8b87c41cbfb3fd8ea027b640355bfb",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 31,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267285.080463,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-C.stdout",
+    "stdout_sha256": "4e032cf7e79a02685e3f32d2f7f341e3d1d3c0b66bd44f811bd532bbbf65c051",
+    "triplet": 11,
+    "wrapper_elapsed_s": 2.861717549036257
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013568,
+        "fields": [
+          1427896,
+          11834,
+          463506,
+          80434702,
+          164203,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82612473
+      },
+      "6": {
+        "busy": 2006128,
+        "fields": [
+          1542271,
+          12933,
+          435952,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82617681
+      }
+    },
+    "after_freq": {
+      "18": "4491643",
+      "6": "4499975"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 8.933988,
+      "query_ms": 2794.577508,
+      "query_ms_per_population": 93.1525836,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 92.883915
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013568,
+        "fields": [
+          1427896,
+          11834,
+          463506,
+          80434411,
+          164203,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82612182
+      },
+      "6": {
+        "busy": 2005836,
+        "fields": [
+          1541980,
+          12933,
+          435951,
+          80470644,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82617389
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4516602"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267290.864162,
+    "label": "audited-original-c",
+    "order": "CAB",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "42,,context-switches,2898690655,100.00,,",
+        "unit": "",
+        "value": 42
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2898690655,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13034176132,,cycles,2898690655,100.00,,",
+        "unit": "",
+        "value": 13034176132
+      },
+      "effective_frequency_hz": 4496574705.125419,
+      "instructions": {
+        "raw": "37471343607,,instructions,2898690655,100.00,,",
+        "unit": "",
+        "value": 37471343607
+      },
+      "task-clock": {
+        "raw": "2898.69,msec,task-clock,2898690655,100.00,,",
+        "unit": "msec",
+        "value": 2898.69
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-A.perf",
+    "perf_sha256": "54119ebe00fe88abec38c8172ea79dadb5c33f0b4e5d6388bc274cff5f48c674",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 32,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267287.943024,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-A.stdout",
+    "stdout_sha256": "8af4d360bf2f3f16efde5704723b3a3be159a56a33c0ce0b8b313c83c892a8f1",
+    "triplet": 11,
+    "wrapper_elapsed_s": 2.9211362679488957
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013578,
+        "fields": [
+          1427902,
+          11834,
+          463510,
+          80434947,
+          164229,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82612754
+      },
+      "6": {
+        "busy": 2006413,
+        "fields": [
+          1542554,
+          12933,
+          435954,
+          80470645,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82617967
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499977"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.161921,
+      "query_ms": 2728.543164,
+      "query_ms_per_population": 90.9514388,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.033586
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013568,
+        "fields": [
+          1427896,
+          11834,
+          463506,
+          80434702,
+          164203,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82612473
+      },
+      "6": {
+        "busy": 2006128,
+        "fields": [
+          1542271,
+          12933,
+          435952,
+          80470645,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82617682
+      }
+    },
+    "before_freq": {
+      "18": "4505557",
+      "6": "4499982"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267293.714306,
+    "label": "unmodified-722ecfb",
+    "order": "CAB",
+    "perf": {
+      "context-switches": {
+        "raw": "41,,context-switches,2827046899,100.00,,",
+        "unit": "",
+        "value": 41
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2827046899,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12718490257,,cycles,2827046899,100.00,,",
+        "unit": "",
+        "value": 12718490257
+      },
+      "effective_frequency_hz": 4498855788.542827,
+      "instructions": {
+        "raw": "31791194991,,instructions,2827046899,100.00,,",
+        "unit": "",
+        "value": 31791194991
+      },
+      "task-clock": {
+        "raw": "2827.05,msec,task-clock,2827046899,100.00,,",
+        "unit": "msec",
+        "value": 2827.05
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-B.perf",
+    "perf_sha256": "73bacdae45f761a4dc6ef57be0b8ca8f16906223f56c0bbbec51545ef1153220",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 33,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267290.8650193,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-11-CAB-B.stdout",
+    "stdout_sha256": "9eb6de42cad6844bd677cdb7b47f00c61632275df2fe82dc0c0e024c488fa544",
+    "triplet": 11,
+    "wrapper_elapsed_s": 2.8492846599547192
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013580,
+        "fields": [
+          1427904,
+          11834,
+          463510,
+          80435227,
+          164229,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82613036
+      },
+      "6": {
+        "busy": 2006695,
+        "fields": [
+          1542835,
+          12933,
+          435955,
+          80470645,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82618249
+      }
+    },
+    "after_freq": {
+      "18": "4522354",
+      "6": "4499949"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.180742,
+      "query_ms": 2695.573428,
+      "query_ms_per_population": 89.8524476,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 93.805593
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013578,
+        "fields": [
+          1427902,
+          11834,
+          463510,
+          80434947,
+          164229,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82612754
+      },
+      "6": {
+        "busy": 2006413,
+        "fields": [
+          1542554,
+          12933,
+          435954,
+          80470645,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82617967
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499943"
+    },
+    "code": "C",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-candidate-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-C.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267296.536694,
+    "label": "candidate",
+    "order": "CBA",
+    "perf": {
+      "context-switches": {
+        "raw": "43,,context-switches,2798899451,100.00,,",
+        "unit": "",
+        "value": 43
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2798899451,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12597416390,,cycles,2798899451,100.00,,",
+        "unit": "",
+        "value": 12597416390
+      },
+      "effective_frequency_hz": 4500845471.435206,
+      "instructions": {
+        "raw": "33307140679,,instructions,2798899451,100.00,,",
+        "unit": "",
+        "value": 33307140679
+      },
+      "task-clock": {
+        "raw": "2798.90,msec,task-clock,2798899451,100.00,,",
+        "unit": "msec",
+        "value": 2798.9
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-C.perf",
+    "perf_sha256": "cc68fe05894039219767cc6b65e05faf1a33ee82a70a4030a26a42b77acde2fa",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-C.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 34,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267293.7151139,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-C.stdout",
+    "stdout_sha256": "ca53ed89f1609fd73f3aae70a8dd86f3a78b007cd6307859c283beaa8c8acfa0",
+    "triplet": 12,
+    "wrapper_elapsed_s": 2.821578229079023
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013581,
+        "fields": [
+          1427904,
+          11834,
+          463511,
+          80435504,
+          164230,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82613315
+      },
+      "6": {
+        "busy": 2006974,
+        "fields": [
+          1543112,
+          12933,
+          435957,
+          80470645,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82618528
+      }
+    },
+    "after_freq": {
+      "18": "1731113",
+      "6": "4499953"
+    },
+    "app": {
+      "final_hash": 15320891441025449163,
+      "open_ms": 7.174592,
+      "query_ms": 2672.971295,
+      "query_ms_per_population": 89.0990431667,
+      "warm_hash": 15320891441025449163,
+      "warm_ms": 89.463164
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013580,
+        "fields": [
+          1427904,
+          11834,
+          463510,
+          80435227,
+          164229,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82613036
+      },
+      "6": {
+        "busy": 2006695,
+        "fields": [
+          1542835,
+          12933,
+          435955,
+          80470645,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82618249
+      }
+    },
+    "before_freq": {
+      "18": "4522354",
+      "6": "4499949"
+    },
+    "code": "B",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/current-baseline-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-B.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267299.331688,
+    "label": "unmodified-722ecfb",
+    "order": "CBA",
+    "perf": {
+      "context-switches": {
+        "raw": "44,,context-switches,2771859564,100.00,,",
+        "unit": "",
+        "value": 44
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2771859564,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "12473514929,,cycles,2771859564,100.00,,",
+        "unit": "",
+        "value": 12473514929
+      },
+      "effective_frequency_hz": 4500052285.829731,
+      "instructions": {
+        "raw": "31791569540,,instructions,2771859564,100.00,,",
+        "unit": "",
+        "value": 31791569540
+      },
+      "task-clock": {
+        "raw": "2771.86,msec,task-clock,2771859564,100.00,,",
+        "unit": "msec",
+        "value": 2771.86
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-B.perf",
+    "perf_sha256": "e9766f90d47d3f88c5247e94b51f80ebfafaa3ccf76f6833f00b04890c8b1295",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-B.results.tsv",
+    "result_sha256": "48695f1a09f283e9ec8991cc4d04e94f0e8735a14cccc6b0df90ef8c780c370e",
+    "returncode": 0,
+    "run_index": 35,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267296.5375793,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-B.stdout",
+    "stdout_sha256": "e3b574583e8d1b8d130cd2bec91bec9525d4ffb6fedc5a568bdd45d2b3c550dd",
+    "triplet": 12,
+    "wrapper_elapsed_s": 2.7941073089605197
+  },
+  {
+    "after_cpu_stat": {
+      "18": {
+        "busy": 2013611,
+        "fields": [
+          1427926,
+          11834,
+          463517,
+          80435774,
+          164230,
+          0,
+          110334,
+          0,
+          0,
+          0
+        ],
+        "total": 82613615
+      },
+      "6": {
+        "busy": 2007275,
+        "fields": [
+          1543412,
+          12933,
+          435958,
+          80470645,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82618829
+      }
+    },
+    "after_freq": {
+      "18": "4499003",
+      "6": "4499990"
+    },
+    "app": {
+      "final_hash": 14674142271753866389,
+      "open_ms": 9.022297,
+      "query_ms": 2888.329141,
+      "query_ms_per_population": 96.2776380333,
+      "warm_hash": 14674142271753866389,
+      "warm_ms": 92.980196
+    },
+    "before_cpu_stat": {
+      "18": {
+        "busy": 2013581,
+        "fields": [
+          1427904,
+          11834,
+          463511,
+          80435505,
+          164230,
+          0,
+          110332,
+          0,
+          0,
+          0
+        ],
+        "total": 82613316
+      },
+      "6": {
+        "busy": 2006974,
+        "fields": [
+          1543112,
+          12933,
+          435957,
+          80470645,
+          140909,
+          0,
+          14972,
+          0,
+          0,
+          0
+        ],
+        "total": 82618528
+      }
+    },
+    "before_freq": {
+      "18": "1731113",
+      "6": "4499953"
+    },
+    "code": "A",
+    "command": [
+      "taskset",
+      "-c",
+      "6",
+      "perf",
+      "stat",
+      "-x,",
+      "-e",
+      "task-clock,cycles,instructions,context-switches,cpu-migrations",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/original-repeat",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/data/federalist",
+      "1",
+      "ab",
+      "memory",
+      "1",
+      "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-A.results.tsv",
+      "30"
+    ],
+    "cpu": 6,
+    "ended_unix": 1789267302.347905,
+    "label": "audited-original-c",
+    "order": "CBA",
+    "perf": {
+      "83 hash tables": {
+        "raw": "Building in-memory QALSH index with approximation ratio 2, bucket width 2.828427, 83 hash tables, collision threshold 45.",
+        "unit": "bucket width 2.828427",
+        "value": "Building in-memory QALSH index with approximation ratio 2"
+      },
+      "context-switches": {
+        "raw": "42,,context-switches,2992648881,100.00,,",
+        "unit": "",
+        "value": 42
+      },
+      "cpu-migrations": {
+        "raw": "0,,cpu-migrations,2992648881,100.00,,",
+        "unit": "",
+        "value": 0
+      },
+      "cycles": {
+        "raw": "13427084113,,cycles,2992648881,100.00,,",
+        "unit": "",
+        "value": 13427084113
+      },
+      "effective_frequency_hz": 4486687087.698194,
+      "instructions": {
+        "raw": "37471268195,,instructions,2992648881,100.00,,",
+        "unit": "",
+        "value": 37471268195
+      },
+      "task-clock": {
+        "raw": "2992.65,msec,task-clock,2992648881,100.00,,",
+        "unit": "msec",
+        "value": 2992.65
+      }
+    },
+    "perf_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-A.perf",
+    "perf_sha256": "7ecd232ee26ce0bfd94c0385d9563953251ca7eaa6a122e1db8ea88cb313c849",
+    "result_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-A.results.tsv",
+    "result_sha256": "dfeb3c2c217c9974f0624fede9f762624cefb6822b28280a3d750adc939302a4",
+    "returncode": 0,
+    "run_index": 36,
+    "siblings": [
+      6,
+      18
+    ],
+    "started_unix": 1789267299.332569,
+    "stdout_file": "/home/jonathanhu237/code/qalsh-window-simd/stageb/raw-stageb-cleanup-20260913/triplet-12-CBA-A.stdout",
+    "stdout_sha256": "0baf5c3ce1bcc7cfe5c1cc0cbe18af6e4e89e834aedc4531f86489d754ea9e34",
+    "triplet": 12,
+    "wrapper_elapsed_s": 3.0153339309617877
+  }
+]

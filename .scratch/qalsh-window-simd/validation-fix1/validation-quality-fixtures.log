@@ -1,0 +1,1 @@
+quality comparator fixtures: positive tie, recall loss, non-exact regression, missing/duplicate/out-of-range/non-finite IDs, wrong distance, and same-file rejection passed

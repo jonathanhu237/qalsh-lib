@@ -1,0 +1,24 @@
+{
+  "comparison": "ID/count/distance only; distance parsed and quantized to float32",
+  "runs": [
+    {
+      "variant": "original-C",
+      "baseline": "/Users/jonathanhu237/code/qalsh-lib/.scratch/qalsh-bottleneck-diagnosis/evidence/0-original.tsv",
+      "instrumented": "/Users/jonathanhu237/code/qalsh-lib/.scratch/qalsh-bottleneck-diagnosis/work-probes/runs-v1/original.tsv",
+      "baseline_queries": 1880,
+      "instrumented_queries": 1880,
+      "same_id_count_distance": true,
+      "mismatches": []
+    },
+    {
+      "variant": "722ecfb-library-C-consumer",
+      "baseline": "/Users/jonathanhu237/code/qalsh-lib/.scratch/qalsh-bottleneck-diagnosis/evidence/0-head.tsv",
+      "instrumented": "/Users/jonathanhu237/code/qalsh-lib/.scratch/qalsh-bottleneck-diagnosis/work-probes/runs-v1/current.tsv",
+      "baseline_queries": 1880,
+      "instrumented_queries": 1880,
+      "same_id_count_distance": true,
+      "mismatches": []
+    }
+  ],
+  "all_pass": true
+}

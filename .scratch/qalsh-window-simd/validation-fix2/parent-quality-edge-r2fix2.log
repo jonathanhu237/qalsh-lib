@@ -1,0 +1,16 @@
+[
+  {
+    "case": "zero_to_nonzero",
+    "expected_quality_rejection": true,
+    "exit_code": 5,
+    "stdout": "query 0 status fail baseline_id 0 candidate_id 1 best_distance 0 best_error 0 baseline_distance 0 baseline_error 0 candidate_distance 4.99999985859034268287e-10 candidate_error 1.35525267727771612486e-28 baseline_exact 1 candidate_exact 0 baseline_ratio 1 candidate_ratio inf baseline_reported_error 0 candidate_reported_error 0 failure recall_loss,selected_distance_regression,approximation_regression\nsummary queries 1 original_hits 1 candidate_hits 0 both_hits 0 original_only 1 candidate_only 0 quality_failures 1 max_original_ratio 1 max_candidate_ratio inf max_original_reported_error 0 max_candidate_reported_error 0\n",
+    "stderr": ""
+  },
+  {
+    "case": "wrong_zero_distance_encoding",
+    "expected_quality_rejection": true,
+    "exit_code": 5,
+    "stdout": "query 0 status fail baseline_id 0 candidate_id 0 best_distance 0 best_error 0 baseline_distance 0 baseline_error 0 candidate_distance 0 candidate_error 0 baseline_exact 1 candidate_exact 1 baseline_ratio 1 candidate_ratio 1 baseline_reported_error 0 candidate_reported_error 9.00000013643875718117e-05 failure candidate_reported_distance_mismatch\nsummary queries 1 original_hits 1 candidate_hits 1 both_hits 1 original_only 0 candidate_only 0 quality_failures 1 max_original_ratio 1 max_candidate_ratio 1 max_original_reported_error 0 max_candidate_reported_error 9.00000013643875718117e-05\n",
+    "stderr": ""
+  }
+]

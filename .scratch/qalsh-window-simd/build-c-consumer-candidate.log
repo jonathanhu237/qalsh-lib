@@ -1,0 +1,138 @@
+[1/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/command.cc for CXX dependencies
+[2/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/ann_searcher.cc for CXX dependencies
+[3/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/dataset.cc for CXX dependencies
+[4/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/config.cc for CXX dependencies
+[5/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/dataset_cuda_stub.cc for CXX dependencies
+[6/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/disk_qalsh_index.cc for CXX dependencies
+[7/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/global.cc for CXX dependencies
+[8/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/estimator.cc for CXX dependencies
+[9/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/point_set.cc for CXX dependencies
+[10/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/main.cc for CXX dependencies
+[11/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/weights_generator.cc for CXX dependencies
+[12/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/utils.cc for CXX dependencies
+[13/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/tests/log_smoke_test.cc for CXX dependencies
+[14/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/tests/ann_searcher_clone_test.cc for CXX dependencies
+[15/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/ann_searcher.cc for CXX dependencies
+[16/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/config.cc for CXX dependencies
+[17/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/global.cc for CXX dependencies
+[18/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/point_set.cc for CXX dependencies
+[19/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/disk_qalsh_index.cc for CXX dependencies
+[20/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/tests/disk_linear_scan_test.cc for CXX dependencies
+[21/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/utils.cc for CXX dependencies
+[22/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/ann_searcher.cc for CXX dependencies
+[23/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/config.cc for CXX dependencies
+[24/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/disk_qalsh_index.cc for CXX dependencies
+[25/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/global.cc for CXX dependencies
+[26/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/estimator.cc for CXX dependencies
+[27/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/point_set.cc for CXX dependencies
+[28/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/utils.cc for CXX dependencies
+[29/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/weights_generator.cc for CXX dependencies
+[30/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/tests/quadtree_weights_generator_test.cc for CXX dependencies
+[31/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/ann_searcher.cc for CXX dependencies
+[32/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/config.cc for CXX dependencies
+[33/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/global.cc for CXX dependencies
+[34/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/point_set.cc for CXX dependencies
+[35/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/disk_qalsh_index.cc for CXX dependencies
+[36/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/weights_generator.cc for CXX dependencies
+[37/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/utils.cc for CXX dependencies
+[38/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/tests/log_error_test.cc for CXX dependencies
+[39/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/tests/dataset_core_test.cc for CXX dependencies
+[40/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/config.cc for CXX dependencies
+[41/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/dataset.cc for CXX dependencies
+[42/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/dataset_cuda_stub.cc for CXX dependencies
+[43/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/global.cc for CXX dependencies
+[44/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/point_set.cc for CXX dependencies
+[45/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/tests/dataset_loader_test.cc for CXX dependencies
+[46/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/utils.cc for CXX dependencies
+[47/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/config.cc for CXX dependencies
+[48/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/dataset.cc for CXX dependencies
+[49/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/dataset_cuda_stub.cc for CXX dependencies
+[50/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/global.cc for CXX dependencies
+[51/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/point_set.cc for CXX dependencies
+[52/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/tests/dataset_bad_bmp_test.cc for CXX dependencies
+[53/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/utils.cc for CXX dependencies
+[54/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/config.cc for CXX dependencies
+[55/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/dataset.cc for CXX dependencies
+[56/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/global.cc for CXX dependencies
+[57/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/dataset_cuda_stub.cc for CXX dependencies
+[58/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/point_set.cc for CXX dependencies
+[59/138] Generating CXX dyndep file CMakeFiles/qalsh4c.dir/CXX.dd
+[60/138] Generating CXX dyndep file CMakeFiles/log_smoke_test.dir/CXX.dd
+[61/138] Generating CXX dyndep file CMakeFiles/ann_searcher_clone_test.dir/CXX.dd
+[62/138] Generating CXX dyndep file CMakeFiles/disk_linear_scan_test.dir/CXX.dd
+[63/138] Generating CXX dyndep file CMakeFiles/quadtree_weights_generator_test.dir/CXX.dd
+[64/138] Generating CXX dyndep file CMakeFiles/log_error_test.dir/CXX.dd
+[65/138] Generating CXX dyndep file CMakeFiles/dataset_core_test.dir/CXX.dd
+[66/138] Generating CXX dyndep file CMakeFiles/dataset_loader_test.dir/CXX.dd
+[67/138] Scanning /home/jonathanhu237/code/qalsh-window-simd/stageb/current-src/src/utils.cc for CXX dependencies
+[68/138] Generating CXX dyndep file CMakeFiles/dataset_bad_bmp_test.dir/CXX.dd
+[69/138] Building CXX object CMakeFiles/qalsh4c.dir/src/ann_searcher.cc.o
+[70/138] Building CXX object qalsh-lib/CMakeFiles/qalsh.dir/src/qalsh.cc.o
+[71/138] Building CXX object CMakeFiles/qalsh4c.dir/src/command.cc.o
+[72/138] Building CXX object CMakeFiles/qalsh4c.dir/src/config.cc.o
+[73/138] Building CXX object CMakeFiles/qalsh4c.dir/src/dataset.cc.o
+[74/138] Building CXX object CMakeFiles/qalsh4c.dir/src/dataset_cuda_stub.cc.o
+[75/138] Building CXX object CMakeFiles/qalsh4c.dir/src/disk_qalsh_index.cc.o
+[76/138] Building CXX object CMakeFiles/qalsh4c.dir/src/global.cc.o
+[77/138] Building CXX object CMakeFiles/qalsh4c.dir/src/estimator.cc.o
+[78/138] Building CXX object CMakeFiles/qalsh4c.dir/src/point_set.cc.o
+[79/138] Building CXX object CMakeFiles/qalsh4c.dir/src/utils.cc.o
+[80/138] Building CXX object CMakeFiles/qalsh4c.dir/src/main.cc.o
+[81/138] Building CXX object CMakeFiles/qalsh4c.dir/src/weights_generator.cc.o
+[82/138] Building CXX object CMakeFiles/log_smoke_test.dir/tests/log_smoke_test.cc.o
+[83/138] Building CXX object CMakeFiles/ann_searcher_clone_test.dir/tests/ann_searcher_clone_test.cc.o
+[84/138] Building CXX object CMakeFiles/ann_searcher_clone_test.dir/src/ann_searcher.cc.o
+[85/138] Building CXX object CMakeFiles/ann_searcher_clone_test.dir/src/config.cc.o
+[86/138] Building CXX object CMakeFiles/ann_searcher_clone_test.dir/src/global.cc.o
+[87/138] Building CXX object CMakeFiles/ann_searcher_clone_test.dir/src/point_set.cc.o
+[88/138] Building CXX object CMakeFiles/ann_searcher_clone_test.dir/src/disk_qalsh_index.cc.o
+[89/138] Building CXX object CMakeFiles/disk_linear_scan_test.dir/tests/disk_linear_scan_test.cc.o
+[90/138] Building CXX object CMakeFiles/ann_searcher_clone_test.dir/src/utils.cc.o
+[91/138] Building CXX object CMakeFiles/disk_linear_scan_test.dir/src/ann_searcher.cc.o
+[92/138] Building CXX object CMakeFiles/disk_linear_scan_test.dir/src/config.cc.o
+[93/138] Building CXX object CMakeFiles/disk_linear_scan_test.dir/src/disk_qalsh_index.cc.o
+[94/138] Building CXX object CMakeFiles/disk_linear_scan_test.dir/src/global.cc.o
+[95/138] Building CXX object CMakeFiles/disk_linear_scan_test.dir/src/estimator.cc.o
+[96/138] Building CXX object CMakeFiles/disk_linear_scan_test.dir/src/point_set.cc.o
+[97/138] Building CXX object CMakeFiles/disk_linear_scan_test.dir/src/utils.cc.o
+[98/138] Building CXX object CMakeFiles/quadtree_weights_generator_test.dir/tests/quadtree_weights_generator_test.cc.o
+[99/138] Building CXX object CMakeFiles/disk_linear_scan_test.dir/src/weights_generator.cc.o
+[100/138] Building CXX object CMakeFiles/quadtree_weights_generator_test.dir/src/ann_searcher.cc.o
+[101/138] Building CXX object CMakeFiles/quadtree_weights_generator_test.dir/src/config.cc.o
+[102/138] Building CXX object CMakeFiles/quadtree_weights_generator_test.dir/src/global.cc.o
+[103/138] Building CXX object CMakeFiles/quadtree_weights_generator_test.dir/src/point_set.cc.o
+[104/138] Building CXX object CMakeFiles/quadtree_weights_generator_test.dir/src/disk_qalsh_index.cc.o
+[105/138] Building CXX object CMakeFiles/quadtree_weights_generator_test.dir/src/utils.cc.o
+[106/138] Building CXX object CMakeFiles/quadtree_weights_generator_test.dir/src/weights_generator.cc.o
+[107/138] Building CXX object CMakeFiles/log_error_test.dir/tests/log_error_test.cc.o
+[108/138] Building CXX object CMakeFiles/dataset_core_test.dir/tests/dataset_core_test.cc.o
+[109/138] Building CXX object CMakeFiles/dataset_core_test.dir/src/config.cc.o
+[110/138] Building CXX object CMakeFiles/dataset_core_test.dir/src/dataset_cuda_stub.cc.o
+[111/138] Building CXX object CMakeFiles/dataset_core_test.dir/src/global.cc.o
+[112/138] Building CXX object CMakeFiles/dataset_core_test.dir/src/dataset.cc.o
+[113/138] Building CXX object CMakeFiles/dataset_core_test.dir/src/point_set.cc.o
+[114/138] Building CXX object CMakeFiles/dataset_loader_test.dir/tests/dataset_loader_test.cc.o
+[115/138] Building CXX object CMakeFiles/dataset_core_test.dir/src/utils.cc.o
+[116/138] Building CXX object CMakeFiles/dataset_loader_test.dir/src/config.cc.o
+[117/138] Building CXX object CMakeFiles/dataset_loader_test.dir/src/dataset_cuda_stub.cc.o
+[118/138] Building CXX object CMakeFiles/dataset_loader_test.dir/src/global.cc.o
+[119/138] Building CXX object CMakeFiles/dataset_loader_test.dir/src/point_set.cc.o
+[120/138] Building CXX object CMakeFiles/dataset_loader_test.dir/src/dataset.cc.o
+[121/138] Building CXX object CMakeFiles/dataset_bad_bmp_test.dir/tests/dataset_bad_bmp_test.cc.o
+[122/138] Building CXX object CMakeFiles/dataset_loader_test.dir/src/utils.cc.o
+[123/138] Building CXX object CMakeFiles/dataset_bad_bmp_test.dir/src/config.cc.o
+[124/138] Building CXX object CMakeFiles/dataset_bad_bmp_test.dir/src/dataset_cuda_stub.cc.o
+[125/138] Building CXX object CMakeFiles/dataset_bad_bmp_test.dir/src/global.cc.o
+[126/138] Building CXX object CMakeFiles/dataset_bad_bmp_test.dir/src/point_set.cc.o
+[127/138] Building CXX object CMakeFiles/dataset_bad_bmp_test.dir/src/dataset.cc.o
+[128/138] Linking CXX static library qalsh-lib/libqalsh.a
+[129/138] Linking CXX executable qalsh4c
+[130/138] Linking CXX executable log_smoke_test
+[131/138] Linking CXX executable ann_searcher_clone_test
+[132/138] Linking CXX executable disk_linear_scan_test
+[133/138] Linking CXX executable quadtree_weights_generator_test
+[134/138] Linking CXX executable log_error_test
+[135/138] Linking CXX executable dataset_core_test
+[136/138] Linking CXX executable dataset_loader_test
+[137/138] Building CXX object CMakeFiles/dataset_bad_bmp_test.dir/src/utils.cc.o
+[138/138] Linking CXX executable dataset_bad_bmp_test

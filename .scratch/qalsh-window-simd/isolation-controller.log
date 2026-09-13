@@ -1,0 +1,111 @@
++ systemd-run --unit=qalshsimdiso20260913arestore --on-active=10m --timer-property=AccuracySec=1s /usr/bin/python3 /run/qalshsimdiso20260913a/isolate_stage_b.py restore
+Running timer as unit: qalshsimdiso20260913arestore.timer
+Will run service as unit: qalshsimdiso20260913arestore.service
++ systemctl is-active qalshsimdiso20260913arestore.timer
+active
++ systemctl set-property --runtime system.slice AllowedCPUs=0-5,7-17,19-23
++ systemctl set-property --runtime user.slice AllowedCPUs=0-5,7-17,19-23
+ISOLATION VERIFIED {"system.slice": {"ControlGroup": "/system.slice", "EffectiveCPUs": "0-5 7-17 19-23", "AllowedCPUs": "0-5 7-17 19-23"}, "user.slice": {"ControlGroup": "/user.slice", "EffectiveCPUs": "0-5 7-17 19-23", "AllowedCPUs": "0-5 7-17 19-23"}}
++ systemd-run --unit=qalshsimdiso20260913a --slice=qalshsimdiso20260913a.slice --uid=jonathanhu237 --gid=jonathanhu237 --wait --pipe --collect --property=AllowedCPUs=6,18 --property=RuntimeMaxSec=480 --property=TimeoutStopSec=5 --property=KillMode=control-group --property=WorkingDirectory=/home/jonathanhu237/code/qalsh-window-simd/stageb --setenv=STAGEB_CPU=6 --setenv=STAGEB_RUN_TAG=stageb-isolated-20260913 --setenv=STAGEB_ADJUSTMENT_REASON=User-authorized runtime cgroup isolation --setenv=OMP_NUM_THREADS=1 --setenv=OMP_PROC_BIND=true --setenv=OMP_PLACES={6} /usr/bin/python3 /home/jonathanhu237/code/qalsh-window-continuation/isolated_benchmark_entry.py
+Running as unit: qalshsimdiso20260913a.service; invocation ID: f5a92d78fb4748ffbb0d54dfcaa68986
+BENCHMARK ISOLATION CONTEXT {"cgroup": "/qalshsimdiso20260913a.slice/qalshsimdiso20260913a.service", "effective_cpus": "6,18", "scheduler_affinity": [6, 18], "other_slices": {"system.slice": "0-5,7-17,19-23", "user.slice": "0-5,7-17,19-23"}, "before_hashes": {"original-repeat": "3577819b3cc1e29465266c731a6e9b6af43d343d879c2853c0df3c71522b5c6c", "current-baseline-repeat": "633282803f7547e79a7870c8cf37d4c56e5b266ca2dc5d0a3f34dd9350cd6517", "current-candidate-repeat": "b423768b8a510c713e1a2c67299a569fdf21a037dc5d5880cdd327851c8ff63b", "stage_b_repeat.cc": "1b894357c6fa9530f6c5845d1359dae8b2dde98201c317ecf0e10d54640ed2ef", "data/federalist/A.bin": "5bb17396ec0d8b77741f059cb484901a46ae62acee3437afb1d72ae05be07efd", "data/federalist/B.bin": "4ab3e20e57692ef81665c6ac97ad32a41d11b4b7bf99fb843c779e9e720b3e95", "data/federalist/metadata.json": "67f67afba504a7a3c2d3ec05274cc50a3bedb0b245fd2786ae7c16d211c588a5"}, "time_unix": 1789268584.7269564, "environment": {"OMP_NUM_THREADS": "1", "OMP_PROC_BIND": "true", "OMP_PLACES": "{6}", "STAGEB_CPU": "6", "STAGEB_RUN_TAG": "stageb-isolated-20260913"}}
+running triplet=1 order=ABC variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.08795, "query_ms": 2784.518198, "query_ms_per_population": 92.8172732667, "warm_hash": 14674142271753866389, "warm_ms": 92.901352}
+running triplet=1 order=ABC variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.195275, "query_ms": 2682.175797, "query_ms_per_population": 89.4058599, "warm_hash": 15320891441025449163, "warm_ms": 89.267348}
+running triplet=1 order=ABC variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.268574, "query_ms": 2674.653273, "query_ms_per_population": 89.1551091, "warm_hash": 15320891441025449163, "warm_ms": 89.265839}
+running triplet=2 order=ACB variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.949631, "query_ms": 2778.305181, "query_ms_per_population": 92.6101727, "warm_hash": 14674142271753866389, "warm_ms": 92.682742}
+running triplet=2 order=ACB variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.305374, "query_ms": 2667.130718, "query_ms_per_population": 88.9043572667, "warm_hash": 15320891441025449163, "warm_ms": 89.11105}
+running triplet=2 order=ACB variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.226154, "query_ms": 2678.986813, "query_ms_per_population": 89.2995604333, "warm_hash": 15320891441025449163, "warm_ms": 88.85805}
+running triplet=3 order=BAC variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.160265, "query_ms": 2643.952748, "query_ms_per_population": 88.1317582667, "warm_hash": 15320891441025449163, "warm_ms": 88.253091}
+running triplet=3 order=BAC variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.999201, "query_ms": 2787.096852, "query_ms_per_population": 92.9032284, "warm_hash": 14674142271753866389, "warm_ms": 92.820132}
+running triplet=3 order=BAC variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.266364, "query_ms": 2680.78304, "query_ms_per_population": 89.3594346667, "warm_hash": 15320891441025449163, "warm_ms": 89.469529}
+running triplet=4 order=BCA variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.187825, "query_ms": 2679.888611, "query_ms_per_population": 89.3296203667, "warm_hash": 15320891441025449163, "warm_ms": 89.19768}
+running triplet=4 order=BCA variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.214604, "query_ms": 2697.928603, "query_ms_per_population": 89.9309534333, "warm_hash": 15320891441025449163, "warm_ms": 90.132748}
+running triplet=4 order=BCA variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.986851, "query_ms": 2789.932857, "query_ms_per_population": 92.9977619, "warm_hash": 14674142271753866389, "warm_ms": 92.951231}
+running triplet=5 order=CAB variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.392694, "query_ms": 2651.006763, "query_ms_per_population": 88.3668921, "warm_hash": 15320891441025449163, "warm_ms": 88.464591}
+running triplet=5 order=CAB variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.975891, "query_ms": 2787.94733, "query_ms_per_population": 92.9315776667, "warm_hash": 14674142271753866389, "warm_ms": 92.898262}
+running triplet=5 order=CAB variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.269695, "query_ms": 2672.409747, "query_ms_per_population": 89.0803249, "warm_hash": 15320891441025449163, "warm_ms": 89.622128}
+running triplet=6 order=CBA variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.193745, "query_ms": 2690.887448, "query_ms_per_population": 89.6962482667, "warm_hash": 15320891441025449163, "warm_ms": 89.730508}
+running triplet=6 order=CBA variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.358575, "query_ms": 2794.100457, "query_ms_per_population": 93.1366819, "warm_hash": 15320891441025449163, "warm_ms": 88.98049}
+running triplet=6 order=CBA variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.986291, "query_ms": 2776.667754, "query_ms_per_population": 92.5555918, "warm_hash": 14674142271753866389, "warm_ms": 92.614912}
+running triplet=7 order=ABC variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.99356, "query_ms": 2791.514082, "query_ms_per_population": 93.0504694, "warm_hash": 14674142271753866389, "warm_ms": 92.953322}
+running triplet=7 order=ABC variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.393115, "query_ms": 2670.136712, "query_ms_per_population": 89.0045570667, "warm_hash": 15320891441025449163, "warm_ms": 89.337129}
+running triplet=7 order=ABC variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.207065, "query_ms": 2684.376482, "query_ms_per_population": 89.4792160667, "warm_hash": 15320891441025449163, "warm_ms": 89.553238}
+running triplet=8 order=ACB variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.048651, "query_ms": 2788.13031, "query_ms_per_population": 92.937677, "warm_hash": 14674142271753866389, "warm_ms": 93.000351}
+running triplet=8 order=ACB variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.209425, "query_ms": 2683.407324, "query_ms_per_population": 89.4469108, "warm_hash": 15320891441025449163, "warm_ms": 89.647028}
+running triplet=8 order=ACB variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.231375, "query_ms": 2673.700064, "query_ms_per_population": 89.1233354667, "warm_hash": 15320891441025449163, "warm_ms": 88.97101}
+running triplet=9 order=BAC variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.254894, "query_ms": 2672.154508, "query_ms_per_population": 89.0718169333, "warm_hash": 15320891441025449163, "warm_ms": 89.06378}
+running triplet=9 order=BAC variant=A
+{"final_hash": 14674142271753866389, "open_ms": 8.99955, "query_ms": 2780.126477, "query_ms_per_population": 92.6708825667, "warm_hash": 14674142271753866389, "warm_ms": 92.749482}
+running triplet=9 order=BAC variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.246635, "query_ms": 2669.514393, "query_ms_per_population": 88.9838131, "warm_hash": 15320891441025449163, "warm_ms": 88.7312}
+running triplet=10 order=BCA variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.161195, "query_ms": 2655.559603, "query_ms_per_population": 88.5186534333, "warm_hash": 15320891441025449163, "warm_ms": 88.237391}
+running triplet=10 order=BCA variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.167915, "query_ms": 2667.048589, "query_ms_per_population": 88.9016196333, "warm_hash": 15320891441025449163, "warm_ms": 88.985849}
+running triplet=10 order=BCA variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.066521, "query_ms": 2785.776354, "query_ms_per_population": 92.8592118, "warm_hash": 14674142271753866389, "warm_ms": 92.698052}
+running triplet=11 order=CAB variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.256004, "query_ms": 2685.710219, "query_ms_per_population": 89.5236739667, "warm_hash": 15320891441025449163, "warm_ms": 89.270669}
+running triplet=11 order=CAB variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.13834, "query_ms": 2788.24153, "query_ms_per_population": 92.9413843333, "warm_hash": 14674142271753866389, "warm_ms": 93.058621}
+running triplet=11 order=CAB variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.440424, "query_ms": 2689.913449, "query_ms_per_population": 89.6637816333, "warm_hash": 15320891441025449163, "warm_ms": 89.611939}
+running triplet=12 order=CBA variant=C
+{"final_hash": 15320891441025449163, "open_ms": 7.214175, "query_ms": 2672.736817, "query_ms_per_population": 89.0912272333, "warm_hash": 15320891441025449163, "warm_ms": 89.185029}
+running triplet=12 order=CBA variant=B
+{"final_hash": 15320891441025449163, "open_ms": 7.326615, "query_ms": 2670.524132, "query_ms_per_population": 89.0174710667, "warm_hash": 15320891441025449163, "warm_ms": 88.6018}
+running triplet=12 order=CBA variant=A
+{"final_hash": 14674142271753866389, "open_ms": 9.03783, "query_ms": 2814.186644, "query_ms_per_population": 93.8062214667, "warm_hash": 14674142271753866389, "warm_ms": 93.95087}
+          Finished with result: success
+Main processes terminated with: code=exited, status=0/SUCCESS
+               Service runtime: 1min 42.318s
+             CPU time consumed: 1min 42.258s
+                   Memory peak: 22.6M (swap: 0B)
++ systemctl stop qalshsimdiso20260913a.service
+Failed to stop qalshsimdiso20260913a.service: Unit qalshsimdiso20260913a.service not loaded.
++ systemctl set-property --runtime system.slice AllowedCPUs=
++ systemctl set-property --runtime user.slice AllowedCPUs=
++ systemctl stop qalshsimdiso20260913a.slice
+{
+  "restored": true,
+  "after": {
+    "system.slice": {
+      "ControlGroup": "/system.slice",
+      "EffectiveCPUs": "0-23",
+      "AllowedCPUs": ""
+    },
+    "user.slice": {
+      "ControlGroup": "/user.slice",
+      "EffectiveCPUs": "0-23",
+      "AllowedCPUs": ""
+    }
+  },
+  "errors": []
+}
++ systemctl stop qalshsimdiso20260913arestore.timer
+Independent watchdog cancelled after verified restoration.

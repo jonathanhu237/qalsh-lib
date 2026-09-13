@@ -1,0 +1,3 @@
+label audited-original-c rows 1880 malformed 0 missing 0 invalid 0 exact_tie_hits 1025 close_distance_hits 1025 reported_distance_mismatches 0 max_ratio 1.9410327242789287 max_reported_abs_error 7.62939453125e-06
+label unmodified-722ecfb rows 1880 malformed 0 missing 0 invalid 0 exact_tie_hits 1025 close_distance_hits 1025 reported_distance_mismatches 0 max_ratio 1.9410327242789287 max_reported_abs_error 0
+label candidate rows 1880 malformed 0 missing 0 invalid 0 exact_tie_hits 1025 close_distance_hits 1025 reported_distance_mismatches 0 max_ratio 1.9410327242789287 max_reported_abs_error 0

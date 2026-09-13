@@ -1,0 +1,215 @@
+2026-09-13T00:53:52+00:00
+centaurus
+Linux centaurus 7.0.0-30-generic #30-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 31 18:22:54 UTC 2026 x86_64 GNU/Linux
+-- lscpu --
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           48 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  24
+On-line CPU(s) list:                     0-23
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD Ryzen 9 5900X 12-Core Processor
+CPU family:                              25
+Model:                                   33
+Thread(s) per core:                      2
+Core(s) per socket:                      12
+Socket(s):                               1
+Stepping:                                0
+Frequency boost:                         enabled
+CPU(s) scaling MHz:                      76%
+CPU max MHz:                             4954.5649
+CPU min MHz:                             567.0890
+BogoMIPS:                                7399.96
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm debug_swap
+Virtualization:                          AMD-V
+L1d cache:                               384 KiB (12 instances)
+L1i cache:                               384 KiB (12 instances)
+L2 cache:                                6 MiB (12 instances)
+L3 cache:                                64 MiB (2 instances)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-23
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Mitigation; Safe RET
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Mitigation; Clear CPU buffers
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+-- governor/frequency --
+      1 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu8/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu9/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu10/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu11/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu12/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu13/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu14/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu15/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu16/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu17/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu18/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu19/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu20/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu21/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu22/cpufreq/scaling_governor powersave
+      1 /sys/devices/system/cpu/cpu23/cpufreq/scaling_governor powersave
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq 3784318
+/sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq 3818475
+/sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq 3812871
+/sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq 4774990
+/sys/devices/system/cpu/cpu4/cpufreq/scaling_cur_freq 3829990
+/sys/devices/system/cpu/cpu5/cpufreq/scaling_cur_freq 1731113
+/sys/devices/system/cpu/cpu6/cpufreq/scaling_cur_freq 3414810
+/sys/devices/system/cpu/cpu7/cpufreq/scaling_cur_freq 3490109
+/sys/devices/system/cpu/cpu8/cpufreq/scaling_cur_freq 3443732
+/sys/devices/system/cpu/cpu9/cpufreq/scaling_cur_freq 3676848
+/sys/devices/system/cpu/cpu10/cpufreq/scaling_cur_freq 1731113
+/sys/devices/system/cpu/cpu11/cpufreq/scaling_cur_freq 1731113
+/sys/devices/system/cpu/cpu12/cpufreq/scaling_cur_freq 3842957
+/sys/devices/system/cpu/cpu13/cpufreq/scaling_cur_freq 4748773
+/sys/devices/system/cpu/cpu14/cpufreq/scaling_cur_freq 3796075
+/sys/devices/system/cpu/cpu15/cpufreq/scaling_cur_freq 1731113
+/sys/devices/system/cpu/cpu16/cpufreq/scaling_cur_freq 3836102
+/sys/devices/system/cpu/cpu17/cpufreq/scaling_cur_freq 3807901
+/sys/devices/system/cpu/cpu18/cpufreq/scaling_cur_freq 1731113
+/sys/devices/system/cpu/cpu19/cpufreq/scaling_cur_freq 3396197
+/sys/devices/system/cpu/cpu20/cpufreq/scaling_cur_freq 4248595
+/sys/devices/system/cpu/cpu21/cpufreq/scaling_cur_freq 3398320
+/sys/devices/system/cpu/cpu22/cpufreq/scaling_cur_freq 3400663
+/sys/devices/system/cpu/cpu23/cpufreq/scaling_cur_freq 3507573
+-- sibling map --
+/sys/devices/system/cpu/cpu0/topology/thread_siblings_list=0,12
+/sys/devices/system/cpu/cpu1/topology/thread_siblings_list=1,13
+/sys/devices/system/cpu/cpu2/topology/thread_siblings_list=2,14
+/sys/devices/system/cpu/cpu3/topology/thread_siblings_list=3,15
+/sys/devices/system/cpu/cpu4/topology/thread_siblings_list=4,16
+/sys/devices/system/cpu/cpu5/topology/thread_siblings_list=5,17
+/sys/devices/system/cpu/cpu6/topology/thread_siblings_list=6,18
+/sys/devices/system/cpu/cpu7/topology/thread_siblings_list=7,19
+/sys/devices/system/cpu/cpu8/topology/thread_siblings_list=8,20
+/sys/devices/system/cpu/cpu9/topology/thread_siblings_list=9,21
+/sys/devices/system/cpu/cpu10/topology/thread_siblings_list=10,22
+/sys/devices/system/cpu/cpu11/topology/thread_siblings_list=11,23
+/sys/devices/system/cpu/cpu12/topology/thread_siblings_list=0,12
+/sys/devices/system/cpu/cpu13/topology/thread_siblings_list=1,13
+/sys/devices/system/cpu/cpu14/topology/thread_siblings_list=2,14
+/sys/devices/system/cpu/cpu15/topology/thread_siblings_list=3,15
+/sys/devices/system/cpu/cpu16/topology/thread_siblings_list=4,16
+/sys/devices/system/cpu/cpu17/topology/thread_siblings_list=5,17
+/sys/devices/system/cpu/cpu18/topology/thread_siblings_list=6,18
+/sys/devices/system/cpu/cpu19/topology/thread_siblings_list=7,19
+/sys/devices/system/cpu/cpu20/topology/thread_siblings_list=8,20
+/sys/devices/system/cpu/cpu21/topology/thread_siblings_list=9,21
+/sys/devices/system/cpu/cpu22/topology/thread_siblings_list=10,22
+/sys/devices/system/cpu/cpu23/topology/thread_siblings_list=11,23
+-- running processes --
+    PID PSR %CPU STAT COMMAND         COMMAND
+ 416377   3 99.9 R    old_algo        /tmp/old_algo /tmp/qalsh-acceptance/base/index/qalsh/l2/b /tmp/qalsh-acceptance/base/B.bin /tmp/qalsh-acceptance/base/A.bin
+2828206  11  2.3 Sl   java            /usr/share/elasticsearch/jdk/bin/java -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -Djava.security.manager=allow -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j2.formatMsgNoLookups=true -Djava.locale.providers=SPI,COMPAT --add-opens=java.base/java.io=org.elasticsearch.preallocate -Des.cgroups.hierarchy.override=/ -XX:+UseG1GC -Djava.io.tmpdir=/tmp/elasticsearch-8234049590142422807 --add-modules=jdk.incubator.vector -XX:+HeapDumpOnOutOfMemoryError -XX:+ExitOnOutOfMemoryError -XX:HeapDumpPath=data -XX:ErrorFile=logs/hs_err_pid%p.log -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,level,pid,tags:filecount=32,filesize=64m -Xms2g -Xmx2g -XX:MaxDirectMemorySize=1073741824 -XX:G1HeapRegionSize=4m -XX:InitiatingHeapOccupancyPercent=30 -XX:G1ReservePercent=15 -Des.distribution.type=docker --module-path /usr/share/elasticsearch/lib --add-modules=jdk.net --add-modules=ALL-MODULE-PATH -m org.elasticsearch.server/org.elasticsearch.bootstrap.Elasticsearch
+   6688   6  2.1 Ssl  dockerd         /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+ 859644   0  1.9 Ssl  containerd      /usr/bin/containerd
+   9992   6  1.4 Ssl  mihomo          /mihomo -d /root/.config/mihomo
+2681774  23  0.3 Ssl  mysqld          mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_0900_ai_ci --lower-case-table-names=1
+  87418   8  0.3 Ssl  mysqld          mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_0900_ai_ci --lower-case-table-names=1
+3970287  13  0.3 Sl   java            /usr/share/elasticsearch/jdk/bin/java -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -Djava.security.manager=allow -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j2.formatMsgNoLookups=true -Djava.locale.providers=SPI,COMPAT --add-opens=java.base/java.io=org.elasticsearch.preallocate -Des.cgroups.hierarchy.override=/ -XX:+UseG1GC -Djava.io.tmpdir=/tmp/elasticsearch-12837077794959418752 --add-modules=jdk.incubator.vector -XX:+HeapDumpOnOutOfMemoryError -XX:+ExitOnOutOfMemoryError -XX:HeapDumpPath=data -XX:ErrorFile=logs/hs_err_pid%p.log -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,level,pid,tags:filecount=32,filesize=64m -Xms512m -Xmx512m -XX:MaxDirectMemorySize=268435456 -XX:G1HeapRegionSize=4m -XX:InitiatingHeapOccupancyPercent=30 -XX:G1ReservePercent=15 -Des.distribution.type=docker --module-path /usr/share/elasticsearch/lib --add-modules=jdk.net --add-modules=ALL-MODULE-PATH -m org.elasticsearch.server/org.elasticsearch.bootstrap.Elasticsearch
+   9663  16  0.2 Ssl  mysqld          mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+  10783  15  0.2 Ssl  java            /usr/share/opensearch/jdk/bin/java -Xshare:auto -Dopensearch.networkaddress.cache.ttl=60 -Dopensearch.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -XX:+ShowCodeDetailsInExceptionMessages -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.security.manager=allow -Djava.locale.providers=SPI,COMPAT -Xms1g -Xmx1g -XX:+UseG1GC -XX:G1ReservePercent=25 -XX:InitiatingHeapOccupancyPercent=30 -Djava.io.tmpdir=/tmp/opensearch-1712870226740981479 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=data -XX:ErrorFile=logs/hs_err_pid%p.log -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m -Djava.security.manager=allow --add-modules=jdk.incubator.vector -Djava.util.concurrent.ForkJoinPool.common.threadFactory=org.opensearch.secure_sm.SecuredForkJoinWorkerThreadFactory -Dclk.tck=100 -Djdk.attach.allowAttachSelf=true -Djava.security.policy=/usr/share/opensearch/config/opensearch-performance-analyzer/opensearch_security.policy --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED -Dopensearch.cgroups.hierarchy.override=/ -Xms2g -Xmx2g -XX:MaxDirectMemorySize=1073741824 -Dopensearch.path.home=/usr/share/opensearch -Dopensearch.path.conf=/usr/share/opensearch/config -Dopensearch.distribution.type=tar -Dopensearch.bundled_jdk=true -cp /usr/share/opensearch/lib/* org.opensearch.bootstrap.OpenSearch -Ediscovery.type=single-node -Eplugins.security.disabled=true
+3770119   5  0.2 Ssl  mysqld          mysqld --lower_case_table_names=1
+  10580  22  0.2 Ssl  mysqld          mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_0900_ai_ci --lower-case-table-names=1
+ 287187  16  0.2 Ssl  redis-server    redis-server *:6379
+  10473  15  0.2 Ssl  redis-server    redis-server *:6379
+   9052  20  0.2 Ssl  redis-server    redis-server *:6379
+   9147  13  0.2 Ssl  redis-server    redis-server *:6379
+3970040   2  0.2 Ssl  redis-server    redis-server *:6379
+2685581   0  0.2 Sl   java            java -jar /app/application.jar
+   8972   4  0.2 Ssl  java            java -jar /app/bootstrap.jar
+2683464   6  0.2 Sl   java            java -jar /app/application.jar
+3139035  19  0.1 Sl   java            java -jar /app/application.jar
+  14283   4  0.1 Sl   java            /usr/share/elasticsearch/jdk/bin/java -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 --add-opens=org.apache.lucene.core/org.apache.lucene.codecs.lucene99=org.elasticsearch.server --add-opens=org.apache.lucene.core/org.apache.lucene.codecs.hnsw=org.elasticsearch.server --add-opens=org.apache.lucene.core/org.apache.lucene.internal.vectorization=org.elasticsearch.server -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j2.formatMsgNoLookups=true -Djava.locale.providers=CLDR -Dorg.apache.lucene.vectorization.upperJavaFeatureVersion=25 -Des.path.home=/usr/share/elasticsearch -Des.distribution.type=docker -Des.java.type=bundled JDK --enable-native-access=org.elasticsearch.nativeaccess,org.apache.lucene.core --enable-native-access=ALL-UNNAMED --illegal-native-access=deny -Des.cgroups.hierarchy.override=/ -XX:ReplayDataFile=logs/replay_pid%p.log -XX:+EnableDynamicAgentLoading -Djdk.attach.allowAttachSelf=true --patch-module=java.base=/usr/share/elasticsearch/lib/entitlement-bridge/elasticsearch-entitlement-bridge-9.2.8.jar --add-exports=java.base/org.elasticsearch.entitlement.bridge=org.elasticsearch.entitlement,java.logging,java.net.http,java.naming,jdk.net --add-exports=jdk.jlink/jdk.tools.jlink.internal=org.elasticsearch.entitlement --add-exports=java.base/sun.net.www=org.elasticsearch.entitlement --add-exports=java.base/sun.net.www.protocol.ftp=org.elasticsearch.entitlement --add-exports=java.base/sun.net.www.protocol.file=org.elasticsearch.entitlement --add-exports=java.base/sun.net.www.protocol.jar=org.elasticsearch.entitlement --add-exports=java.base/sun.net.www.protocol.http=org.elasticsearch.entitlement --add-exports=java.base/sun.net.www.protocol.https=org.elasticsearch.entitlement --add-exports=java.base/sun.net.www.protocol.mailto=org.elasticsearch.entitlement --add-exports=java.base/sun.nio.ch=org.elasticsearch.entitlement --add-exports=java.base/jdk.internal.foreign=org.elasticsearch.entitlement --add-exports=java.base/jdk.internal.foreign.abi=org.elasticsearch.entitlement --add-exports=java.base/jdk.internal.foreign.layout=org.elasticsearch.entitlement --add-exports=java.net.http/jdk.internal.net.http=org.elasticsearch.entitlement --add-exports=jdk.jdi/com.sun.tools.jdi=org.elasticsearch.entitlement -XX:+UseG1GC -Djava.io.tmpdir=/tmp/elasticsearch-11931261862967992530 --add-modules=jdk.incubator.vector -Dorg.apache.lucene.store.defaultReadAdvice=normal -Dorg.apache.lucene.store.MMapDirectory.sharedArenaMaxPermits=1 -XX:+HeapDumpOnOutOfMemoryError -XX:+ExitOnOutOfMemoryError -XX:ErrorFile=hs_err_pid%p.log -Xlog:gc*,gc+age=trace,safepoint:file=gc.log:utctime,level,pid,tags:filecount=32,filesize=64m -Xms512m -Xmx512m -XX:MaxDirectMemorySize=268435456 -XX:G1HeapRegionSize=4m -XX:InitiatingHeapOccupancyPercent=30 -XX:G1ReservePercent=15 --module-path /usr/share/elasticsearch/lib --add-modules=jdk.net --add-modules=jdk.management.agent --add-modules=ALL-MODULE-PATH -m org.elasticsearch.server/org.elasticsearch.bootstrap.Elasticsearch
+3139071  19  0.1 Sl   java            java -jar /app/application.jar
+  11713   0  0.1 Sl   java            java -jar /app/application.jar
+ 866749  16  0.1 Sl   containerd-shim /usr/bin/containerd-shim-runc-v2 -namespace moby -id b0c70613f3814254003d3304c6374bcef3ef2afb305e8238adc314b1675ecada -address /run/containerd/containerd.sock
+3493276  12  0.1 Sl   containerd-shim /usr/bin/containerd-shim-runc-v2 -namespace moby -id 22a283bd1d7a6484572f624410819f86bb6d89ca0efe28037f45f8f4e4630fcc -address /run/containerd/containerd.sock
+  10111   4  0.1 Ssl  minio           minio server /data --console-address :9001
+ 300107   2  0.1 Sl   containerd-shim /usr/bin/containerd-shim-runc-v2 -namespace moby -id a47d185d85840d7e2365abc5db38ca49029d29d9092dec08df624a5fd1059a4f -address /run/containerd/containerd.sock
+2994767   2  0.1 Sl   java            /usr/share/elasticsearch/jdk/bin/java -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -Djava.security.manager=allow -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j2.formatMsgNoLookups=true -Djava.locale.providers=SPI,COMPAT --add-opens=java.base/java.io=org.elasticsearch.preallocate -Des.cgroups.hierarchy.override=/ -XX:+UseG1GC -Djava.io.tmpdir=/tmp/elasticsearch-8862473990507047727 --add-modules=jdk.incubator.vector -XX:+HeapDumpOnOutOfMemoryError -XX:+ExitOnOutOfMemoryError -XX:HeapDumpPath=data -XX:ErrorFile=logs/hs_err_pid%p.log -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,level,pid,tags:filecount=32,filesize=64m -Xms512m -Xmx512m -XX:MaxDirectMemorySize=268435456 -XX:G1HeapRegionSize=4m -XX:InitiatingHeapOccupancyPercent=30 -XX:G1ReservePercent=15 -Des.distribution.type=docker --module-path /usr/share/elasticsearch/lib --add-modules=jdk.net --add-modules=ALL-MODULE-PATH -m org.elasticsearch.server/org.elasticsearch.bootstrap.Elasticsearch
+1919806  11  0.1 Sl   java            /usr/share/elasticsearch/jdk/bin/java -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -Djava.security.manager=allow -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j2.formatMsgNoLookups=true -Djava.locale.providers=SPI,COMPAT --add-opens=java.base/java.io=org.elasticsearch.preallocate -Des.cgroups.hierarchy.override=/ -XX:+UseG1GC -Djava.io.tmpdir=/tmp/elasticsearch-15920222091347228010 --add-modules=jdk.incubator.vector -XX:+HeapDumpOnOutOfMemoryError -XX:+ExitOnOutOfMemoryError -XX:HeapDumpPath=data -XX:ErrorFile=logs/hs_err_pid%p.log -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,level,pid,tags:filecount=32,filesize=64m -Xms512m -Xmx512m -XX:MaxDirectMemorySize=268435456 -XX:G1HeapRegionSize=4m -XX:InitiatingHeapOccupancyPercent=30 -XX:G1ReservePercent=15 -Des.distribution.type=docker --module-path /usr/share/elasticsearch/lib --add-modules=jdk.net --add-modules=ALL-MODULE-PATH -m org.elasticsearch.server/org.elasticsearch.bootstrap.Elasticsearch
+3476793  20  0.1 Sl   java            /usr/share/elasticsearch/jdk/bin/java -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -Djava.security.manager=allow -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Dlog4j2.formatMsgNoLookups=true -Djava.locale.providers=SPI,COMPAT --add-opens=java.base/java.io=org.elasticsearch.preallocate -Des.cgroups.hierarchy.override=/ -XX:+UseG1GC -Djava.io.tmpdir=/tmp/elasticsearch-9909682268017487151 --add-modules=jdk.incubator.vector -XX:+HeapDumpOnOutOfMemoryError -XX:+ExitOnOutOfMemoryError -XX:HeapDumpPath=data -XX:ErrorFile=logs/hs_err_pid%p.log -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,level,pid,tags:filecount=32,filesize=64m -Xms512m -Xmx512m -XX:MaxDirectMemorySize=268435456 -XX:G1HeapRegionSize=4m -XX:InitiatingHeapOccupancyPercent=30 -XX:G1ReservePercent=15 -Des.distribution.type=docker --module-path /usr/share/elasticsearch/lib --add-modules=jdk.net --add-modules=ALL-MODULE-PATH -m org.elasticsearch.server/org.elasticsearch.bootstrap.Elasticsearch
+ 414643   7  0.1 Ssl  temvia-api      /usr/local/bin/temvia-api
+2684287  20  0.1 Sl   java            java -jar /app/search-oauth2-server.jar
+2962161  15  0.1 Ssl  uvicorn         /usr/local/bin/python3.12 /usr/local/bin/uvicorn server.app.app_runtime.main:app --host 0.0.0.0 --port 8000
+3244525  19  0.0 Sl   java            java -jar /app/local-cas-service.jar
+3245342   0  0.0 Sl   java            java -jar /app/sysu-google.jar
+3383076  11  0.0 SNl  temvia-preview- /tmp/temvia-preview-server-new
+3509511   5  0.0 Ssl  uvicorn         /usr/local/bin/python3.12 /usr/local/bin/uvicorn server.app.app_runtime.main:app --host 0.0.0.0 --port 8000
+4101420  22  0.0 Ssl  uvicorn         /usr/local/bin/python3.12 /usr/local/bin/uvicorn server.app.app_runtime.main:app --host 0.0.0.0 --port 8000
+-- /proc/stat sample 0 --
+cpu0 11847690 38188 684167 68413467 206536 0 56964 0 0 0
+cpu1 21446671 22759 683209 59279984 225053 0 30210 0 0 0
+cpu2 7285225 38688 598789 73656652 189479 0 24863 0 0 0
+cpu3 24065596 24829 691325 56882348 200961 0 24609 0 0 0
+cpu4 4707552 38771 563669 76372777 175049 0 20953 0 0 0
+cpu5 3163251 27610 489693 78041063 162426 0 19034 0 0 0
+cpu6 1514906 12904 431244 79860125 140095 0 14839 0 0 0
+cpu7 3030729 29059 620339 78072009 127880 0 17296 0 0 0
+cpu8 1942576 20283 504030 79349607 117000 0 16328 0 0 0
+cpu9 2376967 24793 540706 78871322 110214 0 16088 0 0 0
+cpu10 1412380 12469 429505 80020425 104598 0 14596 0 0 0
+cpu11 1695145 16470 466778 79676552 106297 0 15062 0 0 0
+cpu12 11465295 34046 469009 69728221 251879 0 14886 0 0 0
+cpu13 23279851 16764 477672 58087559 140703 0 15689 0 0 0
+cpu14 4438034 30259 481485 76687970 278960 0 16970 0 0 0
+cpu15 19587529 20227 486760 61747793 153748 0 16211 0 0 0
+cpu16 2915786 29600 475561 78190178 297701 0 17655 0 0 0
+cpu17 2180630 24737 455756 78917836 324088 0 17007 0 0 0
+cpu18 1420769 11792 458648 79804737 162752 0 110126 0 0 0
+cpu19 2270567 18843 463397 79135286 97047 0 14553 0 0 0
+cpu20 2359980 15552 448694 78991552 174246 0 14543 0 0 0
+cpu21 2270800 17629 457949 79140291 106293 0 14232 0 0 0
+cpu22 1374418 10696 416672 80015750 175709 0 14481 0 0 0
+cpu23 1688794 13252 438222 79667497 186368 0 13559 0 0 0
+-- /proc/stat sample 1 --
+cpu0 11847694 38188 684168 68413561 206536 0 56964 0 0 0
+cpu1 21446702 22759 683210 59280052 225053 0 30210 0 0 0
+cpu2 7285231 38688 598790 73656745 189479 0 24863 0 0 0
+cpu3 24065622 24829 691327 56882419 200961 0 24609 0 0 0
+cpu4 4707554 38771 563670 76372875 175049 0 20953 0 0 0
+cpu5 3163253 27610 489694 78041160 162426 0 19034 0 0 0
+cpu6 1514907 12904 431245 79860224 140095 0 14839 0 0 0
+cpu7 3030732 29059 620341 78072105 127880 0 17296 0 0 0
+cpu8 1942576 20283 504031 79349705 117000 0 16328 0 0 0
+cpu9 2376968 24793 540707 78871418 110214 0 16088 0 0 0
+cpu10 1412381 12469 429505 80020525 104598 0 14596 0 0 0
+cpu11 1695145 16470 466778 79676652 106297 0 15062 0 0 0
+cpu12 11465297 34046 469010 69728317 251879 0 14886 0 0 0
+cpu13 23279894 16764 477672 58087616 140703 0 15689 0 0 0
+cpu14 4438037 30259 481486 76688068 278960 0 16970 0 0 0
+cpu15 19587532 20227 486761 61747888 153748 0 16211 0 0 0
+cpu16 2915787 29600 475561 78190277 297701 0 17655 0 0 0
+cpu17 2180631 24737 455758 78917933 324088 0 17007 0 0 0
+cpu18 1420770 11792 458648 79804837 162752 0 110126 0 0 0
+cpu19 2270569 18843 463399 79135384 97047 0 14553 0 0 0
+cpu20 2359980 15552 448694 78991652 174246 0 14543 0 0 0
+cpu21 2270801 17629 457950 79140390 106293 0 14232 0 0 0
+cpu22 1374419 10696 416672 80015848 175709 0 14481 0 0 0
+cpu23 1688794 13252 438223 79667596 186368 0 13559 0 0 0

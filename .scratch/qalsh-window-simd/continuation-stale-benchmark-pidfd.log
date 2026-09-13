@@ -1,0 +1,23 @@
+{
+  "pid": 416377,
+  "ppid": 416258,
+  "argv": [
+    "/tmp/old_algo",
+    "/tmp/qalsh-acceptance/base/index/qalsh/l2/b",
+    "/tmp/qalsh-acceptance/base/B.bin",
+    "/tmp/qalsh-acceptance/base/A.bin"
+  ],
+  "uid": 1000,
+  "executable": "/tmp/old_algo (deleted)",
+  "stdout": "/tmp/oldalgo.out (deleted)",
+  "parent_ppid": 1,
+  "parent_argv": [
+    "zsh",
+    "-c",
+    "set -e; c++ -O3 -std=c++20 /tmp/old_algo.cc -o /tmp/old_algo; /tmp/old_algo /tmp/qalsh-acceptance/base/index/qalsh/l2/b /tmp/qalsh-acceptance/base/B.bin /tmp/qalsh-acceptance/base/A.bin >/tmp/oldalgo.out; head /tmp/oldalgo.out; python3 - <<\"PY\"\nimport struct\nx=struct.unpack(\"<1880f\",open(\"/tmp/oldalgo.bin\",\"rb\").read())\nfor p in [\"/tmp/qalsh-acceptance/base/l2_qalsh_weights_A.bin\",\"/tmp/qalsh-acceptance/mig/l2_qalsh_weights_A.bin\"]:\n a=struct.unpack(\"<1880f\",open(p,\"rb\").read()); print(p,\"diff\",sum(i!=j for i,j in zip(a,x)),\"mae\",sum(abs(i-j) for i,j in zip(a,x))/len(x))\nPY"
+  ],
+  "cpu_allowed": "0-23",
+  "observed_unix": 1789267013.0654635,
+  "signal": "SIGTERM"
+}
+SIGTERM sent to verified stale benchmark via pidfd; no other process signaled.
